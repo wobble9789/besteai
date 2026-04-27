@@ -43,6 +43,27 @@ const comparisons = [
     searches: "20k+/mo",
     emoji: "🎙️",
   },
+  {
+    slug: "chatgpt-vs-gemini",
+    title: "ChatGPT vs Gemini",
+    desc: "The two biggest AI assistants compared. ChatGPT or Google Gemini — which should you use?",
+    searches: "500k+/mo",
+    emoji: "⚡",
+  },
+  {
+    slug: "notion-vs-notion-ai",
+    title: "Notion vs Notion AI",
+    desc: "Is the Notion AI upgrade worth $10/month? We break down exactly what you get.",
+    searches: "40k+/mo",
+    emoji: "📝",
+  },
+  {
+    slug: "canva-vs-adobe-firefly",
+    title: "Canva AI vs Adobe Firefly",
+    desc: "Two AI design tools for different audiences. Which one fits your workflow?",
+    searches: "35k+/mo",
+    emoji: "🎨",
+  },
 ];
 
 export default function ComparePage() {

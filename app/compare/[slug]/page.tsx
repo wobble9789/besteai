@@ -255,6 +255,173 @@ Choose **ElevenLabs** for: podcasts, YouTube, audiobooks, voice cloning, API int
 
 Choose **Murf AI** for: corporate training videos, presentation voiceovers, e-learning, teams needing a complete audio-video workflow.`,
   },
+  "chatgpt-vs-gemini": {
+    toolA: "chatgpt",
+    toolB: "chatgpt",
+    title: "ChatGPT vs Gemini 2025: Which AI Assistant Should You Use?",
+    intro:
+      "ChatGPT and Google Gemini are the two most-used AI assistants in the world. Both offer free plans, similar pricing, and multimodal capabilities. But they have very different strengths. Here's the definitive comparison.",
+    verdict:
+      "Choose ChatGPT for writing, coding, and the widest plugin ecosystem. Choose Gemini for Google Workspace integration, real-time search, and if you're already deep in the Google ecosystem.",
+    content: `## ChatGPT vs Gemini 2025: Full Comparison
+
+OpenAI's ChatGPT launched the AI revolution in 2022. Google responded with Gemini (formerly Bard), leveraging its search dominance and Google Workspace integration. Two years later, it's a genuine battle.
+
+### Writing Quality
+
+ChatGPT produces more natural, creative prose and is the preferred choice for long-form writing. Gemini tends toward more factual, encyclopedic responses — excellent for research, less engaging for creative work.
+
+**Winner: ChatGPT** for creative writing; **Gemini** for factual research.
+
+### Google Integration
+
+Gemini's killer feature is its deep Google integration. It can read your Gmail, access Google Drive, update Google Sheets, and search the web in real time. For heavy Google Workspace users, this is transformative.
+
+**Winner: Gemini**
+
+### Coding
+
+ChatGPT with GPT-4o remains the stronger coder. Google's Gemini Code Assist is solid but ChatGPT's ecosystem advantage (Copilot integrations, Advanced Data Analysis) gives it the edge.
+
+**Winner: ChatGPT**
+
+### Real-Time Information
+
+Both tools now offer web search. Gemini's search results are more tightly integrated (it IS Google, after all). ChatGPT's browsing is good but Gemini edges it on freshness.
+
+**Winner: Gemini**
+
+### Multimodal Features
+
+Both handle images, documents, and voice. Gemini has an edge on YouTube video analysis (being Google). ChatGPT's vision features are more mature for image analysis.
+
+**Winner: Tie**
+
+### Price
+
+Both offer free plans and $20/month premium plans. For the money, both deliver excellent value.
+
+**Winner: Tie**
+
+## Who Should Use ChatGPT?
+- Writers, creatives, and content creators
+- Developers building apps
+- Anyone wanting the widest AI ecosystem
+- Users who need complex reasoning and analysis
+
+## Who Should Use Gemini?
+- Heavy Google Workspace users
+- Anyone wanting AI integrated into Gmail and Drive
+- Users who want the best real-time web search
+- Android users (Gemini is the default assistant)`,
+  },
+  "notion-vs-notion-ai": {
+    toolA: "chatgpt",
+    toolB: "claude",
+    title: "Notion vs Notion AI 2025: Is the Upgrade Worth It?",
+    intro:
+      "Notion is the world's most popular all-in-one workspace. Notion AI adds artificial intelligence on top — but is it worth the extra $10/month? We break down exactly what you get and whether it's worth paying for.",
+    verdict:
+      "Notion AI is worth it if you write, summarize, or generate content in Notion regularly. Skip it if you mainly use Notion for databases and project tracking — basic Notion handles that fine.",
+    content: `## Notion vs Notion AI: What You're Actually Paying For
+
+Notion starts at free and goes to $16/month for teams. Notion AI adds $10/user/month on top. For a team of 5, that's $50/month extra. Is it worth it?
+
+### What Notion AI Adds
+
+**AI Writing Features:**
+- Drafts content from bullet points
+- Summarizes long documents with one click
+- Translates pages to other languages
+- Generates action items from meeting notes
+- Auto-fills database properties with AI
+
+**AI Q&A:**
+- Ask questions about your entire workspace
+- Find information across all pages instantly
+- "What did we decide about the Q3 budget?" gets an instant answer
+
+### The Core Notion (No AI) Strengths
+- Databases, tables, and kanban boards
+- Project management and task tracking
+- Wiki and documentation
+- Team collaboration and comments
+- Page sharing and permissions
+
+### Honest Assessment
+
+Notion AI's summarization and writing features are genuinely useful for note-heavy workflows. The Q&A feature is powerful for teams with large knowledge bases.
+
+However, for pure writing assistance, ChatGPT and Claude are more capable. And for project management, the base Notion is excellent without AI.
+
+### When to Pay for Notion AI
+- Your team writes a lot of documentation
+- You have meeting notes that need action items extracted
+- Your knowledge base is large enough that finding things is a problem
+- You want AI assistance without leaving your workspace
+
+### When to Skip It
+- You mainly use Notion for task management
+- You already pay for ChatGPT or Claude
+- You're cost-sensitive (combine with a free AI tool instead)
+- Small team with a simple knowledge base
+
+**Bottom line:** Notion AI is a solid add-on for content-heavy teams. It's not worth it if you're already paying for a dedicated AI writing tool.`,
+  },
+  "canva-vs-adobe-firefly": {
+    toolA: "chatgpt",
+    toolB: "chatgpt",
+    title: "Canva AI vs Adobe Firefly 2025: Which Design Tool Wins?",
+    intro:
+      "Canva and Adobe Firefly both offer powerful AI design features, but they serve different audiences. Canva is for non-designers who want quick results. Adobe Firefly is for professionals already in the Adobe ecosystem. Here's the full comparison.",
+    verdict:
+      "Choose Canva for quick social media graphics, marketing materials, and non-designer workflows. Choose Adobe Firefly if you're already using Photoshop or Illustrator and need commercially-safe AI generation inside your professional workflow.",
+    content: `## Canva AI vs Adobe Firefly: The Full Picture
+
+Canva has 150 million users. Adobe serves tens of millions of professionals. Both added AI image generation — but the results feel very different.
+
+### Canva AI Features
+
+**Text to Image:** Generate images from prompts directly inside Canva templates. Useful for social media, but quality lags behind Midjourney and Firefly.
+
+**Magic Design:** Upload a photo and get instant template suggestions around it. Genuinely useful for non-designers.
+
+**Background Remover:** One-click background removal. Excellent and saves significant time.
+
+**Magic Write:** AI text generation inside Canva for captions, headlines, and ad copy.
+
+**Price:** Free tier available. Canva Pro at $15/month includes all AI features.
+
+### Adobe Firefly Features
+
+**Generative Fill:** Select any area of a Photoshop image and describe what should appear there. Arguably the most impressive AI feature in any design tool.
+
+**Generative Expand:** Extend images beyond their original borders. Works remarkably well for changing aspect ratios.
+
+**Text Effects:** AI-powered typography that integrates textures and styles into fonts.
+
+**Commercially Safe:** Firefly is trained exclusively on licensed Adobe Stock content — safe for commercial use without copyright concerns.
+
+**Price:** Included with Creative Cloud. Standalone Firefly: Free (25 credits/month) or $4.99/month.
+
+### Key Differences
+
+| Feature | Canva AI | Adobe Firefly |
+|---------|----------|---------------|
+| Ease of use | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Output quality | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Commercial safety | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Template library | ⭐⭐⭐⭐⭐ | ⭐⭐ |
+| Workflow integration | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+
+### The Verdict for Different Users
+
+**Non-designers and marketers:** Canva. The template library and ease of use are unmatched. Firefly requires design knowledge to use well.
+
+**Professional designers:** Adobe Firefly — specifically Generative Fill in Photoshop. It's the most powerful AI tool inside a professional workflow available today.
+
+**Budget-conscious users:** Canva's free tier is very capable. Firefly's free plan (25 credits/month) is useful for occasional use.`,
+  },
 };
 
 export async function generateStaticParams() {

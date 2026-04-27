@@ -697,6 +697,161 @@ const sprint4Tools: Tool[] = [
 
 tools.push(...sprint4Tools);
 
+const sprint5Tools: Tool[] = [
+  {
+    slug: "perplexity-pages",
+    name: "Perplexity Pages",
+    tagline: "AI-powered research publishing platform",
+    description:
+      "Perplexity Pages lets you turn AI-generated research into beautifully formatted, shareable documents. Perfect for researchers, journalists, and knowledge workers who want to publish polished reports fast.",
+    website: "perplexity.ai",
+    affiliateUrl: "https://perplexity.ai/?ref=besteai",
+    price: "Free / $20/mo",
+    priceDetails: "Free plan with limited pages. Pro plan at $20/month unlocks full publishing features.",
+    categories: ["research", "writing"],
+    rating: 4.4,
+    pros: ["Beautiful output", "Cites sources", "Fast research", "Easy sharing"],
+    cons: ["Limited customization", "Requires Pro for full features", "Best for factual content"],
+  },
+  {
+    slug: "anthropic-claude-api",
+    name: "Anthropic Claude API",
+    tagline: "Enterprise-grade AI API for automation",
+    description:
+      "The Anthropic Claude API gives developers direct access to Claude's powerful language models for building AI-powered applications, automation workflows, and enterprise integrations.",
+    website: "anthropic.com",
+    affiliateUrl: "https://anthropic.com/?ref=besteai",
+    price: "From $0.003/1k tokens",
+    priceDetails: "Pay-as-you-go pricing. Claude Haiku from $0.003/1k tokens. Claude Opus for advanced tasks.",
+    categories: ["automation"],
+    rating: 4.6,
+    pros: ["Best-in-class safety", "Large context window", "High quality output", "Reliable uptime"],
+    cons: ["Developer-focused", "No free tier", "Requires API knowledge"],
+  },
+  {
+    slug: "stability-ai",
+    name: "Stability AI",
+    tagline: "Open-source AI image generation platform",
+    description:
+      "Stability AI is the company behind Stable Diffusion, the world's leading open-source image generation model. Use their API or run models locally for full creative control.",
+    website: "stability.ai",
+    affiliateUrl: "https://stability.ai/?ref=besteai",
+    price: "Free / $20/mo",
+    priceDetails: "Free credits on signup. Stability AI Membership from $20/month for commercial use.",
+    categories: ["images"],
+    rating: 4.3,
+    pros: ["Open-source models", "Full control", "Commercial licensing", "Huge community"],
+    cons: ["Steeper learning curve", "Requires setup for local use", "Quality varies by model"],
+  },
+  {
+    slug: "flux-ai",
+    name: "Flux AI",
+    tagline: "Next-gen open-source image generation",
+    description:
+      "Flux by Black Forest Labs is one of the most capable open-source image generation models available, producing photorealistic results that rival Midjourney at a fraction of the cost.",
+    website: "blackforestlabs.ai",
+    affiliateUrl: "https://blackforestlabs.ai/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free via open-source. Hosted API plans start from $10/month for commercial access.",
+    categories: ["images"],
+    rating: 4.4,
+    pros: ["Photorealistic output", "Open-source", "Fast generation", "Affordable"],
+    cons: ["Newer ecosystem", "Fewer integrations", "Some setup required"],
+  },
+  {
+    slug: "meta-ai",
+    name: "Meta AI",
+    tagline: "Free AI assistant from Meta",
+    description:
+      "Meta AI is Meta's free AI assistant, integrated across WhatsApp, Instagram, Facebook, and Messenger. Powered by Llama, it handles research, writing, and creative tasks for billions of users.",
+    website: "meta.ai",
+    affiliateUrl: "https://meta.ai/?ref=besteai",
+    price: "Free",
+    priceDetails: "Completely free across all Meta platforms.",
+    categories: ["research", "writing"],
+    rating: 4.2,
+    pros: ["Completely free", "Integrated with Meta apps", "Accessible globally", "No signup required"],
+    cons: ["Less powerful than Claude/GPT-4", "Privacy concerns", "Limited customization"],
+  },
+  {
+    slug: "krea-ai",
+    name: "Krea AI",
+    tagline: "Real-time AI image creation for designers",
+    description:
+      "Krea AI lets designers generate and iterate on images in real time. Its unique real-time canvas lets you draw rough sketches and watch AI transform them into polished visuals instantly.",
+    website: "krea.ai",
+    affiliateUrl: "https://krea.ai/?ref=besteai",
+    price: "Free / $24/mo",
+    priceDetails: "Free plan with limited generations. Pro plan at $24/month for unlimited real-time creation.",
+    categories: ["images", "design"],
+    rating: 4.4,
+    pros: ["Real-time generation", "Sketch-to-image", "Great for iteration", "Designer-friendly UI"],
+    cons: ["Credit limits on free plan", "Best for visuals not text", "Requires creativity to use well"],
+  },
+  {
+    slug: "fathom-ai",
+    name: "Fathom AI",
+    tagline: "AI meeting recorder and note-taker",
+    description:
+      "Fathom automatically records, transcribes, and summarizes your meetings. It integrates with Zoom, Teams, and Google Meet to give you instant AI-generated action items and highlights.",
+    website: "fathom.video",
+    affiliateUrl: "https://fathom.video/?ref=besteai",
+    price: "Free / $19/mo",
+    priceDetails: "Generous free plan. Team Edition starts at $19/user/month with advanced features.",
+    categories: ["automation"],
+    rating: 4.5,
+    pros: ["Free plan is excellent", "Accurate transcription", "Instant summaries", "CRM integrations"],
+    cons: ["Requires meeting bot", "Best with Zoom", "Privacy-sensitive for some teams"],
+  },
+  {
+    slug: "fireflies-ai",
+    name: "Fireflies AI",
+    tagline: "AI meeting notes and conversation intelligence",
+    description:
+      "Fireflies AI records and transcribes meetings, then uses AI to extract action items, key topics, and sentiment. Integrates with 40+ tools including Salesforce and HubSpot.",
+    website: "fireflies.ai",
+    affiliateUrl: "https://fireflies.ai/?ref=besteai",
+    price: "Free / $18/mo",
+    priceDetails: "Free plan with 800 minutes storage. Pro plan at $18/user/month for unlimited storage.",
+    categories: ["automation"],
+    rating: 4.4,
+    pros: ["Wide integrations", "Conversation intelligence", "Good free tier", "Team collaboration"],
+    cons: ["Storage limits on free", "Bot joining can feel intrusive", "Some transcription errors"],
+  },
+  {
+    slug: "gamma-ai",
+    name: "Gamma AI",
+    tagline: "AI presentation and document builder",
+    description:
+      "Gamma creates stunning presentations, documents, and webpages from a simple text prompt. Unlike PowerPoint, everything is web-native, responsive, and shareable with a link.",
+    website: "gamma.app",
+    affiliateUrl: "https://gamma.app/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free plan with 400 AI credits. Plus plan at $10/month for unlimited AI generation.",
+    categories: ["design"],
+    rating: 4.5,
+    pros: ["Beautiful templates", "Fast generation", "Web-native sharing", "No design skills needed"],
+    cons: ["Limited offline use", "Less control than PowerPoint", "Credit limits on free plan"],
+  },
+  {
+    slug: "tome-ai",
+    name: "Tome AI",
+    tagline: "AI-powered storytelling and presentations",
+    description:
+      "Tome creates narrative-driven presentations with AI. Perfect for sales decks, pitch decks, and storytelling — it generates beautiful slides and suggests compelling narratives automatically.",
+    website: "tome.app",
+    affiliateUrl: "https://tome.app/?ref=besteai",
+    price: "Free / $8/mo",
+    priceDetails: "Free plan available. Pro plan at $8/month for unlimited pages and AI features.",
+    categories: ["design"],
+    rating: 4.3,
+    pros: ["Story-focused design", "Affordable Pro plan", "Good AI generation", "Easy to share"],
+    cons: ["Less powerful than Gamma", "Limited export options", "Best for narrative content"],
+  },
+];
+
+tools.push(...sprint5Tools);
+
 export function getToolsByCategory(categorySlug: string): Tool[] {
   return tools.filter((t) => t.categories.includes(categorySlug));
 }
