@@ -109,6 +109,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Recently Added */}
+      <section className="max-w-6xl mx-auto px-4 py-14">
+        <div className="text-center mb-10">
+          <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">🆕 Recently Added</span>
+          <h2 className="text-3xl font-extrabold text-gray-900">New AI tools</h2>
+          <p className="text-gray-500 mt-2">The latest tools added to our directory</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {tools.slice(-6).reverse().map((tool) => (
+            <div key={tool.slug} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded-full">🆕 New</span>
+                <span className="text-xs text-gray-400">{tool.price}</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">{tool.name}</h3>
+              <p className="text-sm text-gray-500 mb-1">{tool.tagline}</p>
+              <div className="flex items-center gap-1 mb-3">
+                <span className="text-amber-400 text-sm">{"★".repeat(Math.round(tool.rating))}</span>
+                <span className="text-sm text-gray-500">{tool.rating}/5</span>
+              </div>
+              <p className="text-sm text-gray-600 flex-1 mb-4 line-clamp-2">{tool.description.slice(0, 100)}…</p>
+              <a
+                href={tool.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="mt-auto block text-center bg-green-600 text-white px-4 py-2 rounded-xl font-semibold hover:bg-green-700 transition-colors"
+              >
+                Try {tool.name} →
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Stats bar */}
       <section className="bg-white border-y border-gray-100 py-6">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-4 text-center">

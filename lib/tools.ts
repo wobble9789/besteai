@@ -995,6 +995,139 @@ const sprint9Tools: Tool[] = [
 
 tools.push(...sprint9Tools);
 
+const sprint10Tools: Tool[] = [
+  {
+    slug: "rytr",
+    name: "Rytr",
+    tagline: "Affordable AI writing for everyone",
+    description:
+      "Rytr is one of the most affordable AI writing tools on the market. It helps bloggers, freelancers, and small businesses generate quality content for blogs, emails, ads, and social media in seconds. With 40+ use cases and 30+ languages, Rytr punches well above its price.",
+    website: "rytr.me",
+    affiliateUrl: "https://rytr.me/?ref=besteai",
+    price: "Free / $9/mo",
+    priceDetails: "Free plan with 10,000 characters/month. Saver plan at $9/month. Unlimited at $29/month.",
+    categories: ["writing"],
+    rating: 4.2,
+    pros: ["Very affordable — $9/mo unlimited", "40+ writing use cases", "30+ languages supported", "Built-in plagiarism checker"],
+    cons: ["Output quality below top-tier tools", "Less nuance for complex content", "Limited long-form editing"],
+    badge: "Best Budget AI Writer",
+  },
+  {
+    slug: "anyword",
+    name: "Anyword",
+    tagline: "AI writing with predictive performance scores",
+    description:
+      "Anyword is a data-driven AI writing platform that predicts how well your copy will perform before you publish. Its Predictive Performance Score analyses your text and compares it to millions of ads and campaigns — making it uniquely valuable for marketers who want measurable results.",
+    website: "anyword.com",
+    affiliateUrl: "https://anyword.com/?ref=besteai",
+    price: "$49/mo",
+    priceDetails: "Starter from $49/month. Data-Driven plans for teams from $99/month.",
+    categories: ["writing", "marketing"],
+    rating: 4.3,
+    pros: ["Predictive performance scores for copy", "Great for ad copy and landing pages", "Brand voice training", "A/B testing built in"],
+    cons: ["No meaningful free tier", "Pricier than basic AI writers", "Best for marketing — not general writing"],
+    badge: "Best for Predictive Copy",
+  },
+  {
+    slug: "scalenut",
+    name: "Scalenut",
+    tagline: "Full-funnel SEO content platform",
+    description:
+      "Scalenut combines AI writing with SEO research to create a complete content marketing platform. From keyword clustering and SERP analysis to AI-generated long-form articles optimised for ranking, Scalenut covers the entire content workflow in one place.",
+    website: "scalenut.com",
+    affiliateUrl: "https://scalenut.com/?ref=besteai",
+    price: "$39/mo",
+    priceDetails: "Essential plan from $39/month. Growth plan at $79/month for agencies.",
+    categories: ["writing", "marketing"],
+    rating: 4.2,
+    pros: ["Keyword clustering and NLP optimization", "SERP analysis built in", "Full article generation with SEO scoring", "Good for content agencies"],
+    cons: ["Learning curve for full feature set", "SEO features need Growth plan", "Output needs editing for quality"],
+    badge: "Best for SEO Content Workflow",
+  },
+  {
+    slug: "surfer-seo",
+    name: "Surfer SEO",
+    tagline: "The #1 tool for on-page SEO optimization",
+    description:
+      "Surfer SEO is the industry-leading on-page optimization tool. It analyses the top-ranking pages for your target keyword and gives you a real-time content score, NLP recommendations, and keyword density targets. Used by thousands of SEO professionals and agencies worldwide.",
+    website: "surferseo.com",
+    affiliateUrl: "https://surferseo.com/?ref=besteai",
+    price: "$89/mo",
+    priceDetails: "Essential plan at $89/month. Scale plan at $129/month. Enterprise custom pricing.",
+    categories: ["marketing", "research"],
+    rating: 4.4,
+    pros: ["Best-in-class content scoring", "Integrates with Jasper, Google Docs, WordPress", "SERP analyzer and keyword research", "Audit tool for existing content"],
+    cons: ["Expensive for solo bloggers", "No standalone AI writer", "Requires SEO knowledge to get full value"],
+    badge: "Best for On-Page SEO",
+  },
+  {
+    slug: "clearscope",
+    name: "Clearscope",
+    tagline: "Enterprise SEO content optimization",
+    description:
+      "Clearscope is an enterprise-grade content optimization platform trusted by major brands like Condé Nast, Adobe, and HubSpot. It provides precise keyword recommendations, content grades, and readability scoring to help content teams consistently rank for competitive terms.",
+    website: "clearscope.io",
+    affiliateUrl: "https://clearscope.io/?ref=besteai",
+    price: "$189/mo",
+    priceDetails: "Essentials plan at $189/month. Business and Enterprise plans available.",
+    categories: ["marketing", "research"],
+    rating: 4.4,
+    pros: ["Trusted by top enterprise brands", "Clean, simple interface", "Google Docs and WordPress integration", "Consistent, reliable content grades"],
+    cons: ["Very expensive for small teams", "Fewer features than Surfer SEO at higher price", "No AI content generation included"],
+    badge: "Best Enterprise SEO Tool",
+  },
+  {
+    slug: "originality-ai",
+    name: "Originality AI",
+    tagline: "AI content detection built for publishers",
+    description:
+      "Originality AI is the most accurate AI content detector on the market. It detects AI-generated text from ChatGPT, Claude, Gemini, and other models — and includes a plagiarism checker. Built specifically for publishers, agencies, and site owners who need to verify content quality.",
+    website: "originality.ai",
+    affiliateUrl: "https://originality.ai/?ref=besteai",
+    price: "$20/mo",
+    priceDetails: "Pay-as-you-go at $0.01/100 words. Subscription plans from $20/month.",
+    categories: ["writing"],
+    rating: 4.3,
+    pros: ["Most accurate AI detector available", "Detects ChatGPT, Claude, Gemini, and more", "Plagiarism check included", "Team accounts for agencies"],
+    cons: ["Not free — pay-per-scan model", "Occasional false positives", "Detection not 100% reliable for short texts"],
+    badge: "Best AI Content Detector",
+  },
+  {
+    slug: "undetectable-ai",
+    name: "Undetectable AI",
+    tagline: "Make AI content bypass detectors",
+    description:
+      "Undetectable AI rewrites AI-generated content to make it pass AI detection tools like GPTZero and Originality AI. It humanizes text while preserving meaning — useful for writers who want to use AI assistance without triggering detection flags.",
+    website: "undetectable.ai",
+    affiliateUrl: "https://undetectable.ai/?ref=besteai",
+    price: "$10/mo",
+    priceDetails: "Monthly plan from $9.99 for 10,000 words. Yearly plans available at a discount.",
+    categories: ["writing"],
+    rating: 4.0,
+    pros: ["Effectively bypasses most AI detectors", "Preserves original meaning", "Fast processing", "Affordable entry price"],
+    cons: ["Ethical grey area for some use cases", "Quality can drop after rewriting", "Not 100% effective against all detectors"],
+    badge: "Best AI Humanizer",
+  },
+  {
+    slug: "humanize-ai",
+    name: "Humanize AI",
+    tagline: "Free AI text humanizer",
+    description:
+      "Humanize AI is a free tool that converts AI-generated text into natural, human-sounding writing. It adjusts sentence structure, varies word choice, and adds natural flow to content produced by ChatGPT, Claude, or any other AI writer — making it ideal for bloggers and students.",
+    website: "humanizeai.pro",
+    affiliateUrl: "https://humanizeai.pro/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free tier available. Premium plan from $10/month for higher word limits.",
+    categories: ["writing"],
+    rating: 4.1,
+    pros: ["Generous free tier", "Simple, easy-to-use interface", "Improves natural flow of AI text", "No account required for basic use"],
+    cons: ["Less powerful than paid alternatives", "Word limits on free tier", "Results vary by content type"],
+    badge: "Best Free AI Humanizer",
+  },
+];
+
+tools.push(...sprint10Tools);
+
 export function getToolsByCategory(categorySlug: string): Tool[] {
   return tools.filter((t) => t.categories.includes(categorySlug));
 }
