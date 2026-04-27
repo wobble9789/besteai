@@ -894,6 +894,107 @@ const sprint8Tools: Tool[] = [
 
 tools.push(...sprint8Tools);
 
+const sprint9Tools: Tool[] = [
+  {
+    slug: "hemingway-editor",
+    name: "Hemingway Editor",
+    tagline: "Write bold, clear, readable prose",
+    description:
+      "Hemingway Editor highlights complex sentences, passive voice, and adverbs so you can write cleaner, bolder prose. A must-have for bloggers, copywriters, and anyone who wants their writing to be instantly readable.",
+    website: "hemingwayapp.com",
+    affiliateUrl: "https://hemingwayapp.com/?ref=besteai",
+    price: "Free / $20 one-time",
+    priceDetails: "Free web version. Desktop app is a one-time purchase of $20.",
+    categories: ["writing"],
+    rating: 4.3,
+    pros: ["Highlights readability issues in real time", "One-time price — no subscription", "Simple, distraction-free editor", "Great for editing drafts quickly"],
+    cons: ["No AI generation — editing only", "Limited formatting options", "Desktop app needed for offline use"],
+    badge: "Best for Readability",
+  },
+  {
+    slug: "prowritingaid",
+    name: "ProWritingAid",
+    tagline: "Deep writing analysis for serious writers",
+    description:
+      "ProWritingAid is a comprehensive writing assistant that goes beyond grammar checking. It analyses style, structure, pacing, readability, and more — making it the favourite tool of novelists, content professionals, and academics.",
+    website: "prowritingaid.com",
+    affiliateUrl: "https://prowritingaid.com/?ref=besteai",
+    price: "Free / $30/mo",
+    priceDetails: "Free version with limited checks. Premium from $30/month or $120/year.",
+    categories: ["writing"],
+    rating: 4.4,
+    pros: ["Over 20 in-depth writing reports", "Integrates with Word, Google Docs, Scrivener", "Strong plagiarism checker", "Great for long-form content"],
+    cons: ["Can feel overwhelming for casual users", "Pricier than basic grammar tools", "Slower than lightweight alternatives"],
+    badge: "Best for Long-Form Writing",
+  },
+  {
+    slug: "veed-io",
+    name: "Veed.io",
+    tagline: "AI video editing in your browser",
+    description:
+      "Veed.io is an online AI video editor that makes it easy to add subtitles, translate videos, remove backgrounds, and create polished content — no software download needed. Ideal for social media creators and marketing teams.",
+    website: "veed.io",
+    affiliateUrl: "https://veed.io/?ref=besteai",
+    price: "Free / $18/mo",
+    priceDetails: "Free plan available. Pro from $18/month.",
+    categories: ["video"],
+    rating: 4.4,
+    pros: ["Auto-subtitles in 100+ languages", "Browser-based — no install", "AI background remover", "Team collaboration features"],
+    cons: ["Free plan watermarks exports", "Limited timeline editing vs. desktop tools", "Can lag on large files"],
+    badge: "Best Browser Video Editor",
+  },
+  {
+    slug: "capcut-ai",
+    name: "CapCut AI",
+    tagline: "The creator's AI video editor",
+    description:
+      "CapCut AI is ByteDance's powerful free video editor packed with AI features: auto-captions, AI avatars, text-to-video, background removal, and viral templates. Hugely popular with TikTok and YouTube Shorts creators.",
+    website: "capcut.com",
+    affiliateUrl: "https://capcut.com/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free plan is very generous. Pro at $10/month unlocks advanced AI features.",
+    categories: ["video"],
+    rating: 4.5,
+    pros: ["Best free tier in its category", "AI captions and auto-reframe", "Massive template library", "Mobile and desktop apps"],
+    cons: ["Owned by ByteDance (data privacy concerns)", "Advanced AI features need Pro", "Export limits on free plan"],
+    badge: "Best Free AI Video Editor",
+  },
+  {
+    slug: "pictory-ai",
+    name: "Pictory AI",
+    tagline: "Turn scripts and articles into videos automatically",
+    description:
+      "Pictory AI converts long-form content — blog posts, scripts, Zoom recordings — into short, branded videos with AI-selected footage, captions, and voiceovers. Perfect for repurposing content at scale.",
+    website: "pictory.ai",
+    affiliateUrl: "https://pictory.ai/?ref=besteai",
+    price: "$23/mo",
+    priceDetails: "Starter plan from $23/month. No meaningful free tier.",
+    categories: ["video"],
+    rating: 4.3,
+    pros: ["Converts articles to video in minutes", "Large stock footage library", "Auto-captions and highlight reels", "Good for content repurposing"],
+    cons: ["No free plan", "AI footage selection can miss context", "Limited creative control"],
+    badge: "Best for Content Repurposing",
+  },
+  {
+    slug: "invideo-ai",
+    name: "InVideo AI",
+    tagline: "Create videos from text prompts",
+    description:
+      "InVideo AI lets you generate full videos from a text prompt or script. Just describe what you want, and the AI picks footage, adds voiceover, and assembles the video. Great for faceless YouTube channels and marketing clips.",
+    website: "invideo.io",
+    affiliateUrl: "https://invideo.io/?ref=besteai",
+    price: "Free / $30/mo",
+    priceDetails: "Free plan with watermark. Business plan from $30/month.",
+    categories: ["video"],
+    rating: 4.3,
+    pros: ["Text-to-video in minutes", "8M+ stock media library", "AI voiceover included", "Good for faceless YouTube channels"],
+    cons: ["Free plan watermarks", "Less control over visuals than manual editors", "Quality varies by topic"],
+    badge: "Best for Faceless YouTube",
+  },
+];
+
+tools.push(...sprint9Tools);
+
 export function getToolsByCategory(categorySlug: string): Tool[] {
   return tools.filter((t) => t.categories.includes(categorySlug));
 }

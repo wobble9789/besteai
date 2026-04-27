@@ -11,6 +11,189 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "capcut-vs-veed-2025",
+    title: "CapCut AI vs Veed.io: Best AI Video Editor in 2025?",
+    summary: "CapCut or Veed.io? We compare features, pricing, and use cases to help you pick the best AI video editor for your workflow.",
+    date: "2026-04-27",
+    author: "BestAI Editorial",
+    readTime: "7 min",
+    category: "video",
+    content: `
+## CapCut AI vs Veed.io: Which AI Video Editor Wins in 2025?
+
+Both CapCut AI and Veed.io are taking the world of online video editing by storm. But they serve different creators.
+
+### TL;DR
+- **CapCut AI** — Best free option for TikTok/Reels/Shorts creators
+- **Veed.io** — Best browser-based editor for teams and professionals
+
+### Pricing
+
+| Feature | CapCut AI | Veed.io |
+|---|---|---|
+| Free plan | Yes (generous) | Yes (limited) |
+| Paid plan | $10/mo | $18/mo |
+| Watermark-free | Pro | Pro |
+
+### Features
+
+**CapCut AI strengths:** AI auto-captions, viral templates, text-to-video, mobile app, huge free tier.
+
+**Veed.io strengths:** Auto-translate subtitles (100+ languages), browser-based, team collaboration, professional UI.
+
+### The Verdict
+
+For individual creators on a budget: **CapCut AI wins** on value. For professional teams needing collaboration: **Veed.io wins**. Both are excellent.
+    `.trim(),
+  },
+  {
+    slug: "prowritingaid-vs-grammarly-2025",
+    title: "ProWritingAid vs Grammarly: Which Writing Tool is Better?",
+    summary: "ProWritingAid or Grammarly? A detailed comparison of features, pricing, and who each writing assistant is best for in 2025.",
+    date: "2026-04-27",
+    author: "BestAI Editorial",
+    readTime: "8 min",
+    category: "writing",
+    content: `
+## ProWritingAid vs Grammarly: The 2025 Verdict
+
+Grammarly is the household name. ProWritingAid is the writer's secret weapon.
+
+### Quick Summary
+- **Grammarly** — Best for quick grammar and tone checks
+- **ProWritingAid** — Best for serious writers on long-form content
+
+### Pricing
+
+| | Grammarly | ProWritingAid |
+|---|---|---|
+| Free plan | Basic | Limited |
+| Premium | $12/mo (annual) | $10/mo (annual) |
+| Lifetime | No | $399 one-time |
+
+### Who Should Use Each?
+
+**Grammarly** is best for students and professionals checking emails, short copy, and everyday writing.
+
+**ProWritingAid** is best for fiction writers, journalists, and anyone improving long-form writing style.
+
+### The Verdict
+
+For most people, **Grammarly** is the better daily driver. For serious writers, **ProWritingAid** offers more depth and better value.
+    `.trim(),
+  },
+  {
+    slug: "ai-tools-youtube-creators-2025",
+    title: "Best AI Tools for YouTube Creators in 2025",
+    summary: "The top AI tools every YouTube creator should use in 2025 — from scripting and voiceover to editing, thumbnails, and SEO.",
+    date: "2026-04-27",
+    author: "BestAI Editorial",
+    readTime: "9 min",
+    category: "video",
+    content: `
+## Best AI Tools for YouTube Creators in 2025
+
+AI is the YouTube creator's unfair advantage. Here are the tools that matter most.
+
+### 1. CapCut AI — Video Editing
+Auto-captions, AI B-roll, text-to-video. **Price:** Free / $10/mo
+
+### 2. InVideo AI — Faceless Channel Videos
+Turn a text prompt into a full YouTube video. **Price:** Free / $30/mo
+
+### 3. Pictory AI — Content Repurposing
+Convert long videos into Shorts and clips. **Price:** $23/mo
+
+### 4. ElevenLabs — AI Voiceover
+Ultra-realistic AI voices for faceless channels. **Price:** Free / $5/mo
+
+### 5. ChatGPT — Script Writing
+Generate full scripts, hooks, and CTAs in minutes. **Price:** Free / $20/mo
+
+### 6. Midjourney — Thumbnails
+Generate eye-catching thumbnail concepts. **Price:** $10/mo
+
+### The Creator Stack
+
+ChatGPT (script) to CapCut AI (edit) to ElevenLabs (voice) to Midjourney (thumbnail). Under $50/mo total.
+    `.trim(),
+  },
+  {
+    slug: "ai-write-business-plan-2025",
+    title: "How to Use AI to Write a Business Plan in 2025",
+    summary: "Step-by-step guide to writing a professional business plan using AI tools. Save weeks of work and produce investor-ready documents.",
+    date: "2026-04-27",
+    author: "BestAI Editorial",
+    readTime: "10 min",
+    category: "writing",
+    content: `
+## How to Use AI to Write a Business Plan in 2025
+
+Writing a business plan used to take weeks. With AI, you can produce an investor-ready plan in a weekend.
+
+### Step 1: Define Your Business First
+Before using any AI, write down: what problem you solve, who your customer is, how you make money, and who your competitors are. AI amplifies clarity.
+
+### Step 2: ChatGPT for the Executive Summary
+Use a detailed role prompt specifying business type, target customer, problem, solution, and revenue model.
+
+### Step 3: Market Research with Perplexity AI
+Perplexity searches the web in real time with citations. Ask for market size, competitors, and key trends.
+
+### Step 4: Financial Projections with Claude
+Claude excels at structured content. Feed it your numbers and ask for a 3-year financial forecast.
+
+### Step 5: Assemble in Notion AI or Google Docs
+Use AI to refine tone, fix grammar, and polish every section.
+
+### AI Can Write All These Sections
+Executive Summary, Company Description, Market Analysis, Product Description, Marketing Strategy, Operations, Financial Projections.
+
+**Time saved:** 1-3 days with AI vs 2-4 weeks manually.
+    `.trim(),
+  },
+  {
+    slug: "ai-tools-real-estate-2025",
+    title: "Best AI Tools for Real Estate Agents in 2025",
+    summary: "Top AI tools helping real estate agents write listings, generate leads, respond faster, and close more deals in 2025.",
+    date: "2026-04-27",
+    author: "BestAI Editorial",
+    readTime: "8 min",
+    category: "business",
+    content: `
+## Best AI Tools for Real Estate Agents in 2025
+
+AI is handling the paperwork and listings so agents can focus on what matters: closing deals.
+
+### 1. ChatGPT — Listing Descriptions
+Write polished, SEO-friendly property listings in seconds. **Price:** Free / $20/mo
+
+### 2. Canva AI — Marketing Materials
+Create professional flyers and social media posts from a text prompt. **Price:** Free / $15/mo
+
+### 3. HeyGen — Video Listings
+AI avatar video walk-throughs — stand out on Zillow without filming. **Price:** Free / $29/mo
+
+### 4. Fireflies.ai — Meeting Transcription
+Auto-record and summarise every client call. **Price:** Free / $10/mo
+
+### 5. Grammarly — Professional Email
+Catch errors and improve tone across Gmail and your CRM. **Price:** Free / $12/mo
+
+### The Real Estate AI Stack
+
+| Task | Tool |
+|---|---|
+| Listing descriptions | ChatGPT |
+| Marketing materials | Canva AI |
+| Video listings | HeyGen |
+| Client call notes | Fireflies.ai |
+| Email writing | Grammarly |
+
+Agents using AI are responding to leads 5x faster and writing listings in minutes.
+    `.trim(),
+  },
+  {
     slug: "beste-ai-schrijftools-2025",
     title: "The 5 Best AI Writing Tools of 2025 — Honestly Compared",
     summary:
