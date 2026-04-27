@@ -3,6 +3,38 @@ import { tools } from "@/lib/tools";
 import { categories } from "@/lib/tools";
 import { blogPosts } from "@/lib/blog";
 
+const comparePages = [
+  "chatgpt-vs-claude",
+  "midjourney-vs-dall-e",
+  "grammarly-vs-writesonic",
+  "github-copilot-vs-cursor",
+  "elevenlabs-vs-murf",
+  "chatgpt-vs-gemini",
+  "notion-vs-notion-ai",
+  "canva-vs-adobe-firefly",
+  "jasper-vs-copy-ai",
+  "chatgpt-vs-perplexity",
+  "notion-ai-vs-chatgpt",
+  "runway-vs-pika",
+  "grammarly-vs-quillbot",
+];
+
+const bestPages = [
+  "ai-audio-tools",
+  "ai-chatbots",
+  "ai-coding-tools",
+  "ai-image-generators",
+  "ai-tools-for-business",
+  "ai-tools-for-marketing",
+  "ai-tools-for-students",
+  "ai-video-tools",
+  "ai-writing-tools",
+  "cheap-ai-tools",
+  "free-ai-tools",
+  "ai-tools-for-teachers",
+  "ai-summarizers",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://besteai.nl";
 
@@ -10,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/tools/${tool.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: 0.8,
+    priority: 0.9,
   }));
 
   const categoryPages = categories.map((cat) => ({
@@ -24,15 +56,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly" as const,
-    priority: 0.6,
+    priority: 0.8,
+  }));
+
+  const compareEntries = comparePages.map((slug) => ({
+    url: `${baseUrl}/compare/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  const bestEntries = bestPages.map((slug) => ({
+    url: `${baseUrl}/best/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
   }));
 
   return [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: "daily", priority: 1 },
+    { url: baseUrl, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${baseUrl}/tools`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/compare`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/best`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     ...toolPages,
-    ...categoryPages,
+    ...bestEntries,
+    ...compareEntries,
     ...blogPages,
+    ...categoryPages,
   ];
 }

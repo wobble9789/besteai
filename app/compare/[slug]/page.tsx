@@ -422,6 +422,261 @@ Canva has 150 million users. Adobe serves tens of millions of professionals. Bot
 
 **Budget-conscious users:** Canva's free tier is very capable. Firefly's free plan (25 credits/month) is useful for occasional use.`,
   },
+  "jasper-vs-copy-ai": {
+    toolA: "jasper",
+    toolB: "copy-ai",
+    title: "Jasper vs Copy.ai 2025: Which AI Copywriting Tool Wins?",
+    intro:
+      "Jasper and Copy.ai are two of the biggest names in AI copywriting. Both help marketers create content faster — but they target different users and budgets. Jasper is a premium powerhouse; Copy.ai is the budget-friendly challenger. Here's the full breakdown.",
+    verdict:
+      "Choose Jasper if you run a marketing team and need brand voice consistency, SEO integration, and enterprise features. Choose Copy.ai if you're a freelancer or small business that needs solid AI writing at a lower price point.",
+    content: `## Jasper vs Copy.ai: In-Depth Comparison
+
+Jasper (formerly Jarvis) launched in 2021 and quickly became the go-to AI writing tool for marketing teams. Copy.ai launched around the same time with a focus on simplicity and accessibility. Both use large language models but have developed very different product philosophies.
+
+### Writing Quality
+
+Jasper produces polished, brand-consistent marketing copy. Its "Brand Voice" feature learns your tone and style, making output feel like it came from your team. Copy.ai's output is solid for short-form content — social posts, emails, product descriptions — but can feel generic for long-form.
+
+**Winner: Jasper** for quality and consistency.
+
+### Templates & Use Cases
+
+Jasper offers 50+ templates and a full document editor. Copy.ai has 90+ templates focused on short-form marketing copy. Both cover the basics: blog posts, ads, emails, social media.
+
+**Winner: Tie** — Jasper wins on long-form; Copy.ai wins on template variety.
+
+### Pricing
+
+Jasper starts at $39/month for one user. Copy.ai's free plan is generous (2,000 words/month), and the Pro plan is $36/month with unlimited words. For solo creators, Copy.ai offers dramatically better value.
+
+**Winner: Copy.ai** for price.
+
+### SEO Features
+
+Jasper integrates with Surfer SEO for content optimization. Copy.ai has basic SEO tools but nothing as powerful as Jasper + Surfer. If SEO content is your focus, Jasper wins clearly.
+
+**Winner: Jasper**
+
+### Team Features
+
+Jasper was built for teams: brand voice, user seats, campaign management, and workflow tools. Copy.ai's team features are more limited. For marketing departments, Jasper is the obvious choice.
+
+**Winner: Jasper**
+
+| Feature | Jasper | Copy.ai |
+|---|---|---|
+| Price | From $39/mo | Free / $36/mo |
+| Long-form writing | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Templates | 50+ | 90+ |
+| SEO integration | ✅ (Surfer) | ❌ |
+| Free plan | ❌ | ✅ |
+| Team features | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |`,
+  },
+  "chatgpt-vs-perplexity": {
+    toolA: "chatgpt",
+    toolB: "perplexity",
+    title: "ChatGPT vs Perplexity AI 2025: Which Should You Use?",
+    intro:
+      "ChatGPT and Perplexity AI are both AI assistants, but they serve fundamentally different purposes. ChatGPT is a general-purpose AI for writing, coding, and analysis. Perplexity is an AI-powered search engine with real-time web access. Here's how to choose.",
+    verdict:
+      "Use Perplexity when you need accurate, cited, up-to-date information fast. Use ChatGPT when you need to create content, write code, analyze data, or have a complex multi-turn conversation.",
+    content: `## ChatGPT vs Perplexity AI: Full Comparison
+
+ChatGPT by OpenAI is the world's most popular AI assistant with over 200 million weekly users. Perplexity AI, founded in 2022, bills itself as "the AI-powered answer engine" and has quickly grown to millions of users by offering something ChatGPT (without browsing) can't: real-time, sourced answers.
+
+### Real-Time Web Access
+
+Perplexity has real-time web access by default on all plans, including free. It cites sources, links to them, and answers questions with current information. ChatGPT's free tier has a knowledge cutoff; browsing is available on Plus ($20/mo) but isn't the core product.
+
+**Winner: Perplexity** for research and current events.
+
+### Writing & Content Creation
+
+ChatGPT is vastly superior for writing tasks. It can draft articles, rewrite copy, generate creative fiction, and handle nuanced instructions over long conversations. Perplexity is not designed for content creation.
+
+**Winner: ChatGPT**
+
+### Accuracy & Hallucinations
+
+Perplexity's citation model reduces hallucinations significantly for factual questions — you can verify every claim. ChatGPT can confidently state incorrect facts. For research, Perplexity's approach is safer.
+
+**Winner: Perplexity** for factual research.
+
+### Coding
+
+ChatGPT is one of the best coding assistants available. Perplexity can explain code and find documentation but isn't a coding tool.
+
+**Winner: ChatGPT**
+
+### Pricing
+
+Both have free tiers. Perplexity Pro is $20/month. ChatGPT Plus is $20/month. Equal price, different value.
+
+| Feature | ChatGPT | Perplexity |
+|---|---|---|
+| Real-time web | Plus only | ✅ Free |
+| Writing quality | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Citations | ❌ | ✅ |
+| Coding | ⭐⭐⭐⭐⭐ | ⭐⭐ |
+| Price | Free / $20/mo | Free / $20/mo |
+| Best for | Creating content | Researching facts |`,
+  },
+  "notion-ai-vs-chatgpt": {
+    toolA: "notion-ai",
+    toolB: "chatgpt",
+    title: "Notion AI vs ChatGPT 2025: Which AI Should Power Your Work?",
+    intro:
+      "Notion AI and ChatGPT are both powerful AI tools — but one lives inside your workspace and one is a standalone assistant. If you already live in Notion, Notion AI is incredibly convenient. But does convenience beat raw capability? Here's the full story.",
+    verdict:
+      "Use Notion AI if your entire workflow lives in Notion — the integration is seamless and it adds $10/month. Use ChatGPT if you need maximum AI power, versatility, or don't use Notion as your primary workspace.",
+    content: `## Notion AI vs ChatGPT: Which Wins?
+
+Notion AI launched in 2023 as an add-on to Notion's already powerful workspace platform. Rather than competing with general AI assistants, it integrates directly into your notes, databases, and documents. ChatGPT remains the general-purpose AI champion.
+
+### Integration & Workflow
+
+Notion AI's biggest advantage: it's inside Notion. Summarize a meeting note, write a draft from your bullet points, translate a document, generate action items — all without leaving your workspace. ChatGPT requires switching tabs and copy-pasting.
+
+**Winner: Notion AI** for Notion users.
+
+### Raw AI Capability
+
+ChatGPT (especially GPT-4o) is significantly more capable than Notion AI for complex tasks. Notion AI handles basic writing assistance well but struggles with nuanced, multi-step instructions.
+
+**Winner: ChatGPT**
+
+### Database & Context Awareness
+
+Notion AI can reference your Notion workspace — your pages, databases, and notes — to give contextual answers. ChatGPT has no awareness of your personal documents unless you paste them in.
+
+**Winner: Notion AI**
+
+### Writing Quality
+
+For simple tasks (summarize, fix grammar, make shorter), Notion AI is excellent. For complex writing, creative work, or technical content, ChatGPT is superior.
+
+**Winner: ChatGPT** for complex writing.
+
+### Pricing
+
+Notion AI adds $10/month to any Notion plan. ChatGPT free tier is powerful; Plus is $20/month.
+
+| Feature | Notion AI | ChatGPT |
+|---|---|---|
+| Workspace integration | ⭐⭐⭐⭐⭐ | ❌ |
+| Raw AI power | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Database context | ✅ | ❌ |
+| Coding | ❌ | ✅ |
+| Price | +$10/mo to Notion | Free / $20/mo |`,
+  },
+  "runway-vs-pika": {
+    toolA: "runway",
+    toolB: "pika",
+    title: "Runway vs Pika 2025: Best AI Video Generator?",
+    intro:
+      "Runway and Pika are leading the AI video generation revolution. Runway is the professional powerhouse used by filmmakers and studios. Pika is the accessible, fast option for creators and marketers. Both are impressive — here's how to choose.",
+    verdict:
+      "Choose Runway Gen-3 if you need cinematic quality, precise control, and professional output. Choose Pika if you want fast, fun video generation at a lower price point for social content.",
+    content: `## Runway vs Pika: AI Video Generation Compared
+
+AI video generation went mainstream in 2024. Runway, backed by $236M in funding, leads the professional segment with Gen-3 Alpha. Pika, founded in 2023 by Stanford AI students, offers a more accessible approach.
+
+### Video Quality
+
+Runway Gen-3 Alpha produces the most cinematically realistic AI video available. Motion is smooth, details are sharp, and you can control camera movements like dolly, zoom, and pan. Pika 2.0 is impressive but the gap in realism is noticeable for professional use.
+
+**Winner: Runway**
+
+### Ease of Use
+
+Pika is significantly easier to use. The interface is clean, generation is fast (under 30 seconds), and the results are consistently good. Runway has more features but a steeper learning curve.
+
+**Winner: Pika**
+
+### Speed
+
+Pika generates video in 20-30 seconds. Runway can take 60-90 seconds for higher quality output. For social content, Pika's speed matters.
+
+**Winner: Pika**
+
+### Pricing
+
+Pika is cheaper: free tier available, paid plans from $8/month. Runway's free plan gives 125 credits; paid plans start at $15/month for 625 credits. Video generation burns credits fast on both.
+
+**Winner: Pika** for value.
+
+### Professional Use
+
+Runway is used by studios for commercial projects. It offers green screen, motion tracking, frame interpolation, and more. Pika is primarily for short social clips.
+
+**Winner: Runway**
+
+| Feature | Runway | Pika |
+|---|---|---|
+| Video quality | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Ease of use | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Speed | 60-90s | 20-30s |
+| Pricing | From $15/mo | From $8/mo |
+| Pro features | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |`,
+  },
+  "grammarly-vs-quillbot": {
+    toolA: "grammarly",
+    toolB: "quillbot",
+    title: "Grammarly vs QuillBot 2025: Which Writing Tool Is Better?",
+    intro:
+      "Grammarly and QuillBot are the two most popular AI writing assistants for non-native English speakers, students, and content creators. Grammarly catches errors and improves style; QuillBot rewrites and paraphrases. But which one should you use — or do you need both?",
+    verdict:
+      "Use Grammarly for real-time grammar checking and style improvements across all your writing. Use QuillBot when you specifically need to paraphrase, rewrite for clarity, or avoid repetition. Many users benefit from having both.",
+    content: `## Grammarly vs QuillBot: Complete Comparison 2025
+
+Grammarly, founded in 2009, is the world's most widely used writing assistant with 30 million daily active users. QuillBot, founded in 2017, became the dominant AI paraphrasing tool used by over 35 million people. They overlap more than ever in 2025 but still serve different primary needs.
+
+### Core Function
+
+Grammarly's core function is error correction and style improvement — it spots mistakes as you write and explains why they're wrong. QuillBot's core function is paraphrasing — rewriting existing text in different ways while preserving meaning.
+
+**Winner: Depends on your need** — different tools, different jobs.
+
+### Grammar Checking
+
+Grammarly is unmatched for grammar and spelling. It catches errors most word processors miss and integrates into browsers, Google Docs, Word, email clients, and desktop apps. QuillBot has a grammar checker but it's secondary to its paraphrasing function.
+
+**Winner: Grammarly**
+
+### Paraphrasing
+
+QuillBot's paraphrasing is significantly better than Grammarly's rewrite suggestions. It offers 8 modes: Standard, Fluency, Formal, Academic, Creative, Shorten, Expand, and Custom. The output quality is excellent.
+
+**Winner: QuillBot**
+
+### Free Plan Comparison
+
+Both have useful free plans. Grammarly Free covers basic grammar; QuillBot Free covers 125-word paraphrasing chunks. Both have meaningful limitations that push power users to paid.
+
+**Winner: Tie**
+
+### Pricing
+
+Grammarly Premium is $12/month (annual). QuillBot Premium is $10/month (annual). QuillBot is slightly cheaper.
+
+**Winner: QuillBot** on price.
+
+### Integrations
+
+Grammarly integrates everywhere: browser extension, Word, Google Docs, Outlook, desktop app. QuillBot has a browser extension and Google Docs add-on but fewer integrations.
+
+**Winner: Grammarly**
+
+| Feature | Grammarly | QuillBot |
+|---|---|---|
+| Grammar checking | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Paraphrasing | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Free word limit | Unlimited | 125 words |
+| Pricing | $12/mo | $10/mo |
+| Integrations | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Best for | Error correction | Rewriting text |`,
+  },
 };
 
 export async function generateStaticParams() {

@@ -852,6 +852,27 @@ const sprint5Tools: Tool[] = [
 
 tools.push(...sprint5Tools);
 
+const sprint7Tools: Tool[] = [
+  {
+    slug: "quillbot",
+    name: "QuillBot",
+    tagline: "AI paraphrasing and writing assistant",
+    description:
+      "QuillBot is the world's most popular AI paraphrasing tool. It rewrites sentences and paragraphs while preserving meaning, making it essential for students, writers, and content creators who need polished, original text fast.",
+    website: "quillbot.com",
+    affiliateUrl: "https://quillbot.com/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free plan with basic paraphrasing. Premium at $10/month for unlimited modes and advanced features.",
+    categories: ["writing"],
+    rating: 4.4,
+    pros: ["Excellent paraphrasing quality", "Multiple rewriting modes", "Browser extension", "Grammar checker included"],
+    cons: ["Free version limited to 125 words", "Not a full AI writer", "Less versatile than ChatGPT"],
+    badge: "Best Paraphraser",
+  },
+];
+
+tools.push(...sprint7Tools);
+
 export function getToolsByCategory(categorySlug: string): Tool[] {
   return tools.filter((t) => t.categories.includes(categorySlug));
 }
