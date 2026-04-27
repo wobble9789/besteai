@@ -2552,6 +2552,183 @@ Khanmigo is explicitly designed for students with parental controls, content fil
 
 This combines Khanmigo's pedagogical strength with ChatGPT's power as a backstop.`,
   },
+
+  "resume-io-vs-kickresume": {
+    toolA: "resume-io",
+    toolB: "kickresume",
+    title: "Resume.io vs Kickresume 2025: Best AI Resume Builder?",
+    intro:
+      "Resume.io and Kickresume are two of the most popular AI resume builders in 2025. Both offer AI writing assistance, professional templates, and cover letter tools — but they differ in price, AI depth, and target audience. Here is everything you need to choose.",
+    verdict:
+      "Choose Resume.io for the smoothest, fastest experience with beautiful templates. Choose Kickresume if you want GPT-4-powered writing that can craft entire sections from scratch, plus a built-in job tracker. Both are excellent — your budget and technical comfort level will decide.",
+    content: `## Resume.io vs Kickresume: A Detailed Comparison
+
+With millions of job seekers using AI resume builders in 2025, Resume.io and Kickresume have emerged as two of the top choices. But which one actually lands you the job?
+
+### AI Writing Quality
+
+Kickresume uses GPT-4 directly to generate bullet points, summaries, and entire cover letters from scratch. The output is specific, achievement-focused, and requires minimal editing. Resume.io's AI writing assistant is solid but less powerful — it suggests improvements rather than writing from scratch.
+
+**Winner: Kickresume** for raw AI writing power.
+
+### Templates
+
+Both tools offer 35+ professionally designed templates. Resume.io templates are cleaner and more minimal — ideal for corporate and traditional roles. Kickresume templates are more creative and visually distinct — better for design, tech, and creative industries.
+
+**Winner: Tie** — depends on your industry.
+
+### ATS Compatibility
+
+Resume.io templates are specifically engineered for ATS parsing, with clean single-column layouts. Kickresume also offers ATS-friendly options but its more visual templates can sometimes cause parsing issues.
+
+**Winner: Resume.io** for ATS optimisation.
+
+### Pricing
+
+| Feature | Resume.io | Kickresume |
+|---|---|---|
+| Free tier | Create only | Create with watermark |
+| Download | From $2.95/week | $19/month |
+| Cover letter | Included | Included |
+| Job tracker | No | Yes |
+
+**Winner: Kickresume** for value.
+
+### Cover Letter Builder
+
+Kickresume's AI cover letter generator writes a complete, personalised cover letter in under 60 seconds. Resume.io's cover letter builder is template-based with AI suggestions rather than full generation.
+
+**Winner: Kickresume**
+
+### Ease of Use
+
+Resume.io wins on simplicity. The editor is drag-and-drop clean and requires zero learning curve.
+
+**Winner: Resume.io**
+
+### Who Should Use Each Tool
+
+**Resume.io is best for:**
+- First-time resume builders
+- Job seekers in traditional industries (finance, law, healthcare)
+- Anyone who wants the fastest path to a professional result
+
+**Kickresume is best for:**
+- Tech workers and professionals targeting competitive roles
+- Anyone who wants maximum AI writing assistance
+- Job seekers who want a full job search toolkit`,
+  },
+
+  "chatgpt-vs-resume-builders": {
+    toolA: "chatgpt",
+    toolB: "resume-io",
+    title: "ChatGPT vs Resume Builders 2025: Which Should You Use?",
+    intro:
+      "Should you use ChatGPT to write your resume — or a dedicated AI resume builder like Resume.io? Both use AI, but they work very differently. Here is an honest comparison to help you choose the right approach.",
+    verdict:
+      "Use a dedicated resume builder for speed, templates, and ATS-optimised formatting. Use ChatGPT when you want maximum control over your content and have time to iterate. For most job seekers, the best approach is both: use ChatGPT to craft your bullet points, then drop them into Resume.io for formatting.",
+    content: `## ChatGPT vs Resume Builders: The Full Picture
+
+ChatGPT can write anything — including a great resume. But dedicated resume builders like Resume.io and Kickresume are purpose-built for the job.
+
+### What ChatGPT Does Well
+
+**Unlimited customisation** — You can iterate endlessly, change tone, adjust for specific companies, and get creative.
+
+**Powerful tailoring** — Paste a job description and your experience, and ChatGPT will rewrite your resume to match the role perfectly.
+
+**Cover letters** — ChatGPT writes excellent cover letters when prompted correctly.
+
+**Cost** — Free tier available. ChatGPT Plus at $20/month gives access to GPT-4.
+
+### What Resume Builders Do Better
+
+**Formatting** — ChatGPT cannot format a resume. Resume builders give you instant ATS-optimised templates.
+
+**ATS compatibility** — Dedicated builders ensure your resume passes automated screening.
+
+**Speed** — Resume.io can produce a finished, downloadable resume in 15 minutes.
+
+**All-in-one** — Resume builders include cover letter tools, job trackers, and resume scoring.
+
+### The Verdict by Situation
+
+**Use ChatGPT if:**
+- You are an experienced professional who can direct AI well
+- You want maximum personalisation per application
+- You want to save money
+
+**Use a Resume Builder if:**
+- You are building your resume from scratch
+- You want ATS-optimised formatting guaranteed
+- Speed matters more than total control
+
+### The Best of Both Worlds
+
+1. Use ChatGPT to write and refine your bullet points and summary
+2. Import that content into Resume.io or Kickresume
+3. Pick an ATS-friendly template and export
+
+You get GPT-4 writing quality inside a professionally formatted, ATS-ready template.`,
+  },
+
+  "hirevue-vs-traditional-interviews": {
+    toolA: "hirevue",
+    toolB: "chatgpt",
+    title: "HireVue vs Traditional Interviews: What Candidates Need to Know",
+    intro:
+      "More companies are replacing traditional phone screens with HireVue AI video interviews. If you have been invited to a HireVue interview, here is exactly what to expect — and how it compares to a human-led interview.",
+    verdict:
+      "HireVue interviews are faster and more structured than traditional interviews, but require a different kind of preparation. The AI evaluates your word choice, facial expressions, and communication patterns. Preparation with AI tools like ChatGPT can significantly improve your performance.",
+    content: `## HireVue vs Traditional Interviews: A Candidate Guide
+
+HireVue AI interviews are now used by hundreds of companies including Unilever, Goldman Sachs, and Hilton.
+
+### What Is HireVue?
+
+HireVue is an AI-powered video interviewing platform. You record answers to structured questions on your own time — no interviewer, no scheduling, no live audience nerves. The AI then analyses your responses and rates you on job-relevant competencies.
+
+### What HireVue Actually Measures
+
+HireVue AI analyses:
+- **Word choice** — Are you using job-relevant vocabulary?
+- **Communication structure** — Are your answers clear and structured?
+- **Energy and engagement** — Does your delivery convey confidence?
+- **Facial expressions** — Are you maintaining natural eye contact with the camera?
+
+Note: HireVue has faced scrutiny over facial analysis. Many companies now use audio and text analysis only.
+
+### HireVue vs Traditional Interview: Key Differences
+
+| Factor | HireVue | Traditional |
+|---|---|---|
+| Scheduling | Do it at your convenience | Requires coordination |
+| Nerves | Lower (no live audience) | Higher |
+| Retakes | Usually no retakes allowed | Can ask to rephrase |
+| Feedback | Rarely provided | Sometimes provided |
+| Length | 20-30 min typical | 30-60 min |
+
+### How to Prepare for a HireVue Interview
+
+**1. Use ChatGPT for practice**
+Prompt: "Give me 5 competency-based interview questions for a [role]. I will answer them and you give me feedback on structure and word choice."
+
+**2. Use the STAR method**
+Every answer should cover Situation, Task, Action, Result. HireVue's AI is trained to recognise this structure.
+
+**3. Look at the camera, not the screen**
+The camera lens is your eye contact. Looking at your own face signals disengagement to the AI.
+
+**4. Speak clearly and at a measured pace**
+HireVue transcribes your speech. Filler words are counted. Slow down.
+
+**5. Do a tech check**
+Test your camera, microphone, and internet connection before starting. You typically cannot retake a HireVue once started.
+
+### The Bigger Picture
+
+HireVue is not the enemy — it gives you a fair shot at roles with thousands of applicants. Companies using HireVue make faster hiring decisions, meaning you hear back sooner either way.`,
+  },
 };
 
 export async function generateStaticParams() {
