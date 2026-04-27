@@ -54,7 +54,7 @@ export const tools: Tool[] = [
     description:
       "Midjourney is the gold standard for AI-generated images. Create stunning illustrations, concept art, and marketing visuals with simple text prompts.",
     website: "midjourney.com",
-    affiliateUrl: "https://midjourney.com/?ref=besteai",
+    affiliateUrl: "https://www.midjourney.com/?ref=besteai",
     price: "From $10/mo",
     priceDetails: "Basic plan $10/month. Standard $30/month for more usage.",
     categories: ["images", "design"],
@@ -85,7 +85,7 @@ export const tools: Tool[] = [
     description:
       "Jasper is built specifically for marketing teams. Write blog posts, ads, emails, and social media content in your brand's voice.",
     website: "jasper.ai",
-    affiliateUrl: "https://jasper.ai/?ref=besteai",
+    affiliateUrl: "https://www.jasper.ai/?fpr=besteai",
     price: "$49/mo",
     priceDetails: "Creator plan $49/month. Teams plan $125/month for 3 users.",
     categories: ["writing", "marketing"],
@@ -100,7 +100,7 @@ export const tools: Tool[] = [
     description:
       "Copy.ai generates marketing copy, product descriptions, and social media posts at lightning speed. Hundreds of templates get you productive instantly.",
     website: "copy.ai",
-    affiliateUrl: "https://copy.ai/?ref=besteai",
+    affiliateUrl: "https://www.copy.ai/?via=besteai",
     price: "Free / $36/mo",
     priceDetails: "Free plan with 2,000 words/month. Pro plan $36/month.",
     categories: ["writing", "marketing"],
@@ -131,7 +131,7 @@ export const tools: Tool[] = [
     description:
       "ElevenLabs creates stunningly realistic AI voices for podcasts, videos, and apps. Clone your own voice or choose from hundreds of professional voices.",
     website: "elevenlabs.io",
-    affiliateUrl: "https://elevenlabs.io/?ref=besteai",
+    affiliateUrl: "https://elevenlabs.io/?from=besteai",
     price: "Free / $5/mo",
     priceDetails: "Free plan with 10,000 characters/month. Starter $5/month for more.",
     categories: ["audio", "automation"],
@@ -147,7 +147,7 @@ export const tools: Tool[] = [
     description:
       "Notion AI brings artificial intelligence directly into your Notion workspace. Draft documents, summarize notes, generate action items, and brainstorm ideas without leaving your workflow.",
     website: "notion.so",
-    affiliateUrl: "https://notion.so/?ref=besteai",
+    affiliateUrl: "https://affiliate.notion.so/besteai",
     price: "$10/mo",
     priceDetails: "Notion AI add-on costs $10/month per member on top of any Notion plan.",
     categories: ["writing", "automation"],
@@ -162,7 +162,7 @@ export const tools: Tool[] = [
     description:
       "Grammarly is the leading AI-powered writing assistant. It checks grammar, spelling, clarity, tone, and plagiarism in real-time across browsers, documents, and email clients.",
     website: "grammarly.com",
-    affiliateUrl: "https://grammarly.com/?ref=besteai",
+    affiliateUrl: "https://grammarly.com",
     price: "Free / $30/mo",
     priceDetails: "Free plan covers basic grammar. Premium $30/month for advanced suggestions and plagiarism detection.",
     categories: ["writing"],
@@ -178,7 +178,7 @@ export const tools: Tool[] = [
     description:
       "Canva AI brings powerful design intelligence to the world's most popular design platform. Generate images, write copy, remove backgrounds, and create stunning visuals with no design experience needed.",
     website: "canva.com",
-    affiliateUrl: "https://canva.com/?ref=besteai",
+    affiliateUrl: "https://canva.com",
     price: "Free / $15/mo",
     priceDetails: "Free plan available. Canva Pro $15/month unlocks AI features and premium assets.",
     categories: ["design", "images"],
@@ -239,7 +239,7 @@ export const tools: Tool[] = [
     description:
       "Copy.ai is an AI-powered copywriting platform built for marketing teams. Generate blog posts, social media content, email sequences, and ad copy at scale using advanced AI workflows.",
     website: "copy.ai",
-    affiliateUrl: "https://copy.ai/?ref=besteai",
+    affiliateUrl: "https://www.copy.ai/?via=besteai",
     price: "Free / $49/mo",
     priceDetails: "Free plan with 2,000 words/month. Pro plan $49/month for unlimited words and workflows.",
     categories: ["writing", "marketing"],
@@ -254,7 +254,7 @@ export const tools: Tool[] = [
     description:
       "DeepL uses advanced neural networks to deliver the most accurate translations available. Supports 30+ languages with nuanced, natural-sounding output. Trusted by professionals and businesses worldwide.",
     website: "deepl.com",
-    affiliateUrl: "https://deepl.com/?ref=besteai",
+    affiliateUrl: "https://www.deepl.com/?utm_source=besteai",
     price: "Free / $8/mo",
     priceDetails: "Free plan for casual use. DeepL Pro from $8/month for unlimited text and document translation.",
     categories: ["writing"],
@@ -400,7 +400,7 @@ const extraTools: Tool[] = [
     tagline: "AI writing and marketing content at scale",
     description: "Writesonic is an AI writing platform for marketers and content teams. Generate blog posts, ads, product descriptions, and landing pages with AI trained on top-performing marketing content.",
     website: "writesonic.com",
-    affiliateUrl: "https://writesonic.com/?ref=besteai",
+    affiliateUrl: "https://writesonic.com?via=besteai",
     price: "Free / $16/mo",
     priceDetails: "Free plan with limited words. Small Team plan $16/month for 200K words.",
     categories: ["writing", "marketing"],
@@ -414,7 +414,7 @@ const extraTools: Tool[] = [
     tagline: "AI-powered SEO and marketing intelligence",
     description: "Semrush is the leading all-in-one SEO and marketing platform, now enhanced with AI. Get keyword research, competitor analysis, site audits, and AI-generated content recommendations to dominate search rankings.",
     website: "semrush.com",
-    affiliateUrl: "https://semrush.com/?ref=besteai",
+    affiliateUrl: "https://www.semrush.com/?ref=besteai",
     price: "$120/mo",
     priceDetails: "Pro plan $120/month. Guru $230/month for advanced features.",
     categories: ["marketing", "research"],

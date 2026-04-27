@@ -64,6 +64,51 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Editor's Choice */}
+      <section className="max-w-6xl mx-auto px-4 py-14">
+        <div className="text-center mb-10">
+          <span className="inline-block bg-amber-100 text-amber-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">⭐ Editor&apos;s Choice</span>
+          <h2 className="text-3xl font-extrabold text-gray-900">Top AI picks for 2025</h2>
+          <p className="text-gray-500 mt-2">Hand-picked by our team for quality, value and impact</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {([
+            { slug: "chatgpt", badge: "Best Overall", emoji: "🥇" },
+            { slug: "claude", badge: "Best for Writing", emoji: "✍️" },
+            { slug: "midjourney", badge: "Best for Images", emoji: "🎨" },
+            { slug: "grammarly", badge: "Best Free Tool", emoji: "✅" },
+            { slug: "elevenlabs", badge: "Best for Audio", emoji: "🎙️" },
+            { slug: "github-copilot", badge: "Best for Developers", emoji: "💻" },
+          ] as { slug: string; badge: string; emoji: string }[]).map(({ slug, badge, emoji }) => {
+            const tool = tools.find((t) => t.slug === slug);
+            if (!tool) return null;
+            return (
+              <div key={slug} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-bold bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full">{emoji} {badge}</span>
+                  <span className="text-xs text-gray-400">{tool.price}</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">{tool.name}</h3>
+                <p className="text-sm text-gray-500 mb-1">{tool.tagline}</p>
+                <div className="flex items-center gap-1 mb-3">
+                  <span className="text-amber-400 text-sm">{'★'.repeat(Math.round(tool.rating))}</span>
+                  <span className="text-sm text-gray-500">{tool.rating}/5</span>
+                </div>
+                <p className="text-sm text-gray-600 flex-1 mb-4 line-clamp-2">{tool.description.slice(0, 100)}…</p>
+                <a
+                  href={tool.affiliateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="mt-auto block text-center bg-indigo-600 text-white px-4 py-2 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
+                >
+                  Try {tool.name} →
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
       {/* Stats bar */}
       <section className="bg-white border-y border-gray-100 py-6">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-4 text-center">
@@ -125,6 +170,36 @@ export default function HomePage() {
           {topTools.map((tool) => (
             <ToolCard key={tool.slug} tool={tool} />
           ))}
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="bg-gradient-to-br from-indigo-50 to-purple-50 py-14 px-4">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-2xl font-extrabold text-gray-900 mb-2">📧 Get weekly AI tool reviews</h2>
+          <p className="text-gray-500 mb-6">New tools, comparisons and deals — delivered every week. No spam.</p>
+          <form
+            action="https://formsubmit.co/henkvrai@outlook.com"
+            method="POST"
+            className="flex flex-col sm:flex-row gap-3 justify-center"
+          >
+            <input type="hidden" name="_subject" value="New subscriber — BestAI.net" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+              className="flex-1 border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+            <button
+              type="submit"
+              className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors text-sm"
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
       </section>
 
