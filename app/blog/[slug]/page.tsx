@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog";
+import { tools } from "@/lib/tools";
 
 interface Props {
   params: { slug: string };
@@ -89,6 +90,31 @@ export default function BlogPostPage({ params }: Props) {
             View all tools →
           </Link>
         </div>
+
+        {/* Related Tools Section */}
+        {(() => {
+          const shuffled = [...tools].sort(() => 0.5 - Math.random()).slice(0, 3);
+          return (
+            <div className="mt-10">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Related AI Tools</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {shuffled.map((tool) => (
+                  <a
+                    key={tool.slug}
+                    href={tool.affiliateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block border border-gray-200 rounded-xl p-4 hover:shadow-md hover:border-indigo-300 transition-all group"
+                  >
+                    <div className="font-semibold text-gray-900 group-hover:text-indigo-600 mb-1">{tool.name}</div>
+                    <div className="text-xs text-gray-500 mb-2">{tool.tagline}</div>
+                    <div className="text-xs font-medium text-indigo-600">{tool.price}</div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         <div className="mt-8">
           <Link href="/blog" className="text-indigo-600 hover:underline text-sm">← Back to blog</Link>

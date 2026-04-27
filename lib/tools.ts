@@ -569,6 +569,134 @@ tools.push(...sprint3Tools);
 // Merge extra tools into main array
 tools.push(...extraTools);
 
+// Sprint 4 tools
+const sprint4Tools: Tool[] = [
+  {
+    slug: "kling-ai",
+    name: "Kling AI",
+    tagline: "Next-gen AI video generation",
+    description:
+      "Kling AI by Kuaishou generates stunning, realistic videos from text prompts or images. One of the most capable AI video generators available with smooth motion and high fidelity.",
+    website: "klingai.com",
+    affiliateUrl: "https://klingai.com/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free tier with watermarks. Standard plan $10/month for HD exports.",
+    categories: ["video"],
+    rating: 4.3,
+    pros: ["Realistic motion", "Text-to-video", "Image-to-video", "Free tier available"],
+    cons: ["Watermark on free tier", "Queue times", "Limited control"],
+  },
+  {
+    slug: "ideogram",
+    name: "Ideogram",
+    tagline: "AI image generation with perfect text",
+    description:
+      "Ideogram excels at generating images with accurate, legible text — a major weakness of most AI image tools. Perfect for posters, logos, and social media graphics.",
+    website: "ideogram.ai",
+    affiliateUrl: "https://ideogram.ai/?ref=besteai",
+    price: "Free / $8/mo",
+    priceDetails: "Free plan with daily credits. Basic plan $8/month for more generations.",
+    categories: ["images"],
+    rating: 4.4,
+    pros: ["Accurate text in images", "Great typography", "Free tier", "Fast generation"],
+    cons: ["Less photorealistic than Midjourney", "Limited styles", "Smaller community"],
+  },
+  {
+    slug: "recraft-ai",
+    name: "Recraft AI",
+    tagline: "Professional AI design and image generation",
+    description:
+      "Recraft AI is built for designers, offering vector generation, brand style controls, and consistent character creation. Generate on-brand images and icons at scale.",
+    website: "recraft.ai",
+    affiliateUrl: "https://recraft.ai/?ref=besteai",
+    price: "Free / $12/mo",
+    priceDetails: "Free plan with limited credits. Pro plan $12/month for unlimited generations.",
+    categories: ["images", "design"],
+    rating: 4.4,
+    pros: ["Vector output", "Brand style consistency", "Designer-focused", "SVG export"],
+    cons: ["Steeper learning curve", "Less known", "Limited animation"],
+    badge: "Best for Designers",
+  },
+  {
+    slug: "suno-ai",
+    name: "Suno AI",
+    tagline: "Create full songs with AI in seconds",
+    description:
+      "Suno AI generates complete songs — vocals, instruments, lyrics — from a simple text prompt. One of the best AI music generators for creators and hobbyists alike.",
+    website: "suno.com",
+    affiliateUrl: "https://suno.com/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free tier with daily credits. Pro plan $10/month for commercial use.",
+    categories: ["audio"],
+    rating: 4.5,
+    pros: ["Full song generation", "Vocals included", "Many genres", "Easy to use"],
+    cons: ["Commercial rights require paid plan", "Less control over composition", "Variable quality"],
+    badge: "Editor's Pick",
+  },
+  {
+    slug: "udio",
+    name: "Udio",
+    tagline: "AI music creation with studio quality",
+    description:
+      "Udio creates high-quality music tracks from text descriptions. Known for impressive audio fidelity and a wide range of musical styles from classical to hip-hop.",
+    website: "udio.com",
+    affiliateUrl: "https://udio.com/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free plan with limited monthly tracks. Standard plan $10/month.",
+    categories: ["audio"],
+    rating: 4.3,
+    pros: ["High audio quality", "Many genres", "Stem export", "Good free tier"],
+    cons: ["Less vocal control than Suno", "Occasional inconsistency", "Beta features"],
+  },
+  {
+    slug: "mistral-ai",
+    name: "Mistral AI",
+    tagline: "Powerful open-source AI models",
+    description:
+      "Mistral AI offers top-tier open-source language models that rival GPT-4 at a fraction of the cost. Ideal for developers wanting privacy, control, and performance.",
+    website: "mistral.ai",
+    affiliateUrl: "https://mistral.ai/?ref=besteai",
+    price: "Free / $7/mo",
+    priceDetails: "Free API tier available. Le Chat Pro $7/month for advanced access.",
+    categories: ["research", "writing"],
+    rating: 4.3,
+    pros: ["Open source", "Affordable API", "Strong reasoning", "Privacy-friendly"],
+    cons: ["Less brand recognition", "Fewer integrations", "Smaller ecosystem"],
+  },
+  {
+    slug: "cohere",
+    name: "Cohere",
+    tagline: "Enterprise AI for search and writing",
+    description:
+      "Cohere provides powerful language models optimized for enterprise use cases: semantic search, summarization, and content generation via a simple API.",
+    website: "cohere.com",
+    affiliateUrl: "https://cohere.com/?ref=besteai",
+    price: "Free / $20/mo",
+    priceDetails: "Free trial tier. Production access starts at $20/month.",
+    categories: ["writing", "automation"],
+    rating: 4.2,
+    pros: ["Enterprise-ready", "Semantic search", "Multilingual", "Easy API"],
+    cons: ["Less consumer-facing", "Requires dev knowledge", "Pricier at scale"],
+  },
+  {
+    slug: "together-ai",
+    name: "Together AI",
+    tagline: "Run open-source AI models in the cloud",
+    description:
+      "Together AI lets developers run top open-source models like Llama, Mistral, and Stable Diffusion via a fast, affordable cloud API. Perfect for building AI-powered apps.",
+    website: "together.ai",
+    affiliateUrl: "https://together.ai/?ref=besteai",
+    price: "From $0.20/mo",
+    priceDetails: "Pay-as-you-go from $0.20/million tokens. Free $1 credit on signup.",
+    categories: ["automation"],
+    rating: 4.2,
+    pros: ["Wide model selection", "Affordable pricing", "Fast inference", "Open-source friendly"],
+    cons: ["Developer-focused", "No consumer UI", "Requires API knowledge"],
+  },
+];
+
+tools.push(...sprint4Tools);
+
 export function getToolsByCategory(categorySlug: string): Tool[] {
   return tools.filter((t) => t.categories.includes(categorySlug));
 }
