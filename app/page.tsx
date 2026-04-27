@@ -37,7 +37,7 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">
-            🚀 Updated April 2025
+            🚀 Updated April 2026
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
             Compare the best{" "}

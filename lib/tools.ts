@@ -439,6 +439,133 @@ const extraTools: Tool[] = [
   },
 ];
 
+// Sprint 3 tools
+const sprint3Tools: Tool[] = [
+  {
+    slug: "leonardo-ai",
+    name: "Leonardo AI",
+    tagline: "High-quality AI image generation for creatives",
+    description:
+      "Leonardo AI delivers stunning, consistent AI-generated images for game assets, concept art, and marketing. Its fine-tuning and canvas tools make it a favourite among professional creatives.",
+    website: "leonardo.ai",
+    affiliateUrl: "https://leonardo.ai/?ref=besteai",
+    price: "Free / $12/mo",
+    priceDetails: "Free tier with 150 daily tokens. Apprentice plan $12/month for more generations.",
+    categories: ["images"],
+    rating: 4.4,
+    pros: ["Consistent character styles", "Fine-tuning support", "Generous free tier", "Canvas editor"],
+    cons: ["Watermark on free plan", "Can be slow at peak times", "Learning curve for fine-tuning"],
+  },
+  {
+    slug: "descript",
+    name: "Descript",
+    tagline: "Edit audio and video by editing text",
+    description:
+      "Descript lets you edit podcasts and videos as easily as a Word document. AI-powered features include automatic transcription, filler-word removal, and voice cloning.",
+    website: "descript.com",
+    affiliateUrl: "https://descript.com/?ref=besteai",
+    price: "Free / $24/mo",
+    priceDetails: "Free plan with 1 hour transcription. Creator plan $24/month for unlimited transcription.",
+    categories: ["audio", "video"],
+    rating: 4.4,
+    pros: ["Text-based editing", "AI filler-word removal", "Voice clone (Overdub)", "Collaborative"],
+    cons: ["Steep learning curve", "Expensive for casual use", "Exports can be slow"],
+  },
+  {
+    slug: "pika-labs",
+    name: "Pika Labs",
+    tagline: "Turn ideas into cinematic AI videos",
+    description:
+      "Pika Labs generates short, high-quality AI videos from text prompts or images. Known for its smooth motion and cinematic style, it's a top pick for content creators and marketers.",
+    website: "pika.art",
+    affiliateUrl: "https://pika.art/?ref=besteai",
+    price: "Free / $8/mo",
+    priceDetails: "Free tier available. Basic plan $8/month for more monthly generations.",
+    categories: ["video"],
+    rating: 4.2,
+    pros: ["Easy text-to-video", "Smooth motion", "Affordable plans", "Active community"],
+    cons: ["Short clip lengths", "Limited control over details", "Queue times on free tier"],
+  },
+  {
+    slug: "sora-openai",
+    name: "Sora",
+    tagline: "OpenAI's groundbreaking text-to-video model",
+    description:
+      "Sora by OpenAI generates photorealistic, complex video scenes from text descriptions. It represents a leap forward in AI video quality and temporal consistency.",
+    website: "openai.com/sora",
+    affiliateUrl: "https://openai.com/sora?ref=besteai",
+    price: "Free / waitlist",
+    priceDetails: "Available to ChatGPT Plus and Pro subscribers. Broader access rolling out.",
+    categories: ["video"],
+    rating: 4.5,
+    pros: ["Photorealistic quality", "Long coherent scenes", "Complex motion", "OpenAI ecosystem"],
+    cons: ["Limited availability", "No fine-tuning yet", "High compute cost"],
+    badge: "New",
+  },
+  {
+    slug: "character-ai",
+    name: "Character.AI",
+    tagline: "Chat with AI characters and create your own",
+    description:
+      "Character.AI lets you chat with thousands of AI personas — from historical figures to fictional characters — or build your own. Perfect for entertainment, storytelling, and roleplay.",
+    website: "character.ai",
+    affiliateUrl: "https://character.ai/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free with ads and slower responses. c.ai+ at $10/month for priority access.",
+    categories: ["writing", "research"],
+    rating: 4.1,
+    pros: ["Massive character library", "Easy persona creation", "Entertaining and immersive", "Free tier available"],
+    cons: ["Content filters can be limiting", "Not for serious productivity", "Occasional inconsistencies"],
+  },
+  {
+    slug: "nightcafe",
+    name: "NightCafe",
+    tagline: "AI art generator with a creative community",
+    description:
+      "NightCafe is one of the most accessible AI art platforms, supporting multiple models including Stable Diffusion and DALL-E. Its credit system and active community make it great for beginners.",
+    website: "nightcafe.studio",
+    affiliateUrl: "https://nightcafe.studio/?ref=besteai",
+    price: "Free / $6/mo",
+    priceDetails: "Free daily credits. Starter plan $6/month for more credits and features.",
+    categories: ["images"],
+    rating: 4.2,
+    pros: ["Multiple AI models", "Active community", "Very affordable", "Good for beginners"],
+    cons: ["Lower max resolution than rivals", "Credit system can confuse", "Less control than Midjourney"],
+  },
+  {
+    slug: "wordtune",
+    name: "Wordtune",
+    tagline: "AI writing companion that rewrites and improves your text",
+    description:
+      "Wordtune helps you rephrase, shorten, expand, and improve any text in seconds. It's the go-to AI writing assistant for non-native English speakers and busy professionals.",
+    website: "wordtune.com",
+    affiliateUrl: "https://wordtune.com/?ref=besteai",
+    price: "Free / $14/mo",
+    priceDetails: "Free plan with 10 rewrites/day. Plus plan $14/month for unlimited rewrites.",
+    categories: ["writing"],
+    rating: 4.3,
+    pros: ["Instant rephrasing", "Tone adjustment", "Browser extension", "Great for ESL writers"],
+    cons: ["Focused mainly on rephrasing", "Limited content generation", "Free tier restrictive"],
+  },
+  {
+    slug: "beautiful-ai",
+    name: "Beautiful.ai",
+    tagline: "AI-powered presentations that design themselves",
+    description:
+      "Beautiful.ai automates slide design so you can focus on content. Smart templates adapt as you type, ensuring every presentation looks polished and professional.",
+    website: "beautiful.ai",
+    affiliateUrl: "https://beautiful.ai/?ref=besteai",
+    price: "$12/mo",
+    priceDetails: "Pro plan $12/month billed annually. Team plans available for collaboration.",
+    categories: ["design"],
+    rating: 4.3,
+    pros: ["Auto-adapting layouts", "Beautiful templates", "Easy to use", "Good brand controls"],
+    cons: ["No free tier", "Less flexible than PowerPoint", "Export options limited"],
+  },
+];
+
+tools.push(...sprint3Tools);
+
 // Merge extra tools into main array
 tools.push(...extraTools);
 
