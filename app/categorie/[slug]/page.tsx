@@ -16,9 +16,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categories.find((c) => c.slug === params.slug);
   if (!cat) return {};
   return {
-    title: `Beste AI Tools voor ${cat.naam} 2025`,
-    description: `Vergelijk de beste AI tools voor ${cat.naam.toLowerCase()} in 2025. ${cat.beschrijving}.`,
-    keywords: [cat.naam, "AI tools", "vergelijken", "2025", "beste"],
+    title: `Best AI Tools for ${cat.name} 2025`,
+    description: `Compare the best AI tools for ${cat.name.toLowerCase()} in 2025. ${cat.description}.`,
+    keywords: [cat.name, "AI tools", "compare", "2025", "best"],
   };
 }
 
@@ -33,17 +33,17 @@ export default function CategoryPage({ params }: Props) {
       <nav className="text-sm text-gray-500 mb-6 flex items-center gap-2">
         <Link href="/" className="hover:text-indigo-600">Home</Link>
         <span>/</span>
-        <span className="text-gray-900">Categorie</span>
+        <span className="text-gray-900">Category</span>
         <span>/</span>
-        <span className="text-gray-900">{cat.naam}</span>
+        <span className="text-gray-900">{cat.name}</span>
       </nav>
 
       <div className="mb-10">
         <div className="text-4xl mb-3">{cat.icon}</div>
         <h1 className="text-4xl font-extrabold text-gray-900 mb-3">
-          Beste AI Tools voor {cat.naam}
+          Best AI Tools for {cat.name}
         </h1>
-        <p className="text-xl text-gray-600">{cat.beschrijving}</p>
+        <p className="text-xl text-gray-600">{cat.description}</p>
       </div>
 
       {catTools.length > 0 ? (
@@ -53,11 +53,11 @@ export default function CategoryPage({ params }: Props) {
           ))}
         </div>
       ) : (
-        <p className="text-gray-500">Geen tools gevonden voor deze categorie.</p>
+        <p className="text-gray-500">No tools found for this category.</p>
       )}
 
       <div className="mt-12 p-6 bg-indigo-50 rounded-2xl">
-        <h2 className="text-xl font-bold text-gray-900 mb-2">Andere categorieën</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-2">Other categories</h2>
         <div className="flex flex-wrap gap-3 mt-4">
           {categories
             .filter((c) => c.slug !== params.slug)
@@ -68,7 +68,7 @@ export default function CategoryPage({ params }: Props) {
                 className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm hover:border-indigo-400 transition-colors"
               >
                 <span>{c.icon}</span>
-                <span>{c.naam}</span>
+                <span>{c.name}</span>
               </Link>
             ))}
         </div>

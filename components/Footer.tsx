@@ -6,20 +6,20 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white font-bold mb-4">BesteAI.nl</h3>
-            <p className="text-sm">Vergelijk de beste AI tools van 2025. Onafhankelijke reviews en eerlijke prijzen.</p>
+            <h3 className="text-white font-bold mb-4">BestAI.net</h3>
+            <p className="text-sm">Compare the best AI tools of 2025. Independent reviews and honest pricing.</p>
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-3 text-sm">Categorieën</h4>
+            <h4 className="text-white font-semibold mb-3 text-sm">Categories</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/categorie/schrijven" className="hover:text-white transition-colors">Schrijven</Link></li>
-              <li><Link href="/categorie/afbeeldingen" className="hover:text-white transition-colors">Afbeeldingen</Link></li>
-              <li><Link href="/categorie/automatisering" className="hover:text-white transition-colors">Automatisering</Link></li>
-              <li><Link href="/categorie/onderzoek" className="hover:text-white transition-colors">Onderzoek</Link></li>
+              <li><Link href="/categorie/writing" className="hover:text-white transition-colors">Writing</Link></li>
+              <li><Link href="/categorie/images" className="hover:text-white transition-colors">Images</Link></li>
+              <li><Link href="/categorie/automation" className="hover:text-white transition-colors">Automation</Link></li>
+              <li><Link href="/categorie/research" className="hover:text-white transition-colors">Research</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-3 text-sm">Populaire Tools</h4>
+            <h4 className="text-white font-semibold mb-3 text-sm">Popular Tools</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/tools/chatgpt" className="hover:text-white transition-colors">ChatGPT</Link></li>
               <li><Link href="/tools/claude" className="hover:text-white transition-colors">Claude</Link></li>
@@ -31,15 +31,15 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-3 text-sm">Info</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-              <li><Link href="/over-ons" className="hover:text-white transition-colors">Over ons</Link></li>
-              <li><Link href="/privacybeleid" className="hover:text-white transition-colors">Privacybeleid</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About us</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-800 pt-6 text-sm flex flex-col md:flex-row justify-between items-center gap-2">
-          <p>© 2025 BesteAI.nl — Alle rechten voorbehouden</p>
+          <p>© 2025 BestAI.net — All rights reserved</p>
           <p className="text-xs">
-            * Sommige links zijn affiliate links. We ontvangen een kleine commissie bij aankoop, zonder extra kosten voor jou.
+            * Some links are affiliate links. We receive a small commission on purchase, at no extra cost to you.
           </p>
         </div>
       </div>

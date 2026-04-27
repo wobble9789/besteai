@@ -15,13 +15,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
   return {
-    title: post.titel,
-    description: post.samenvatting,
+    title: post.title,
+    description: post.summary,
     openGraph: {
-      title: post.titel,
-      description: post.samenvatting,
+      title: post.title,
+      description: post.summary,
       type: "article",
-      publishedTime: post.datum,
+      publishedTime: post.date,
     },
   };
 }
@@ -33,11 +33,11 @@ export default function BlogPostPage({ params }: Props) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: post.titel,
-    description: post.samenvatting,
-    datePublished: post.datum,
-    author: { "@type": "Organization", name: post.auteur },
-    publisher: { "@type": "Organization", name: "BesteAI.nl", url: "https://besteai.nl" },
+    headline: post.title,
+    description: post.summary,
+    datePublished: post.date,
+    author: { "@type": "Organization", name: post.author },
+    publisher: { "@type": "Organization", name: "BestAI.net", url: "https://besteai.nl" },
   };
 
   // Convert markdown-ish content to HTML-ish display
@@ -64,34 +64,34 @@ export default function BlogPostPage({ params }: Props) {
           <span>/</span>
           <Link href="/blog" className="hover:text-indigo-600">Blog</Link>
           <span>/</span>
-          <span className="text-gray-900 truncate">{post.titel}</span>
+          <span className="text-gray-900 truncate">{post.title}</span>
         </nav>
 
         <div className="flex items-center gap-3 text-sm text-gray-400 mb-4">
-          <span>{new Date(post.datum).toLocaleDateString("nl-NL", { day: "numeric", month: "long", year: "numeric" })}</span>
+          <span>{new Date(post.date).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })}</span>
           <span>•</span>
-          <span>{post.leestijd} leestijd</span>
+          <span>{post.readTime} read</span>
           <span>•</span>
-          <span>{post.auteur}</span>
+          <span>{post.author}</span>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">{post.titel}</h1>
-        <p className="text-xl text-gray-600 mb-8 pb-8 border-b">{post.samenvatting}</p>
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">{post.title}</h1>
+        <p className="text-xl text-gray-600 mb-8 pb-8 border-b">{post.summary}</p>
 
         <article className="prose-sm md:prose max-w-none">
           {renderContent(post.content)}
         </article>
 
         <div className="mt-12 p-6 bg-indigo-50 rounded-2xl">
-          <h3 className="font-bold text-gray-900 mb-2">Vergelijk zelf de beste AI tools</h3>
-          <p className="text-gray-600 text-sm mb-4">Bekijk onze overzichtspagina en vind de tool die bij jou past.</p>
+          <h3 className="font-bold text-gray-900 mb-2">Compare the best AI tools yourself</h3>
+          <p className="text-gray-600 text-sm mb-4">Check our overview page and find the tool that suits you.</p>
           <Link href="/tools" className="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition-colors">
-            Bekijk alle tools →
+            View all tools →
           </Link>
         </div>
 
         <div className="mt-8">
-          <Link href="/blog" className="text-indigo-600 hover:underline text-sm">← Terug naar blog</Link>
+          <Link href="/blog" className="text-indigo-600 hover:underline text-sm">← Back to blog</Link>
         </div>
       </div>
     </>

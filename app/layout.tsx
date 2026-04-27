@@ -9,22 +9,22 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://besteai.nl"),
   title: {
-    default: "BesteAI.nl — Vergelijk de beste AI tools van 2025",
-    template: "%s | BesteAI.nl",
+    default: "BestAI.net — Compare the Best AI Tools of 2025",
+    template: "%s | BestAI.net",
   },
   description:
-    "Vergelijk de beste AI tools van 2025. Onafhankelijke reviews, eerlijke prijzen en affiliate deals voor ChatGPT, Claude, Midjourney en meer.",
-  keywords: ["AI tools", "vergelijken", "ChatGPT", "Claude", "Midjourney", "kunstmatige intelligentie", "beste AI"],
+    "Compare the best AI tools of 2025. Independent reviews, honest pricing and affiliate deals for ChatGPT, Claude, Midjourney and more.",
+  keywords: ["AI tools", "compare", "ChatGPT", "Claude", "Midjourney", "artificial intelligence", "best AI"],
   openGraph: {
     type: "website",
-    locale: "nl_NL",
+    locale: "en_US",
     url: "https://besteai.nl",
-    siteName: "BesteAI.nl",
+    siteName: "BestAI.net",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@besteai_nl",
+    site: "@bestai_net",
   },
   robots: {
     index: true,
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="nl">
+    <html lang="en">
       <body className={inter.className}>
         <Header />
         <main>{children}</main>

@@ -1,161 +1,161 @@
 export interface BlogPost {
   slug: string;
-  titel: string;
-  samenvatting: string;
-  datum: string;
-  auteur: string;
-  leestijd: string;
-  categorie: string;
+  title: string;
+  summary: string;
+  date: string;
+  author: string;
+  readTime: string;
+  category: string;
   content: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "beste-ai-schrijftools-2025",
-    titel: "De 5 beste AI schrijftools van 2025 — Eerlijk vergeleken",
-    samenvatting:
-      "ChatGPT, Claude of Jasper? We testen alle populaire AI schrijftools en vertellen je welke het beste bij jouw behoeften past.",
-    datum: "2025-04-20",
-    auteur: "Redactie BesteAI",
-    leestijd: "8 min",
-    categorie: "schrijven",
+    title: "The 5 Best AI Writing Tools of 2025 — Honestly Compared",
+    summary:
+      "ChatGPT, Claude, or Jasper? We test all the popular AI writing tools and tell you which one best suits your needs.",
+    date: "2025-04-20",
+    author: "BestAI Editorial",
+    readTime: "8 min",
+    category: "writing",
     content: `
-## De 5 beste AI schrijftools van 2025
+## The 5 Best AI Writing Tools of 2025
 
-Kunstmatige intelligentie heeft de manier waarop we schrijven compleet veranderd. Of je nu een blogger bent, een copywriter of een ondernemer — AI schrijftools besparen je uren werk elke week.
+Artificial intelligence has completely changed the way we write. Whether you're a blogger, copywriter, or entrepreneur — AI writing tools save you hours of work every week.
 
-Maar welke tool kies je? We hebben de populairste opties uitgebreid getest.
+But which tool do you choose? We've extensively tested the most popular options.
 
-### 1. ChatGPT — De allrounder
+### 1. ChatGPT — The All-Rounder
 
-ChatGPT van OpenAI is de meest bekende AI schrijftool. Met GPT-4 krijg je krachtige resultaten voor vrijwel elke schrijftaak.
+ChatGPT by OpenAI is the most well-known AI writing tool. With GPT-4 you get powerful results for virtually any writing task.
 
-**Prijs:** Gratis / $20 per maand voor Plus
+**Price:** Free / $20 per month for Plus
 
-**Ideaal voor:** Blogposts, e-mails, creatief schrijven
+**Ideal for:** Blog posts, emails, creative writing
 
-### 2. Claude — De schrijver met nuance
+### 2. Claude — The Writer with Nuance
 
-Claude van Anthropic staat bekend om zijn genuanceerde en stijlvolle schrijfstijl. Ideaal voor langere documenten.
+Claude by Anthropic is known for its nuanced and stylish writing. Ideal for longer documents.
 
-**Prijs:** Gratis / $20 per maand voor Pro
+**Price:** Free / $20 per month for Pro
 
-**Ideaal voor:** Lange artikelen, rapporten, academisch schrijven
+**Ideal for:** Long articles, reports, academic writing
 
-### 3. Jasper — De marketeer
+### 3. Jasper — The Marketer
 
-Jasper is speciaal gebouwd voor marketeers. Met honderden templates ben je direct productief.
+Jasper is built specifically for marketers. With hundreds of templates you're instantly productive.
 
-**Prijs:** Vanaf $49 per maand
+**Price:** From $49 per month
 
-**Ideaal voor:** Marketing copy, advertenties, e-mailcampagnes
+**Ideal for:** Marketing copy, ads, email campaigns
 
-### 4. Copy.ai — De snelle assistent
+### 4. Copy.ai — The Fast Assistant
 
-Copy.ai genereert razendsnel korte marketing copy. Perfect voor social media en productbeschrijvingen.
+Copy.ai generates short marketing copy at lightning speed. Perfect for social media and product descriptions.
 
-**Prijs:** Gratis / $36 per maand
+**Price:** Free / $36 per month
 
-### 5. Gemini — De Google-integratie
+### 5. Gemini — The Google Integration
 
-Gemini werkt naadloos samen met Google Docs en Gmail. Handig als je al in het Google-ecosysteem werkt.
+Gemini works seamlessly with Google Docs and Gmail. Handy if you already live in the Google ecosystem.
 
-**Prijs:** Gratis / $20 per maand
+**Price:** Free / $20 per month
 
-## Onze aanbeveling
+## Our Recommendation
 
-Voor de meeste gebruikers is **ChatGPT Plus** de beste keuze. De combinatie van kracht, veelzijdigheid en prijs is moeilijk te verslaan.
+For most users, **ChatGPT Plus** is the best choice. The combination of power, versatility, and price is hard to beat.
 
-Ben je voornamelijk bezig met marketing copy? Kijk dan naar **Jasper** of **Copy.ai**.
+Primarily doing marketing copy? Check out **Jasper** or **Copy.ai**.
 
-Schrijf je lange, complexe documenten? Dan is **Claude** wellicht de betere keuze.
+Writing long, complex documents? Then **Claude** may be the better choice.
     `.trim(),
   },
   {
     slug: "chatgpt-vs-claude-2025",
-    titel: "ChatGPT vs Claude 2025 — Welke AI is beter?",
-    samenvatting:
-      "De twee grootste AI-assistenten vergeleken. We testen schrijfkwaliteit, snelheid, prijzen en wanneer je welke moet kiezen.",
-    datum: "2025-04-15",
-    auteur: "Redactie BesteAI",
-    leestijd: "10 min",
-    categorie: "vergelijking",
+    title: "ChatGPT vs Claude 2025 — Which AI Is Better?",
+    summary:
+      "The two biggest AI assistants compared. We test writing quality, speed, pricing, and when to use which.",
+    date: "2025-04-15",
+    author: "BestAI Editorial",
+    readTime: "10 min",
+    category: "comparison",
     content: `
-## ChatGPT vs Claude — De ultieme vergelijking van 2025
+## ChatGPT vs Claude — The Ultimate 2025 Comparison
 
-ChatGPT en Claude zijn de twee dominante AI-assistenten. Maar welke is beter? Het antwoord hangt af van wat je wilt doen.
+ChatGPT and Claude are the two dominant AI assistants. But which is better? The answer depends on what you want to do.
 
-### Schrijfkwaliteit
+### Writing Quality
 
-**Claude** wint op schrijfkwaliteit. De teksten zijn vloeiender, meer genuanceerd en minder robotachtig.
+**Claude** wins on writing quality. The texts are more fluent, nuanced, and less robotic.
 
-**ChatGPT** is veelzijdiger en kan beter schakelen tussen stijlen.
+**ChatGPT** is more versatile and can better switch between styles.
 
-### Codeerondersteuning
+### Coding Support
 
-**ChatGPT** met GPT-4 is de winnaar voor coderen. De uitleg is duidelijker en de code accurater.
+**ChatGPT** with GPT-4 is the winner for coding. The explanations are clearer and the code more accurate.
 
-### Prijs
+### Price
 
-Beide kosten $20/maand voor de premium versie. Gratis tiers zijn ook beschikbaar.
+Both cost $20/month for the premium version. Free tiers are also available.
 
-### Contextvenster
+### Context Window
 
-**Claude** heeft een groter contextvenster — ideaal voor lange documenten.
+**Claude** has a larger context window — ideal for long documents.
 
-### Ons oordeel
+### Our Verdict
 
-- **Kies ChatGPT** als je veel codeert, plugins gebruikt of de meest veelzijdige tool wilt
-- **Kies Claude** als je schrijfkwaliteit en veiligheid prioriteit zijn
+- **Choose ChatGPT** if you code a lot, use plugins, or want the most versatile tool
+- **Choose Claude** if writing quality and safety are your priority
 
-Beide zijn uitstekende tools. Probeer ze allebei met de gratis versie!
+Both are excellent tools. Try them both with the free version!
     `.trim(),
   },
   {
     slug: "ai-tools-voor-beginners-2025",
-    titel: "AI tools voor beginners — Zo begin je in 2025",
-    samenvatting:
-      "Nog nooit AI tools gebruikt? Dit is jouw startgids. We leggen uit wat AI tools zijn, hoe ze werken en welke je als beginner moet proberen.",
-    datum: "2025-04-10",
-    auteur: "Redactie BesteAI",
-    leestijd: "6 min",
-    categorie: "gids",
+    title: "AI Tools for Beginners — How to Get Started in 2025",
+    summary:
+      "Never used AI tools before? This is your starter guide. We explain what AI tools are, how they work, and which ones to try as a beginner.",
+    date: "2025-04-10",
+    author: "BestAI Editorial",
+    readTime: "6 min",
+    category: "guide",
     content: `
-## AI tools voor beginners — Jouw startgids voor 2025
+## AI Tools for Beginners — Your 2025 Starter Guide
 
-Kunstmatige intelligentie (AI) is niet meer alleen voor techneuten. Met de juiste tools kun je als beginner direct aan de slag.
+Artificial intelligence (AI) is no longer just for tech experts. With the right tools, even beginners can get started straight away.
 
-### Wat zijn AI tools?
+### What Are AI Tools?
 
-AI tools zijn programma's die gebruikmaken van kunstmatige intelligentie om taken te automatiseren. Denk aan teksten schrijven, afbeeldingen maken of vragen beantwoorden.
+AI tools are programs that use artificial intelligence to automate tasks. Think writing texts, creating images, or answering questions.
 
-### De 3 beste AI tools voor beginners
+### The 3 Best AI Tools for Beginners
 
-#### 1. ChatGPT (gratis te gebruiken)
+#### 1. ChatGPT (free to use)
 
-ChatGPT is de meest gebruiksvriendelijke AI. Typ gewoon wat je wilt en de AI geeft antwoord.
+ChatGPT is the most user-friendly AI. Just type what you want and the AI responds.
 
-**Hoe te starten:**
-1. Ga naar chat.openai.com
-2. Maak een gratis account aan
-3. Begin met typen!
+**How to get started:**
+1. Go to chat.openai.com
+2. Create a free account
+3. Start typing!
 
-#### 2. Gemini (gratis met Google account)
+#### 2. Gemini (free with Google account)
 
-Als je al een Google account hebt, kun je Gemini direct gebruiken. Handig voor research en schrijfhulp.
+If you already have a Google account, you can use Gemini straight away. Great for research and writing assistance.
 
-#### 3. Perplexity (gratis)
+#### 3. Perplexity (free)
 
-Perplexity is een AI-zoekmachine die bronnen citeert. Perfect voor research.
+Perplexity is an AI search engine that cites its sources. Perfect for research.
 
-### Tips voor beginners
+### Tips for Beginners
 
-1. **Begin simpel** — Stel duidelijke, specifieke vragen
-2. **Experimenteer** — Er is geen "verkeerde" manier
-3. **Controleer altijd** — AI maakt soms fouten
-4. **Gebruik gratis versies** — Upgrade pas als je het echt gebruikt
+1. **Start simple** — Ask clear, specific questions
+2. **Experiment** — There's no "wrong" way
+3. **Always verify** — AI sometimes makes mistakes
+4. **Use free versions** — Upgrade only when you're truly using it
 
-Veel succes met je AI-avontuur!
+Good luck on your AI adventure!
     `.trim(),
   },
 ];
