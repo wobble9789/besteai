@@ -17,6 +17,12 @@ export function Header() {
               {cat.name.split(" ")[0]}
             </Link>
           ))}
+          <Link href="/best" className="hover:text-indigo-600 transition-colors">
+            Best Tools
+          </Link>
+          <Link href="/compare" className="hover:text-indigo-600 transition-colors">
+            Compare
+          </Link>
           <Link href="/blog" className="hover:text-indigo-600 transition-colors">
             Blog
           </Link>
