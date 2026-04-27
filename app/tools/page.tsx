@@ -6,10 +6,15 @@ import { ToolCard } from "@/components/ToolCard";
 
 export default function ToolsPage() {
   const [freeOnly, setFreeOnly] = useState(false);
+  const [topRated, setTopRated] = useState(false);
 
-  const displayed = freeOnly
+  let displayed = freeOnly
     ? tools.filter((t) => t.price.toLowerCase().includes("free"))
-    : tools;
+    : [...tools];
+
+  if (topRated) {
+    displayed = [...displayed].sort((a, b) => b.rating - a.rating);
+  }
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -18,7 +23,7 @@ export default function ToolsPage() {
         <p className="text-xl text-gray-600 mb-6">
           Compare {tools.length} AI tools on price, features and ease of use.
         </p>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-wrap">
           <button
             onClick={() => setFreeOnly((v) => !v)}
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${
@@ -30,12 +35,23 @@ export default function ToolsPage() {
             <span>{freeOnly ? "✅" : "🆓"}</span>
             {freeOnly ? `Showing ${displayed.length} free tools` : "Show Free Tools Only"}
           </button>
-          {freeOnly && (
+          <button
+            onClick={() => setTopRated((v) => !v)}
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${
+              topRated
+                ? "bg-amber-500 text-white border-amber-500 hover:bg-amber-600"
+                : "bg-white text-gray-700 border-gray-300 hover:border-amber-400 hover:text-amber-600"
+            }`}
+          >
+            <span>⭐</span>
+            {topRated ? "Sorted: Top Rated" : "Sort by Top Rated"}
+          </button>
+          {(freeOnly || topRated) && (
             <button
-              onClick={() => setFreeOnly(false)}
+              onClick={() => { setFreeOnly(false); setTopRated(false); }}
               className="text-sm text-gray-400 hover:text-gray-600 underline"
             >
-              Show all tools
+              Reset filters
             </button>
           )}
         </div>
