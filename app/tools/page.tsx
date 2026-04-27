@@ -1,24 +1,47 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState } from "react";
 import { tools } from "@/lib/tools";
 import { ToolCard } from "@/components/ToolCard";
 
-export const metadata: Metadata = {
-  title: "Compare All AI Tools 2025",
-  description:
-    "Compare all AI tools of 2025 on price, features and ease of use. From ChatGPT to ElevenLabs — find the best AI tool for you.",
-};
-
 export default function ToolsPage() {
+  const [freeOnly, setFreeOnly] = useState(false);
+
+  const displayed = freeOnly
+    ? tools.filter((t) => t.price.toLowerCase().includes("free"))
+    : tools;
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <div className="mb-10">
         <h1 className="text-4xl font-extrabold text-gray-900 mb-3">All AI Tools</h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-gray-600 mb-6">
           Compare {tools.length} AI tools on price, features and ease of use.
         </p>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setFreeOnly((v) => !v)}
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${
+              freeOnly
+                ? "bg-green-600 text-white border-green-600 hover:bg-green-700"
+                : "bg-white text-gray-700 border-gray-300 hover:border-green-500 hover:text-green-600"
+            }`}
+          >
+            <span>{freeOnly ? "✅" : "🆓"}</span>
+            {freeOnly ? `Showing ${displayed.length} free tools` : "Show Free Tools Only"}
+          </button>
+          {freeOnly && (
+            <button
+              onClick={() => setFreeOnly(false)}
+              className="text-sm text-gray-400 hover:text-gray-600 underline"
+            >
+              Show all tools
+            </button>
+          )}
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {tools.map((tool) => (
+        {displayed.map((tool) => (
           <ToolCard key={tool.slug} tool={tool} />
         ))}
       </div>
