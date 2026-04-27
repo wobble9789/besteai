@@ -1164,6 +1164,209 @@ ChatGPT handles coding, analysis, research, image generation (DALL-E), voice, an
 
 For **marketing teams with brand consistency needs**, Jasper's specialisation justifies the premium. For **everyone else**, ChatGPT offers better value and more flexibility at a lower price.`,
   },
+  "framer-vs-webflow": {
+    toolA: "framer-ai",
+    toolB: "webflow",
+    title: "Framer AI vs Webflow 2025: Which Website Builder Wins?",
+    intro:
+      "Framer AI and Webflow are two of the most powerful website builders for design-conscious creators. Framer uses AI to generate sites; Webflow gives you full visual control. Here's the full 2025 comparison.",
+    verdict:
+      "Choose Framer AI if you want a beautiful site fast with minimal learning curve. Choose Webflow if you need advanced CMS features, complex interactions, and full design control. Both are excellent — your workflow decides.",
+    content: `## Framer AI vs Webflow: Full 2025 Comparison
+
+Framer AI and Webflow represent two philosophies in modern web design. Framer uses AI to accelerate creation; Webflow gives designers pixel-perfect control. Both target designers and developers who want more than basic builders.
+
+### AI Generation
+
+Framer AI generates complete website layouts from text prompts in seconds. Describe your site and Framer builds it. Webflow has no AI generation — you build everything manually with its visual editor.
+
+**Winner: Framer AI** for speed of creation.
+
+### Design Flexibility
+
+Webflow's visual editor is the most powerful no-code design tool available. You can build virtually anything with it. Framer is flexible but has some constraints in its component system.
+
+**Winner: Webflow** for design control.
+
+### CMS and Content Management
+
+Webflow's CMS is exceptional — structured content, dynamic pages, and filtering make it ideal for large sites with lots of content. Framer's CMS is more basic.
+
+**Winner: Webflow**
+
+### Hosting Performance
+
+Both use fast global CDNs. Framer's hosting is slightly simpler to configure. Webflow offers more fine-grained control over hosting settings.
+
+**Winner: Tie**
+
+### Learning Curve
+
+Framer AI dramatically lowers the learning curve — AI handles the initial build. Webflow has a famously steep learning curve that takes weeks to master.
+
+**Winner: Framer AI** for beginners; Webflow for those willing to invest time.
+
+### Pricing
+
+Framer starts at $20/month. Webflow's CMS plan is $23/month. Both are similarly priced for basic use, but Webflow becomes expensive for e-commerce and larger sites.
+
+**Winner: Framer** on value for most use cases.
+
+| Feature | Framer AI | Webflow |
+|---|---|---|
+| AI generation | ✅ | ❌ |
+| Design control | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| CMS | Basic | Advanced |
+| Learning curve | Low | High |
+| Price (mo) | $20 | $23+ |
+| Best for | Speed + design | Complex sites |
+
+## Who Should Choose Framer AI?
+
+- Designers who want to build fast without sacrificing aesthetics
+- Founders who need a polished site quickly
+- Anyone who wants AI to handle the initial layout
+
+## Who Should Choose Webflow?
+
+- Agencies building complex client sites
+- Businesses with large content libraries
+- Developers who want full control over every element
+
+## The Bottom Line
+
+For most creators and startups, **Framer AI** delivers 90% of Webflow's quality at half the learning time. For enterprise-grade sites and complex CMS needs, **Webflow** remains the gold standard.`,
+  },
+  "looka-vs-canva": {
+    toolA: "looka",
+    toolB: "canva",
+    title: "Looka vs Canva AI 2025: Which Logo Maker Wins?",
+    intro:
+      "Looka and Canva AI are two of the most popular AI design tools for creating logos and brand identities. Looka specialises in logos; Canva is a full creative suite. Here's which one to choose.",
+    verdict:
+      "Choose Looka if you need a professional logo with full brand kit and vector files. Choose Canva if you want a free option and already use Canva for other design work. For serious branding, Looka wins.",
+    content: `## Looka vs Canva AI: Logo and Brand Design 2025
+
+Looka and Canva AI represent different approaches to AI logo design. Looka is a dedicated logo generator; Canva is a comprehensive design platform that includes AI logo capabilities.
+
+### Logo Quality
+
+Looka generates logos that look genuinely professional — on par with what a mid-tier designer would produce. Its AI is trained specifically on logo design principles. Canva's AI logo generation (via Magic Design) produces decent results but feels more generic.
+
+**Winner: Looka** for dedicated logo quality.
+
+### File Formats
+
+Looka provides SVG, PNG, PDF, and EPS vector files — everything you need for professional printing and use. Canva free tier provides PNG only; Pro tier adds SVG. For commercial printing, vector files are essential.
+
+**Winner: Looka** (vectors included in purchase).
+
+### Brand Kit
+
+Looka's Brand Kit ($96/year) generates business cards, social media templates, email signatures, and more — all consistent with your logo. Canva Pro includes brand kit features too, but requires more manual setup.
+
+**Winner: Tie** — both offer brand kits, Looka's is more logo-centric, Canva's is more versatile.
+
+### Pricing
+
+Looka: $20 one-time for logo files. Canva: Free (PNG only) or $15/month Pro (all formats). For a single logo purchase, Looka is cheaper. For ongoing design needs, Canva Pro offers better value.
+
+**Winner: Depends on use case**
+
+### Ease of Use
+
+Both are very easy to use. Looka's questionnaire takes 2 minutes; Canva's AI prompt is instant. Canva has a much larger user community and more tutorials.
+
+**Winner: Tie**
+
+| Feature | Looka | Canva AI |
+|---|---|---|
+| Logo quality | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Vector files | ✅ (included) | Pro only |
+| Brand kit | ✅ | ✅ |
+| Free option | ❌ | ✅ |
+| Price | $20 one-time | Free / $15/mo |
+| Best for | Serious branding | Budget/existing users |
+
+## The Bottom Line
+
+If you're launching a business and need a logo that looks professional, invest $20 in Looka. You get vector files, full ownership, and a complete brand kit. If you're already using Canva and just need a quick logo for a personal project, Canva's free tier is perfectly adequate.`,
+  },
+  "durable-vs-wix": {
+    toolA: "durable-ai",
+    toolB: "wix-adi",
+    title: "Durable AI vs Wix ADI 2025: Which AI Website Builder Wins?",
+    intro:
+      "Durable AI and Wix ADI both use artificial intelligence to generate websites automatically. But they serve different needs. Durable is built for speed; Wix ADI is built for features. Here's the full breakdown.",
+    verdict:
+      "Choose Durable AI if you need a website live in minutes with minimal fuss. Choose Wix ADI if you need e-commerce, booking systems, or a large app ecosystem. Both are affordable — your feature requirements decide.",
+    content: `## Durable AI vs Wix ADI: Full 2025 Comparison
+
+Durable AI and Wix ADI both generate websites automatically using AI — but they have fundamentally different strengths. Durable optimises for speed and simplicity. Wix ADI optimises for feature depth.
+
+### Speed of Generation
+
+Durable AI generates a complete website in under 30 seconds — the fastest AI builder available. Wix ADI's questionnaire takes 3-5 minutes and generates a personalised design.
+
+**Winner: Durable AI** — nothing matches 30 seconds.
+
+### Design Quality
+
+Both produce clean, professional designs. Wix ADI has access to 500+ templates and tends to produce more polished results. Durable's designs are simpler but load fast and look good.
+
+**Winner: Wix ADI** on variety; **Durable** on simplicity.
+
+### Features and Apps
+
+Wix's app market is its killer advantage — 500+ apps including booking systems, e-commerce, CRM, events, and more. Durable includes built-in CRM and invoicing but has a much smaller ecosystem.
+
+**Winner: Wix ADI** — not even close for features.
+
+### E-commerce
+
+Wix has full e-commerce: product catalog, cart, payments, inventory, and shipping. Durable has no e-commerce.
+
+**Winner: Wix ADI** for any product-selling use case.
+
+### Pricing
+
+Durable: $15/month. Wix Light: $17/month. Both include a custom domain. Very similar pricing for basic use; Wix gets more expensive for business and e-commerce plans.
+
+**Winner: Durable** on base price; value depends on features needed.
+
+### Ease of Use
+
+Durable is simpler — intentionally so. Fewer options mean less overwhelm. Wix has a rich editor but can feel complex for first-time users.
+
+**Winner: Durable** for simplicity.
+
+| Feature | Durable AI | Wix ADI |
+|---|---|---|
+| Generation speed | 30 seconds ⭐ | 3–5 minutes |
+| App ecosystem | Small | 500+ apps |
+| E-commerce | ❌ | ✅ Full |
+| Built-in CRM | ✅ | Via app |
+| Base price | $15/mo | $17/mo |
+| Best for | Fast launch | Full platform |
+
+## Who Should Choose Durable AI?
+
+- Service businesses (cleaners, coaches, consultants)
+- Freelancers who need a simple presence
+- Anyone who just needs a contact form and basic info page
+- Businesses that want CRM + invoicing built in
+
+## Who Should Choose Wix ADI?
+
+- Businesses selling products online
+- Anyone needing booking and scheduling
+- Restaurants, events, or complex service businesses
+- Those who want to grow into a full feature set over time
+
+## The Bottom Line
+
+For a simple business website fast, **Durable AI** is the winner. For anything involving e-commerce, booking, or complex functionality, **Wix ADI** and the broader Wix platform is the better long-term choice.`,
+  },
 };
 
 export async function generateStaticParams() {

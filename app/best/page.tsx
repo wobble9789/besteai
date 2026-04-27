@@ -107,6 +107,24 @@ const bestPages = [
     badgeColor: "bg-emerald-100 text-emerald-700",
     color: "border-emerald-200 hover:border-emerald-400",
   },
+  {
+    slug: "ai-website-builders",
+    title: "Best AI Website Builders 2025",
+    description: "Framer AI, Durable, Wix ADI — build a site in minutes with AI.",
+    emoji: "🌐",
+    badge: "New",
+    badgeColor: "bg-blue-100 text-blue-700",
+    color: "border-blue-200 hover:border-blue-400",
+  },
+  {
+    slug: "ai-logo-generators",
+    title: "Best AI Logo Generators 2025",
+    description: "Looka, Brandmark, Namelix — create a professional logo in minutes.",
+    emoji: "🎨",
+    badge: "New",
+    badgeColor: "bg-pink-100 text-pink-700",
+    color: "border-pink-200 hover:border-pink-400",
+  },
 ];
 
 export default function BestAIToolsIndexPage() {
@@ -148,7 +166,7 @@ export default function BestAIToolsIndexPage() {
         </p>
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <Link href="/tools" className="bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-700 transition-colors">
-            Browse All 63 Tools →
+            Browse All 87 Tools →
           </Link>
           <Link href="/compare" className="bg-white border border-gray-200 text-gray-700 text-sm font-semibold px-5 py-2.5 rounded-xl hover:border-indigo-300 transition-colors">
             Compare Tools Side-by-Side →

@@ -1135,3 +1135,173 @@ export function getToolsByCategory(categorySlug: string): Tool[] {
 export function getToolBySlug(slug: string): Tool | undefined {
   return tools.find((t) => t.slug === slug);
 }
+
+// Sprint 11 tools
+const sprint11Tools: Tool[] = [
+  {
+    slug: "durable-ai",
+    name: "Durable AI",
+    tagline: "Build a business website in 30 seconds with AI",
+    description:
+      "Durable AI is the fastest AI website builder on the market. Enter your business type, and Durable generates a complete website with copy, images, and a contact form in under 30 seconds. No design skills or coding required — ideal for freelancers and small business owners.",
+    website: "durable.co",
+    affiliateUrl: "https://durable.co/?ref=besteai",
+    price: "Free / $15/mo",
+    priceDetails: "Free tier to build and preview. Starter plan $15/month to publish with custom domain.",
+    categories: ["design", "automation"],
+    rating: 4.2,
+    pros: ["Generates full website in 30 seconds", "Built-in AI copywriting", "CRM and invoicing included", "Very affordable"],
+    cons: ["Templates feel similar", "Less design flexibility than Webflow", "Limited e-commerce"],
+    badge: "Fastest Builder",
+  },
+  {
+    slug: "framer-ai",
+    name: "Framer AI",
+    tagline: "Design and publish stunning websites with AI",
+    description:
+      "Framer AI combines professional design tools with AI generation. Describe your website in plain language and Framer generates a fully designed, responsive site. Unlike no-code builders, Framer gives designers full creative control — perfect for agencies, designers, and tech-savvy founders.",
+    website: "framer.com",
+    affiliateUrl: "https://framer.com/?ref=besteai",
+    price: "Free / $20/mo",
+    priceDetails: "Free plan for one site with Framer subdomain. Mini plan $20/month for custom domain.",
+    categories: ["design"],
+    rating: 4.5,
+    pros: ["Beautiful, modern design output", "Full design flexibility", "Fast hosting included", "Great animations"],
+    cons: ["Steeper learning curve", "More expensive than basic builders", "Not ideal for complex e-commerce"],
+    badge: "Best Design",
+  },
+  {
+    slug: "wix-adi",
+    name: "Wix ADI",
+    tagline: "AI website builder from the world's biggest website platform",
+    description:
+      "Wix ADI (Artificial Design Intelligence) creates personalised websites based on a short questionnaire. It pulls in your business info, selects matching layouts, and populates content automatically. Backed by Wix's massive app marketplace, it's one of the most feature-complete AI builders available.",
+    website: "wix.com",
+    affiliateUrl: "https://wix.com/?ref=besteai",
+    price: "Free / $17/mo",
+    priceDetails: "Free with Wix subdomain. Light plan $17/month for custom domain and no Wix ads.",
+    categories: ["design"],
+    rating: 4.2,
+    pros: ["Massive app marketplace", "E-commerce ready", "Established platform", "500+ templates"],
+    cons: ["ADI output can be generic", "Can't switch templates after creation", "Ads on free plan"],
+  },
+  {
+    slug: "mixo-ai",
+    name: "Mixo AI",
+    tagline: "Launch a landing page in seconds with AI",
+    description:
+      "Mixo AI generates high-converting landing pages from a single sentence. Built for entrepreneurs validating ideas fast, Mixo creates a professional page with email capture, waitlist integration, and analytics in minutes. No design or development experience needed.",
+    website: "mixo.io",
+    affiliateUrl: "https://mixo.io/?ref=besteai",
+    price: "$29/mo",
+    priceDetails: "Starter plan $29/month. Includes unlimited subscribers and custom domain.",
+    categories: ["design", "marketing"],
+    rating: 4.3,
+    pros: ["Generates full landing page from one sentence", "Built-in email capture", "Fast idea validation", "Clean modern design"],
+    cons: ["No free tier", "Limited to landing pages", "Less control than Webflow"],
+    badge: "Best for MVPs",
+  },
+  {
+    slug: "namelix",
+    name: "Namelix",
+    tagline: "AI-powered business name generator",
+    description:
+      "Namelix uses AI to generate short, catchy business names based on your keywords and style preferences. It checks domain availability in real time and shows brandable options with logo concepts. Perfect for founders naming their startup or product.",
+    website: "namelix.com",
+    affiliateUrl: "https://namelix.com/?ref=besteai",
+    price: "Free",
+    priceDetails: "Completely free to use. Earn credits by rating names.",
+    categories: ["marketing", "design"],
+    rating: 4.2,
+    pros: ["100% free", "Checks domain availability live", "Smart style filters", "Generates logo mockups"],
+    cons: ["Many good names already taken", "No trademark check", "Some suggestions are generic"],
+    badge: "Best Free Naming",
+  },
+  {
+    slug: "looka",
+    name: "Looka",
+    tagline: "AI logo and brand identity creator",
+    description:
+      "Looka uses AI to design logos and complete brand kits based on your industry, style preferences, and color choices. Get hundreds of logo options instantly, then customise and download. Includes a brand kit with business cards, social media assets, and more.",
+    website: "looka.com",
+    affiliateUrl: "https://looka.com/?ref=besteai",
+    price: "From $20 one-time",
+    priceDetails: "Logo package from $20 one-time. Brand Kit subscription $96/year for ongoing brand assets.",
+    categories: ["design", "marketing"],
+    rating: 4.3,
+    pros: ["Huge variety of AI logo concepts", "Full brand kit included", "High-res files", "Easy to customise"],
+    cons: ["Pay-per-download model", "Logos not trademarked by default", "Brand kit is subscription"],
+    badge: "Best Logo AI",
+  },
+  {
+    slug: "brandmark",
+    name: "Brandmark",
+    tagline: "AI logo design and brand identity",
+    description:
+      "Brandmark creates AI-generated logos with a focus on uniqueness and modern design. Unlike template-based tools, Brandmark generates original vector logos. Includes brand book, social media assets, and business card designs. Trusted by over 20,000 brands.",
+    website: "brandmark.io",
+    affiliateUrl: "https://brandmark.io/?ref=besteai",
+    price: "From $25 one-time",
+    priceDetails: "Basic package $25 one-time. Designer package $65 with full source files.",
+    categories: ["design", "marketing"],
+    rating: 4.2,
+    pros: ["Unique AI-generated logos", "Vector files included", "Brand book and style guide", "One-time payment"],
+    cons: ["Less style variety than Looka", "No free preview", "Customisation less intuitive"],
+  },
+  {
+    slug: "uizard",
+    name: "Uizard",
+    tagline: "AI UI/UX design tool for non-designers",
+    description:
+      "Uizard turns text prompts and rough sketches into professional UI mockups and prototypes. Ideal for product managers, founders, and developers who need to visualize app ideas without hiring a designer. Supports web apps, mobile apps, and desktop interfaces.",
+    website: "uizard.io",
+    affiliateUrl: "https://uizard.io/?ref=besteai",
+    price: "Free / $19/mo",
+    priceDetails: "Free plan includes 3 projects. Pro plan $19/month for unlimited projects and AI features.",
+    categories: ["design"],
+    rating: 4.3,
+    pros: ["Text to UI prototype", "Sketch to mockup scanning", "Team collaboration", "Export to developer-ready specs"],
+    cons: ["Not a replacement for Figma at scale", "AI designs need refinement", "Free plan limited"],
+    badge: "Best UI Prototyping",
+  },
+];
+
+tools.push(...sprint11Tools);
+
+// Sprint 11 compare stubs
+const sprint11CompareStubs: Tool[] = [
+  {
+    slug: "webflow",
+    name: "Webflow",
+    tagline: "Professional visual website builder for designers",
+    description:
+      "Webflow is the most powerful no-code website builder for professional designers. It gives you full CSS-level control through a visual interface, with built-in CMS, e-commerce, and hosting. Used by top agencies and design-forward companies worldwide.",
+    website: "webflow.com",
+    affiliateUrl: "https://webflow.com/?ref=besteai",
+    price: "Free / $23/mo",
+    priceDetails: "Free plan available. Basic plan $23/month. CMS plan $39/month for dynamic content.",
+    categories: ["design"],
+    rating: 4.6,
+    pros: ["Full design control", "Powerful CMS", "Clean code output", "Great hosting"],
+    cons: ["Steep learning curve", "More expensive at scale", "Not beginner-friendly"],
+    badge: "Most Powerful",
+  },
+  {
+    slug: "canva",
+    name: "Canva",
+    tagline: "The world's most popular AI design platform",
+    description:
+      "Canva is the world's most popular design tool, used by over 150 million people. Its AI features include Magic Design for logo generation, Magic Write for copy, and AI image generation. Covers social media, presentations, logos, and more in one platform.",
+    website: "canva.com",
+    affiliateUrl: "https://canva.com/?ref=besteai",
+    price: "Free / $15/mo",
+    priceDetails: "Free tier is generous. Canva Pro $15/month for brand kit, premium templates, and more assets.",
+    categories: ["design", "marketing"],
+    rating: 4.7,
+    pros: ["Massive template library", "Extremely easy to use", "Generous free tier", "AI design features"],
+    cons: ["Logos less unique than dedicated tools", "Pro needed for vectors", "Design limitations vs Figma"],
+    badge: "Most Popular Design Tool",
+  },
+];
+
+tools.push(...sprint11CompareStubs);
