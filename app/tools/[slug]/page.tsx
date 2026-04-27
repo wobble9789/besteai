@@ -81,6 +81,7 @@ export default function ToolPage({ params }: Props) {
               </div>
               <p className="text-lg text-gray-600">{tool.tagline}</p>
               <p className="text-sm text-gray-400 mt-1">{tool.website}</p>
+              <p className="text-xs text-gray-400 mt-1">Last Updated: April 2026</p>
             </div>
             <div className="text-right">
               <div className="text-2xl font-bold text-gray-900 mb-1">{tool.price}</div>
