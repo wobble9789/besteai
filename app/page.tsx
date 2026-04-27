@@ -143,6 +143,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Browse by Use Case */}
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <div className="text-center mb-8">
+          <span className="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">🗂️ Use Cases</span>
+          <h2 className="text-3xl font-extrabold text-gray-900">Browse by Use Case</h2>
+          <p className="text-gray-500 mt-2">Find the right AI tool for what you actually need</p>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {[
+            { emoji: "✍️", label: "Writing", href: "/categorie/writing", color: "bg-blue-50 hover:bg-blue-100 text-blue-700" },
+            { emoji: "🎨", label: "Images", href: "/categorie/images", color: "bg-pink-50 hover:bg-pink-100 text-pink-700" },
+            { emoji: "🎬", label: "Video", href: "/categorie/video", color: "bg-purple-50 hover:bg-purple-100 text-purple-700" },
+            { emoji: "🔊", label: "Audio", href: "/categorie/audio", color: "bg-orange-50 hover:bg-orange-100 text-orange-700" },
+            { emoji: "🤖", label: "Automation", href: "/categorie/automation", color: "bg-green-50 hover:bg-green-100 text-green-700" },
+            { emoji: "🔍", label: "Research", href: "/categorie/research", color: "bg-indigo-50 hover:bg-indigo-100 text-indigo-700" },
+            { emoji: "📈", label: "Marketing", href: "/categorie/marketing", color: "bg-red-50 hover:bg-red-100 text-red-700" },
+            { emoji: "🎨", label: "Design", href: "/categorie/design", color: "bg-yellow-50 hover:bg-yellow-100 text-yellow-700" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`${item.color} rounded-2xl p-5 text-center transition-colors group cursor-pointer border border-transparent hover:border-current hover:border-opacity-20`}
+            >
+              <div className="text-3xl mb-2">{item.emoji}</div>
+              <div className="font-semibold text-sm">{item.label}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Stats bar */}
       <section className="bg-white border-y border-gray-100 py-6">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-4 text-center">

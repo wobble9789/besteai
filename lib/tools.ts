@@ -1305,3 +1305,121 @@ const sprint11CompareStubs: Tool[] = [
 ];
 
 tools.push(...sprint11CompareStubs);
+
+// Sprint 12 tools — professional niches
+const sprint12Tools = [
+  {
+    slug: "harvey-ai",
+    name: "Harvey AI",
+    tagline: "AI built exclusively for legal professionals",
+    description:
+      "Harvey AI is the leading AI platform for law firms and legal departments. Built on fine-tuned legal models, it handles contract review, legal research, due diligence, and drafting at enterprise scale. Trusted by AmLaw 100 firms and global legal teams.",
+    website: "harvey.ai",
+    affiliateUrl: "https://harvey.ai/?ref=besteai",
+    price: "Enterprise",
+    priceDetails: "Enterprise pricing only. Contact Harvey for a custom quote based on firm size and use cases.",
+    categories: ["automation", "research"],
+    rating: 4.4,
+    pros: ["Purpose-built for law", "Enterprise-grade security", "Contract analysis at scale", "Trusted by top firms"],
+    cons: ["Enterprise pricing only", "No individual plan", "Requires onboarding"],
+    badge: "Best Legal AI",
+  },
+  {
+    slug: "casetext",
+    name: "CaseText",
+    tagline: "AI-powered legal research and drafting",
+    description:
+      "CaseText (now part of Thomson Reuters) is an AI-powered legal research platform featuring CoCounsel — an AI legal assistant that can review documents, conduct legal research, draft memos, and analyze contracts. Trusted by over 10,000 law firms.",
+    website: "casetext.com",
+    affiliateUrl: "https://casetext.com/?ref=besteai",
+    price: "$90/mo",
+    priceDetails: "CoCounsel starting from $90/month. Enterprise plans available for larger firms.",
+    categories: ["automation", "research"],
+    rating: 4.3,
+    pros: ["Comprehensive legal database", "AI contract review", "Trusted case law research", "CoCounsel assistant"],
+    cons: ["Expensive for solo attorneys", "US-focused legal database", "Learning curve"],
+    badge: "Best Legal Research",
+  },
+  {
+    slug: "elicit",
+    name: "Elicit",
+    tagline: "AI research assistant for academics and scientists",
+    description:
+      "Elicit is an AI research tool that helps you find, summarize, and extract insights from scientific papers. Ask a research question and Elicit searches academic literature, extracts key data, and helps you synthesize findings — saving hours of manual literature review.",
+    website: "elicit.com",
+    affiliateUrl: "https://elicit.com/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free plan includes 12 credits/month. Plus plan $10/month for unlimited searches.",
+    categories: ["research"],
+    rating: 4.5,
+    pros: ["Semantic paper search", "Auto-extracts study data", "Evidence synthesis", "Citation export"],
+    cons: ["Scientific papers only", "Free plan limited", "Less useful for non-STEM"],
+    badge: "Best Academic Research",
+  },
+  {
+    slug: "consensus-ai",
+    name: "Consensus AI",
+    tagline: "Search engine for scientific consensus",
+    description:
+      "Consensus is an AI-powered search engine that finds and synthesizes insights from peer-reviewed research. Ask any question and get evidence-based answers with direct citations from academic papers. Built for researchers, students, and anyone who needs evidence-based insights.",
+    website: "consensus.app",
+    affiliateUrl: "https://consensus.app/?ref=besteai",
+    price: "Free / $9/mo",
+    priceDetails: "Free plan with 20 searches/month. Premium $9/month for unlimited searches and advanced features.",
+    categories: ["research"],
+    rating: 4.4,
+    pros: ["Peer-reviewed sources only", "Consensus meter shows agreement", "Easy to use", "Free tier generous"],
+    cons: ["No proprietary research access", "Best for factual questions", "Can miss newer papers"],
+    badge: "Best Evidence Search",
+  },
+  {
+    slug: "wolfram-alpha",
+    name: "Wolfram Alpha",
+    tagline: "Computational intelligence for math and science",
+    description:
+      "Wolfram Alpha is the world's leading computational knowledge engine. It solves complex mathematical equations, interprets scientific queries, computes statistical data, and provides step-by-step solutions. The gold standard for STEM students, researchers, and engineers.",
+    website: "wolframalpha.com",
+    affiliateUrl: "https://wolframalpha.com/?ref=besteai",
+    price: "Free / $8/mo",
+    priceDetails: "Free for basic queries. Pro plan $8/month for step-by-step solutions and extended computation.",
+    categories: ["research"],
+    rating: 4.5,
+    pros: ["Exact computational answers", "Step-by-step math solutions", "Scientific knowledge base", "Trusted by universities"],
+    cons: ["Not a conversational AI", "Limited to structured queries", "Pro needed for full steps"],
+    badge: "Best STEM Tool",
+  },
+  {
+    slug: "semantic-scholar",
+    name: "Semantic Scholar",
+    tagline: "Free AI-powered academic paper search",
+    description:
+      "Semantic Scholar is a free, AI-powered research tool from the Allen Institute for AI. It indexes over 200 million academic papers with semantic search, citation graphs, and AI-generated paper summaries (TLDR). The best free tool for navigating scientific literature.",
+    website: "semanticscholar.org",
+    affiliateUrl: "https://semanticscholar.org/?ref=besteai",
+    price: "Free",
+    priceDetails: "Completely free. No premium plan required.",
+    categories: ["research"],
+    rating: 4.3,
+    pros: ["200M+ papers indexed", "Completely free", "AI-generated TLDRs", "Citation network visualization"],
+    cons: ["No full-text access (paywalled papers)", "Less curated than Elicit", "Basic UI"],
+    badge: "Best Free Research Tool",
+  },
+  {
+    slug: "tactiq",
+    name: "Tactiq",
+    tagline: "AI meeting transcription and summaries in real-time",
+    description:
+      "Tactiq is a Chrome extension and app that transcribes your Google Meet, Zoom, and Teams calls in real-time. It generates AI meeting summaries, action items, and key decisions automatically — so you can focus on the conversation instead of taking notes.",
+    website: "tactiq.io",
+    affiliateUrl: "https://tactiq.io/?ref=besteai",
+    price: "Free / $12/mo",
+    priceDetails: "Free plan includes 10 transcripts/month. Pro plan $12/month for unlimited transcripts and AI features.",
+    categories: ["automation"],
+    rating: 4.3,
+    pros: ["Real-time transcription", "Works in browser", "AI action item extraction", "Supports Zoom, Meet, Teams"],
+    cons: ["Chrome extension only", "Free plan limited", "AI summaries need editing"],
+    badge: "Best Meeting Transcription",
+  },
+];
+
+tools.push(...sprint12Tools);

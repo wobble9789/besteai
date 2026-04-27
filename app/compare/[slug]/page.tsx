@@ -1367,6 +1367,141 @@ Durable is simpler — intentionally so. Fewer options mean less overwhelm. Wix 
 
 For a simple business website fast, **Durable AI** is the winner. For anything involving e-commerce, booking, or complex functionality, **Wix ADI** and the broader Wix platform is the better long-term choice.`,
   },
+
+  "elicit-vs-consensus": {
+    toolA: "elicit",
+    toolB: "consensus-ai",
+    title: "Elicit vs Consensus AI 2025: Best Academic Research Tool?",
+    intro:
+      "Elicit and Consensus AI are the two leading AI tools for academic research. Both help researchers find and understand scientific literature — but they work very differently.",
+    verdict:
+      "Choose Elicit for in-depth literature reviews and systematic research. Choose Consensus for quick evidence-based answers. For serious research, use both together.",
+    content: `## Elicit vs Consensus AI: Full Comparison
+
+Both tools help researchers navigate scientific literature with AI — but they serve different purposes.
+
+### How They Work
+
+**Elicit** is a research workflow tool. Ask a research question and Elicit searches academic databases, finds relevant papers, and helps you extract and synthesize data across dozens of studies.
+
+**Consensus AI** is a search engine for scientific consensus. Ask a factual question and Consensus shows what peer-reviewed research says, with a consensus meter indicating how much evidence supports each view.
+
+### Speed vs Depth
+
+- Consensus wins for speed: quick evidence-based answers in seconds
+- Elicit wins for depth: comprehensive literature reviews with structured data extraction
+
+### Data Extraction
+
+Elicit lets you extract structured columns from papers (sample size, study type, outcomes, populations) — essential for systematic reviews. Consensus does not offer this.
+
+**Winner:** Elicit for deep research; Consensus for quick lookups.
+
+### Free Plans
+
+- Elicit: 12 credits/month free
+- Consensus: 20 searches/month free
+
+Both are usable on free plans for light research.
+
+### Who Should Use Each?
+
+- Undergraduate students: Consensus AI (simpler, faster)
+- Graduate researchers: Elicit (more powerful, better for literature reviews)
+- Clinicians doing evidence checks: Consensus AI
+- Systematic reviewers: Elicit (essential tool)`,
+  },
+
+  "otter-vs-fireflies": {
+    toolA: "otter-ai",
+    toolB: "fireflies-ai",
+    title: "Otter.ai vs Fireflies.ai 2025: Best AI Meeting Transcription?",
+    intro:
+      "Otter.ai and Fireflies.ai are the two most popular AI meeting transcription tools. Both record, transcribe, and summarize your meetings — but they target different users.",
+    verdict:
+      "Choose Otter.ai for individuals, students, and small teams who want the best free plan. Choose Fireflies.ai for sales teams that need CRM integrations and call analytics.",
+    content: `## Otter.ai vs Fireflies.ai: Full Comparison 2025
+
+### Transcription Accuracy
+
+Both deliver excellent accuracy for clear audio. Otter.ai handles multiple speakers well with automatic speaker labeling. Fireflies is accurate but occasionally struggles with heavy technical jargon.
+
+Slight edge: Otter.ai for speaker identification.
+
+### Meeting Platform Support
+
+- Otter.ai: Zoom, Google Meet, Teams, Webex
+- Fireflies: Zoom, Meet, Teams, Webex, Dialpad, RingCentral, phone calls
+
+Winner: Fireflies (broader platform support)
+
+### Free Plans
+
+- Otter.ai: 600 minutes/month (30 min max per session)
+- Fireflies: 800 minutes storage, limited AI features free
+
+Winner: Otter.ai (more usable free tier)
+
+### CRM and Business Integrations
+
+Fireflies connects natively with Salesforce, HubSpot, Notion, Zapier, and 40+ tools — a clear winner for sales teams wanting meeting notes automatically in their CRM.
+
+Winner: Fireflies (by a wide margin for business use)
+
+### Pricing
+
+Free plan: Otter 600 min/month vs Fireflies 800 min storage. Pro: Otter $17/month vs Fireflies $18/month. Business: Otter $30/month vs Fireflies $29/month.
+
+### Final Verdict
+
+- Students and individuals: Otter.ai
+- Sales teams: Fireflies.ai
+- Small remote teams: Otter.ai
+- Enterprise: Either, based on your CRM stack`,
+  },
+
+  "chatgpt-vs-wolfram-alpha": {
+    toolA: "chatgpt",
+    toolB: "wolfram-alpha",
+    title: "ChatGPT vs Wolfram Alpha 2025: Which AI Wins for Research?",
+    intro:
+      "ChatGPT and Wolfram Alpha are both powerful AI tools — but they work completely differently. ChatGPT is a conversational AI. Wolfram Alpha is a computational knowledge engine. Here's when to use each.",
+    verdict:
+      "Use Wolfram Alpha for precise math, science, and data computations. Use ChatGPT for explanations, writing, and open-ended questions. For best results, use both together.",
+    content: `## ChatGPT vs Wolfram Alpha: Full Comparison 2025
+
+### How They Work
+
+ChatGPT generates text by predicting the next most likely token. Excellent at explaining concepts, writing, and synthesis — but it can hallucinate incorrect math answers.
+
+Wolfram Alpha computes precise answers from curated knowledge and algorithms. It calculates, not generates. It does not hallucinate on math and science.
+
+### Math and Computation
+
+Ask ChatGPT to solve a complex integral and it might get it right — or wrong. Ask Wolfram Alpha the same and it returns the exact answer with step-by-step working.
+
+Winner: Wolfram Alpha for anything requiring mathematical precision.
+
+### Explanations and Learning
+
+ChatGPT is a better teacher. It explains why formulas work, adjusts to your level, and answers follow-up questions conversationally. Wolfram gives the answer with limited explanation.
+
+Winner: ChatGPT for conceptual understanding.
+
+### Real-World Data and Facts
+
+Wolfram Alpha has curated knowledge bases for scientific constants, country statistics, financial data, and more — precise and reliable. ChatGPT's knowledge has a cutoff date and can be imprecise on specific facts.
+
+Winner: Wolfram Alpha for precise factual data.
+
+### Pricing
+
+ChatGPT: Free / $20/month (Plus with GPT-4o). Wolfram Alpha: Free / $8/month (Pro with step-by-step solutions). Wolfram Pro at $8/month is exceptional value for STEM students.
+
+### The Verdict
+
+Use both together: Wolfram Alpha to compute and verify quantitative answers, ChatGPT to understand, explain, write, and synthesize the results.`,
+  },
 };
 
 export async function generateStaticParams() {
