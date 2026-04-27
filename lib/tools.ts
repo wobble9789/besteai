@@ -12,6 +12,7 @@ export interface Tool {
   pros: string[];
   cons: string[];
   badge?: string;
+  isNew?: boolean;
 }
 
 export const tools: Tool[] = [
@@ -2208,6 +2209,7 @@ const sprint19Tools: Tool[] = [
     pros: ["Evidence-based CBT approach", "Available 24/7", "Completely private", "Clinically researched"],
     cons: ["Not a replacement for therapy", "Limited conversation depth", "No human escalation"],
     badge: "Mental Health",
+    isNew: true,
   },
   {
     slug: "replika",
@@ -2223,6 +2225,7 @@ const sprint19Tools: Tool[] = [
     rating: 4.1,
     pros: ["Highly empathetic conversations", "Available 24/7", "Customisable AI persona", "Journaling features"],
     cons: ["Can feel repetitive over time", "Pro required for key features", "Not professional therapy"],
+    isNew: true,
   },
   {
     slug: "youper",
@@ -2238,6 +2241,7 @@ const sprint19Tools: Tool[] = [
     rating: 4.2,
     pros: ["Mood tracking + CBT combo", "Personalised insights", "Evidence-based exercises", "Easy to use"],
     cons: ["Limited free features", "Not a therapist substitute", "UI feels dated"],
+    isNew: true,
   },
   {
     slug: "aiva",
@@ -2254,6 +2258,7 @@ const sprint19Tools: Tool[] = [
     pros: ["Cinematic and orchestral quality", "Full commercial license", "200+ music styles", "MIDI export"],
     cons: ["Less pop/electronic focus", "Learning curve for customisation", "Slower generation than Suno"],
     badge: "Best Composition",
+    isNew: true,
   },
   {
     slug: "soundraw",
@@ -2269,6 +2274,7 @@ const sprint19Tools: Tool[] = [
     rating: 4.4,
     pros: ["Unlimited royalty-free downloads", "Customisable mood and tempo", "YouTube Content ID safe", "Clean UI"],
     cons: ["No free tier", "Less creative control than Aiva", "Genre variety could improve"],
+    isNew: true,
   },
   {
     slug: "beatoven",
@@ -2284,6 +2290,7 @@ const sprint19Tools: Tool[] = [
     rating: 4.3,
     pros: ["Emotion-aware music generation", "Very affordable", "Genre and mood control", "Good free tier"],
     cons: ["Less polished than Soundraw", "Limited advanced customisation", "Smaller genre library"],
+    isNew: true,
   },
   {
     slug: "boomy",
@@ -2299,6 +2306,7 @@ const sprint19Tools: Tool[] = [
     rating: 4.2,
     pros: ["Publish to Spotify and Apple Music", "Huge free tier", "No skill required", "Earn royalties"],
     cons: ["Limited sound quality vs Suno", "Generic-sounding results", "Streaming splits apply"],
+    isNew: true,
   },
   {
     slug: "loudly",
@@ -2314,7 +2322,143 @@ const sprint19Tools: Tool[] = [
     rating: 4.2,
     pros: ["Stem-level editing", "High-quality output", "Good genre variety", "Affordable premium"],
     cons: ["Limited free downloads", "UI can be complex", "Smaller community than Suno"],
+    isNew: true,
   },
 ];
 
 tools.push(...sprint19Tools);
+
+const sprint20Tools: Tool[] = [
+  {
+    slug: "sudowrite",
+    name: "Sudowrite",
+    tagline: "AI writing partner for fiction and creative writing",
+    description:
+      "Sudowrite is an AI writing tool built specifically for fiction writers. It helps you brainstorm, draft, and rewrite scenes, develop characters, and beat writer's block. Unlike general-purpose AI tools, every feature is designed around the craft of storytelling.",
+    website: "sudowrite.com",
+    affiliateUrl: "https://sudowrite.com/?ref=besteai",
+    price: "$19/mo",
+    priceDetails: "Hobby & Student $19/month for 30,000 AI words. Professional $29/month for 90,000 words. Max $129/month unlimited.",
+    categories: ["writing"],
+    rating: 4.5,
+    pros: ["Built specifically for fiction", "Story bible and character tools", "Beat writer's block features", "High-quality prose output"],
+    cons: ["Expensive for casual users", "Not suited for non-fiction", "Word limits on lower plans"],
+    badge: "Best for Fiction",
+    isNew: true,
+  },
+  {
+    slug: "novelai",
+    name: "NovelAI",
+    tagline: "AI-powered collaborative fiction and storytelling",
+    description:
+      "NovelAI is a subscription service for AI-assisted authorship and storytelling. Powered by custom language models trained on a large dataset of literature, it excels at maintaining consistent narrative voice and generating content in your personal style.",
+    website: "novelai.net",
+    affiliateUrl: "https://novelai.net/?ref=besteai",
+    price: "$15/mo",
+    priceDetails: "Tablet $10/month with 1,000 Anlas/month. Scroll $15/month with 1,000 Anlas. Opus $25/month with 10,000 Anlas and all features.",
+    categories: ["writing"],
+    rating: 4.3,
+    pros: ["Custom-trained on literature", "Strong narrative consistency", "Image generation included", "Privacy-focused"],
+    cons: ["Learning curve for new users", "UI feels complex", "Best features require Opus plan"],
+    isNew: true,
+  },
+  {
+    slug: "squibler",
+    name: "Squibler",
+    tagline: "AI-powered writing platform for authors and storytellers",
+    description:
+      "Squibler is an all-in-one writing platform combining distraction-free writing, AI assistance, and project management for authors. Its Smart Writer AI can generate scenes, develop plots, and help you meet your daily word count goals.",
+    website: "squibler.io",
+    affiliateUrl: "https://squibler.io/?ref=besteai",
+    price: "$16/mo",
+    priceDetails: "Pro plan $16/month with unlimited AI words, project templates, and collaboration. Annual plan saves 30%.",
+    categories: ["writing"],
+    rating: 4.2,
+    pros: ["Project and manuscript management", "Daily word count tracking", "Distraction-free editor", "Good AI scene generation"],
+    cons: ["Less powerful AI than Sudowrite", "Limited genre-specific features", "Mobile app needs improvement"],
+    isNew: true,
+  },
+  {
+    slug: "scrivener-ai",
+    name: "Scrivener AI",
+    tagline: "The professional writing suite with AI for long-form work",
+    description:
+      "Scrivener is the industry-standard writing tool for novelists, screenwriters, and academics. With AI integration added in recent versions, it now helps with brainstorming, outlining, and drafting while preserving the powerful manuscript management features professionals rely on.",
+    website: "literatureandlatte.com",
+    affiliateUrl: "https://www.literatureandlatte.com/?ref=besteai",
+    price: "$49 one-time",
+    priceDetails: "One-time purchase: $49 for macOS or Windows. iOS version $19.99. No subscription required.",
+    categories: ["writing"],
+    rating: 4.4,
+    pros: ["One-time payment, no subscription", "Best-in-class manuscript management", "Corkboard and outline views", "Used by professional authors"],
+    cons: ["Steep learning curve", "AI features less advanced than dedicated tools", "Older UI compared to modern apps"],
+    badge: "Best Value",
+    isNew: true,
+  },
+  {
+    slug: "shortly-ai",
+    name: "Shortly AI",
+    tagline: "AI writing assistant powered by GPT for long-form content",
+    description:
+      "Shortly AI is a focused, distraction-free AI writing tool powered by GPT. Just start writing and hit a shortcut to let the AI continue your story or article. Designed for writers who want AI to feel like a natural extension of their own voice.",
+    website: "shortlyai.com",
+    affiliateUrl: "https://shortlyai.com/?ref=besteai",
+    price: "$79/mo",
+    priceDetails: "Single plan $79/month with unlimited words and all features. Annual plan $65/month.",
+    categories: ["writing"],
+    rating: 4.2,
+    pros: ["Clean distraction-free interface", "Unlimited word generation", "Great for long-form flow", "Simple command system"],
+    cons: ["Expensive for what you get", "No collaboration features", "Less fiction-specific than Sudowrite"],
+    isNew: true,
+  },
+  {
+    slug: "fictionary",
+    name: "Fictionary",
+    tagline: "AI-powered story editing for fiction writers",
+    description:
+      "Fictionary is a story editing tool that uses AI to help you evaluate and improve your manuscript's structure, character development, and scene-by-scene pacing. Unlike writing tools, it focuses entirely on the editing phase — perfect for revising your first draft.",
+    website: "fictionary.co",
+    affiliateUrl: "https://fictionary.co/?ref=besteai",
+    price: "$14/mo",
+    priceDetails: "Indie $14/month for self-editing. StoryTeller $49/month for editors working with clients. Annual discount available.",
+    categories: ["writing"],
+    rating: 4.2,
+    pros: ["Story-structure focused editing", "Scene-by-scene feedback", "Character arc tracking", "Affordable indie plan"],
+    cons: ["Editing tool, not writing", "Requires completed manuscript", "Less known than competitors"],
+    isNew: true,
+  },
+  {
+    slug: "plot-factory",
+    name: "Plot Factory",
+    tagline: "AI story planner and world-building tool for authors",
+    description:
+      "Plot Factory is a cloud-based story planning platform that helps authors build fictional worlds, develop characters, and outline plots before writing a single word. Its AI assistant generates story ideas, character backstories, and scene suggestions.",
+    website: "plotfactory.com",
+    affiliateUrl: "https://plotfactory.com/?ref=besteai",
+    price: "Free / $9/mo",
+    priceDetails: "Free plan for 1 story and basic features. Author $9/month for unlimited stories and AI features.",
+    categories: ["writing"],
+    rating: 4.1,
+    pros: ["World-building tools included", "Character relationship maps", "Free tier available", "Good for pre-writing planning"],
+    cons: ["AI less powerful than premium tools", "Limited export options", "Smaller community"],
+    isNew: true,
+  },
+  {
+    slug: "ai-dungeon",
+    name: "AI Dungeon",
+    tagline: "Infinite AI-generated interactive fiction and roleplay",
+    description:
+      "AI Dungeon is an interactive fiction platform powered by AI that generates unlimited text-based adventure stories in real time. Choose your setting, make choices, and let the AI craft an infinite, responsive narrative. Perfect for creative exploration and collaborative storytelling.",
+    website: "aidungeon.com",
+    affiliateUrl: "https://aidungeon.com/?ref=besteai",
+    price: "Free / $10/mo",
+    priceDetails: "Free tier with basic AI model. Hero $10/month for premium AI, faster generation, and extended memory. Champion $20/month for best model.",
+    categories: ["writing", "research"],
+    rating: 4.0,
+    pros: ["Truly infinite stories", "Multiplayer adventure support", "Good free tier", "Unique interactive format"],
+    cons: ["Quality inconsistent on free tier", "Content moderation issues historically", "Not for traditional writing workflows"],
+    isNew: true,
+  },
+];
+
+tools.push(...sprint20Tools);

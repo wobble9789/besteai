@@ -112,7 +112,7 @@ export default function HomePage() {
       {/* Recently Added */}
       <section className="max-w-6xl mx-auto px-4 py-14">
         <div className="text-center mb-10">
-          <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">🆕 Recently Added</span>
+          <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">🆕 New This Week</span>
           <h2 className="text-3xl font-extrabold text-gray-900">New AI tools</h2>
           <p className="text-gray-500 mt-2">The latest tools added to our directory</p>
         </div>

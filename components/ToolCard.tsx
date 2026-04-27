@@ -13,11 +13,18 @@ export function ToolCard({ tool }: ToolCardProps) {
           <h3 className="text-xl font-bold text-gray-900">{tool.name}</h3>
           <p className="text-sm text-gray-500">{tool.website}</p>
         </div>
-        {tool.badge && (
-          <span className="text-xs font-semibold bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full whitespace-nowrap">
-            {tool.badge}
-          </span>
-        )}
+        <div className="flex flex-col items-end gap-1">
+          {tool.isNew && (
+            <span className="text-xs font-semibold bg-green-100 text-green-700 px-2 py-0.5 rounded-full whitespace-nowrap">
+              🆕 New
+            </span>
+          )}
+          {tool.badge && (
+            <span className="text-xs font-semibold bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full whitespace-nowrap">
+              {tool.badge}
+            </span>
+          )}
+        </div>
       </div>
 
       <p className="text-gray-600 text-sm mb-4 flex-grow">{tool.tagline}</p>

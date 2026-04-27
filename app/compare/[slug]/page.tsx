@@ -2906,6 +2906,201 @@ For entertainment and creativity: **Character.AI wins** — the character variet
 
 Both are worth trying. The free tiers of each let you experience the core value before committing.`,
   },
+  // sprint 20: creative writing
+  "sudowrite-vs-novelai": {
+    toolA: "sudowrite",
+    toolB: "novelai",
+    title: "Sudowrite vs NovelAI 2025: Best AI for Fiction Writers?",
+    intro:
+      "Sudowrite and NovelAI are the two leading AI tools purpose-built for fiction writers. Both help novelists draft, brainstorm, and overcome writer's block — but they take very different approaches. Sudowrite focuses on workflow integration; NovelAI on immersive prose generation.",
+    verdict:
+      "Choose Sudowrite if you want the most feature-rich AI writing assistant with story management tools. Choose NovelAI if you want deeply immersive prose generation that feels like a true co-author. Both are excellent — Sudowrite wins on features, NovelAI on prose quality.",
+    content: `## Sudowrite vs NovelAI: Full Comparison for Fiction Writers
+
+Both Sudowrite and NovelAI were built specifically for fiction writers — a rarity in the AI tool market dominated by general-purpose assistants. Choosing between them comes down to your workflow and what you value most.
+
+### Writing Quality
+
+NovelAI uses custom language models trained on a large dataset of literature, giving it a distinctive prose quality that often feels more "literary" than ChatGPT-based tools. Sudowrite, powered by GPT-4, produces cleaner prose with better instruction-following.
+
+**Winner: NovelAI** for atmospheric, literary prose; **Sudowrite** for following specific style instructions.
+
+### Features and Workflow
+
+Sudowrite has a far more developed feature set:
+- Story Bible for tracking characters and world-building
+- Describe mode for sensory scene generation
+- Rewrite mode for instant revisions
+- Feedback mode for editorial suggestions
+- Brainstorm mode for plot development
+
+NovelAI has:
+- Lorebook for world-building context
+- Custom AI model selection
+- Image generation included
+- Strong narrative continuation
+
+**Winner: Sudowrite** for feature depth.
+
+### Pricing
+
+| | Sudowrite | NovelAI |
+|---|---|---|
+| Entry tier | $19/mo (30K words) | $10/mo (Tablet) |
+| Mid tier | $29/mo (90K words) | $15/mo (Scroll) |
+| Top tier | $129/mo (unlimited) | $25/mo (Opus) |
+
+NovelAI is significantly cheaper for comparable usage.
+
+**Winner: NovelAI** on price.
+
+### Privacy and Content
+
+NovelAI allows more flexible content generation with fewer content restrictions — important for writers working in darker genres. Sudowrite has more moderation built in.
+
+**Winner: NovelAI** for creative freedom.
+
+### Who Should Use Sudowrite?
+- Writers who want a complete workflow tool
+- Authors working on complex multi-character novels
+- Writers who value editorial feedback features
+- Those comfortable with GPT-4 quality prose
+
+### Who Should Use NovelAI?
+- Writers who prioritize prose quality and literary feel
+- Authors who want immersive, collaborative storytelling
+- Writers in mature or dark fiction genres
+- Those who want image generation included`,
+  },
+  "jasper-vs-sudowrite": {
+    toolA: "jasper",
+    toolB: "sudowrite",
+    title: "Jasper vs Sudowrite 2025: Marketing AI vs Fiction AI",
+    intro:
+      "Jasper and Sudowrite are both premium AI writing tools, but they serve fundamentally different audiences. Jasper is built for marketing teams and business content; Sudowrite is built for fiction writers and creative authors. The right choice depends entirely on what you're writing.",
+    verdict:
+      "If you write marketing copy, blog posts, or business content: choose Jasper. If you write fiction, novels, or creative stories: choose Sudowrite. They're not really competitors — they serve different writing worlds.",
+    content: `## Jasper vs Sudowrite: The Full Comparison
+
+Comparing Jasper and Sudowrite is like comparing a sports car to an SUV — they're both excellent vehicles built for completely different purposes.
+
+### Core Purpose
+
+**Jasper:** Enterprise marketing content — blog posts, ads, social media, email campaigns, brand voice consistency, SEO content at scale.
+
+**Sudowrite:** Creative fiction — novels, short stories, screenplays, brainstorming, scene rewrites, character development.
+
+### Content Quality
+
+For marketing content, Jasper is exceptional. It produces polished, conversion-focused copy with brand voice training and 50+ templates optimized for different marketing formats.
+
+For fiction, Sudowrite is exceptional. Its prose is more atmospheric and its features (Story Bible, Describe mode, scene rewrites) are designed around storytelling craft.
+
+**Winner:** Each wins in their domain.
+
+### Features
+
+| Feature | Jasper | Sudowrite |
+|---------|--------|----------|
+| Marketing templates | 50+ | None |
+| Brand voice training | ✅ | ❌ |
+| SEO integration | ✅ (Surfer) | ❌ |
+| Story Bible | ❌ | ✅ |
+| Fiction-specific modes | ❌ | ✅ |
+| Team collaboration | ✅ | Limited |
+| Image generation | ✅ | ❌ |
+
+### Pricing
+
+| | Jasper | Sudowrite |
+|---|---|---|
+| Entry tier | $39/mo | $19/mo |
+| Mid tier | $59/mo | $29/mo |
+| Teams | From $99/mo | N/A |
+
+Sudowrite is significantly cheaper. Jasper's price is justified for marketing teams where it replaces multiple content roles.
+
+### The Overlap
+
+Both tools can technically handle the other's use case — but poorly. Jasper produces generic, marketing-flavored prose for fiction. Sudowrite produces fine but template-free content for marketing without brand features.
+
+**Use Jasper if:** You're a marketer, content team, or business owner
+**Use Sudowrite if:** You're a novelist, fiction writer, or creative author`,
+  },
+  "chatgpt-vs-sudowrite": {
+    toolA: "chatgpt",
+    toolB: "sudowrite",
+    title: "ChatGPT vs Sudowrite 2025: Which Is Better for Creative Writing?",
+    intro:
+      "ChatGPT and Sudowrite are both AI writing assistants, but one is general-purpose and one is purpose-built for fiction. For creative writers, this comparison has a clear answer — but the details matter depending on your budget and writing style.",
+    verdict:
+      "For serious fiction writing, Sudowrite wins on specialized features and prose quality. For occasional creative writing mixed with other tasks, ChatGPT Plus offers better value. If budget allows, use both: ChatGPT for research and outlining, Sudowrite for drafting and revisions.",
+    content: `## ChatGPT vs Sudowrite for Creative Writing
+
+This comparison is really asking: is a purpose-built fiction tool worth paying for when ChatGPT exists? The answer depends on how seriously you write fiction.
+
+### Writing Quality for Fiction
+
+ChatGPT with GPT-4o is a remarkably capable writer. It can produce engaging scenes, develop characters, and generate creative content across genres.
+
+But Sudowrite, also powered by GPT-4, has been fine-tuned and prompted specifically for fiction writing. The difference is noticeable:
+- Better voice matching to your existing prose
+- More atmospheric, less "AI-sounding" output
+- Better understanding of fiction craft (show don't tell, subtext, pacing)
+
+**Winner: Sudowrite** for fiction-specific quality.
+
+### Features
+
+**ChatGPT Plus ($20/month):**
+- General-purpose assistant
+- Image generation (DALL-E)
+- Web search and research
+- Code interpreter
+- Plugin ecosystem
+- Voice mode
+
+**Sudowrite ($19/month):**
+- Story Bible for project management
+- Describe mode for sensory details
+- Rewrite mode for instant revisions
+- Brainstorm mode for plot development
+- Feedback mode for editorial notes
+- Canvas for manuscript organization
+
+**Winner:** ChatGPT for versatility; Sudowrite for fiction-specific workflow.
+
+### The Prompt Overhead Problem
+
+To get ChatGPT to write good fiction, you need sophisticated prompts. You need to:
+- Set the style guidelines
+- Remind it of character details
+- Specify POV and tense each time
+- Provide context from previous scenes
+
+Sudowrite handles all of this automatically through the Story Bible and its interface design. It's built so writers can focus on writing, not prompting.
+
+**Winner: Sudowrite** for workflow efficiency.
+
+### Price Comparison
+
+| | ChatGPT Plus | Sudowrite Hobby |
+|---|---|---|
+| Monthly cost | $20 | $19 |
+| Word limit | Unlimited* | 30,000 AI words |
+| Fiction features | General | Specialized |
+| Other uses | Everything | Fiction only |
+
+*Subject to usage caps.
+
+### Our Recommendation
+
+**Just starting with AI writing?** Try ChatGPT first — it's cheaper per capability and teaches you how to prompt AI effectively.
+
+**Serious fiction writer?** Sudowrite is worth it. The specialized features and workflow integration justify the cost.
+
+**Best setup?** ChatGPT Plus for research, outlines, and worldbuilding. Sudowrite for actual drafting and revisions.`,
+  },
 };
 
 export async function generateStaticParams() {
