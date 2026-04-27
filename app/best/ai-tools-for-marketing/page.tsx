@@ -75,9 +75,45 @@ const marketingTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI tool for marketing in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jasper AI is the best purpose-built AI marketing tool. For SEO content, Writesonic with Surfer SEO is top. For social media, Copy.ai is a popular choice.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can AI replace a marketing team?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI augments marketing teams rather than replacing them. AI handles high-volume content and personalization at scale, but human creativity and strategy remain essential.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What AI tools do marketers use most?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The most popular are ChatGPT, Jasper, Grammarly, Canva AI, and HubSpot AI.",
+      },
+    }
+  ],
+};
+
 export default function BestAIMarketingToolsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-pink-100 text-pink-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           📢 Marketing Tools
@@ -144,6 +180,27 @@ export default function BestAIMarketingToolsPage() {
           Start with <strong>Canva AI</strong> (free) + <strong>Writesonic</strong> for content creation. Add <strong>Semrush</strong> when you&apos;re serious about SEO. Scale to <strong>Jasper</strong> when you have a team and need brand consistency at scale.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI tool for marketing in 2025?</h3>
+                <p className="text-gray-600 text-sm">Jasper AI is the best purpose-built AI marketing tool. For SEO content, Writesonic with Surfer SEO is top. For social media, Copy.ai is a popular choice.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Can AI replace a marketing team?</h3>
+                <p className="text-gray-600 text-sm">AI augments marketing teams rather than replacing them. AI handles high-volume content and personalization at scale, but human creativity and strategy remain essential.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What AI tools do marketers use most?</h3>
+                <p className="text-gray-600 text-sm">The most popular are ChatGPT, Jasper, Grammarly, Canva AI, and HubSpot AI.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

@@ -17,6 +17,10 @@ const comparePages = [
   "notion-ai-vs-chatgpt",
   "runway-vs-pika",
   "grammarly-vs-quillbot",
+  "chatgpt-vs-copilot",
+  "stable-diffusion-vs-midjourney",
+  "jasper-vs-writesonic",
+  "suno-vs-udio",
 ];
 
 const bestPages = [
@@ -33,6 +37,8 @@ const bestPages = [
   "free-ai-tools",
   "ai-tools-for-teachers",
   "ai-summarizers",
+  "ai-tools-europe",
+  "ai-tools-2026",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

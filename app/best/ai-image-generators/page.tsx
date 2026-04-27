@@ -89,9 +89,45 @@ const imageTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI image generator in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Midjourney is best for artistic quality. DALL-E 3 via ChatGPT is best for accuracy. Stable Diffusion is the best free, customizable option.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Midjourney free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No, Midjourney no longer offers a free trial. The cheapest plan is $10/month. Free alternatives include Adobe Firefly and Microsoft Designer.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I use AI-generated images commercially?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, most paid AI image generators allow commercial use. Always check the specific terms of service for the platform you use.",
+      },
+    }
+  ],
+};
+
 export default function BestAIImageGeneratorsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-purple-100 text-purple-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           🎨 Image Generators
@@ -143,6 +179,27 @@ export default function BestAIImageGeneratorsPage() {
           We generate 50+ images with identical prompts across portrait photography, landscape art, product mockups, and abstract art. Rankings reflect quality, speed, price, and ease of use. Updated quarterly.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI image generator in 2025?</h3>
+                <p className="text-gray-600 text-sm">Midjourney is best for artistic quality. DALL-E 3 via ChatGPT is best for accuracy. Stable Diffusion is the best free, customizable option.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is Midjourney free?</h3>
+                <p className="text-gray-600 text-sm">No, Midjourney no longer offers a free trial. The cheapest plan is $10/month. Free alternatives include Adobe Firefly and Microsoft Designer.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Can I use AI-generated images commercially?</h3>
+                <p className="text-gray-600 text-sm">Yes, most paid AI image generators allow commercial use. Always check the specific terms of service for the platform you use.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

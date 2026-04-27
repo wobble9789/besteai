@@ -64,6 +64,34 @@ const comparisons = [
     searches: "35k+/mo",
     emoji: "🎨",
   },
+  {
+    slug: "chatgpt-vs-copilot",
+    title: "ChatGPT vs Microsoft Copilot",
+    desc: "The AI powerhouse vs the Microsoft-integrated assistant. Which fits your workflow?",
+    searches: "150k+/mo",
+    emoji: "🪟",
+  },
+  {
+    slug: "stable-diffusion-vs-midjourney",
+    title: "Stable Diffusion vs Midjourney",
+    desc: "Free open-source vs premium AI art. Which image generator should you use in 2025?",
+    searches: "120k+/mo",
+    emoji: "🖼️",
+  },
+  {
+    slug: "jasper-vs-writesonic",
+    title: "Jasper vs Writesonic",
+    desc: "Two top AI writing tools for marketers. Which gives you more for your money?",
+    searches: "40k+/mo",
+    emoji: "✍️",
+  },
+  {
+    slug: "suno-vs-udio",
+    title: "Suno vs Udio",
+    desc: "The two leading AI music generators compared. Which creates better songs from prompts?",
+    searches: "25k+/mo",
+    emoji: "🎵",
+  },
 ];
 
 export default function ComparePage() {

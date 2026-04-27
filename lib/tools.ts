@@ -873,6 +873,27 @@ const sprint7Tools: Tool[] = [
 
 tools.push(...sprint7Tools);
 
+const sprint8Tools: Tool[] = [
+  {
+    slug: "microsoft-copilot",
+    name: "Microsoft Copilot",
+    tagline: "AI assistant built into Microsoft 365",
+    description:
+      "Microsoft Copilot is the AI assistant integrated across Microsoft 365, Windows, Edge, and Bing. It helps with writing, summarizing emails, generating images, and automating tasks — directly inside the tools you already use.",
+    website: "copilot.microsoft.com",
+    affiliateUrl: "https://copilot.microsoft.com/?ref=besteai",
+    price: "Free / $20/mo",
+    priceDetails: "Free version via Bing/Edge. Microsoft 365 Copilot for $20/month per user.",
+    categories: ["automation", "writing"],
+    rating: 4.3,
+    pros: ["Deep Microsoft 365 integration", "Free version available", "Image generation with Designer", "Works in Teams, Outlook, Word"],
+    cons: ["Best features require M365 subscription", "Less versatile than ChatGPT standalone", "Enterprise focus"],
+    badge: "Best for Microsoft Users",
+  },
+];
+
+tools.push(...sprint8Tools);
+
 export function getToolsByCategory(categorySlug: string): Tool[] {
   return tools.filter((t) => t.categories.includes(categorySlug));
 }

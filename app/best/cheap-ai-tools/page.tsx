@@ -97,9 +97,45 @@ const cheapTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the cheapest AI tool that actually works?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT free and Claude free deliver real value. For paid tools, Writesonic at $16/month and Grammarly at $12/month offer excellent value.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is there a cheap alternative to Jasper AI?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Writesonic ($16/month) and Copy.ai are top cheap alternatives to Jasper ($39/month) with comparable quality.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are cheap AI tools worse than expensive ones?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Not necessarily. ChatGPT Plus ($20/month) rivals tools costing hundreds per month. Price often reflects team features or volume limits, not raw AI quality.",
+      },
+    }
+  ],
+};
+
 export default function BestCheapAIToolsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-emerald-100 text-emerald-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           💸 Free & Budget AI
@@ -166,6 +202,27 @@ export default function BestCheapAIToolsPage() {
           <strong>ChatGPT Free</strong> + <strong>Canva Free</strong> + <strong>Grammarly Free</strong> + <strong>Perplexity Free</strong> = a complete AI toolkit at $0/month. Start here, then upgrade only what you actually use daily.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the cheapest AI tool that actually works?</h3>
+                <p className="text-gray-600 text-sm">ChatGPT free and Claude free deliver real value. For paid tools, Writesonic at $16/month and Grammarly at $12/month offer excellent value.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is there a cheap alternative to Jasper AI?</h3>
+                <p className="text-gray-600 text-sm">Writesonic ($16/month) and Copy.ai are top cheap alternatives to Jasper ($39/month) with comparable quality.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Are cheap AI tools worse than expensive ones?</h3>
+                <p className="text-gray-600 text-sm">Not necessarily. ChatGPT Plus ($20/month) rivals tools costing hundreds per month. Price often reflects team features or volume limits, not raw AI quality.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

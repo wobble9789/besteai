@@ -75,9 +75,45 @@ const codingTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI coding tool in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "GitHub Copilot and Cursor are the top AI coding tools. Cursor leads for agentic multi-file edits; GitHub Copilot is best for VS Code and enterprise teams.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is GitHub Copilot free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "GitHub Copilot is free for verified students, teachers, and open-source maintainers. Otherwise it costs $10/month.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can AI write complete programs?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI tools can write complete functions and scripts. For full applications, tools like Cursor Agent handle end-to-end development, though human review remains essential.",
+      },
+    }
+  ],
+};
+
 export default function BestAICodingToolsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           💻 Coding Tools
@@ -144,6 +180,27 @@ export default function BestAICodingToolsPage() {
           <strong>Cursor</strong> is the best all-in-one AI editor for serious developers. <strong>GitHub Copilot</strong> is the safest choice if you want to stay in your current IDE. For one-off complex problems, <strong>Claude</strong> consistently delivers the best reasoning.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI coding tool in 2025?</h3>
+                <p className="text-gray-600 text-sm">GitHub Copilot and Cursor are the top AI coding tools. Cursor leads for agentic multi-file edits; GitHub Copilot is best for VS Code and enterprise teams.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is GitHub Copilot free?</h3>
+                <p className="text-gray-600 text-sm">GitHub Copilot is free for verified students, teachers, and open-source maintainers. Otherwise it costs $10/month.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Can AI write complete programs?</h3>
+                <p className="text-gray-600 text-sm">AI tools can write complete functions and scripts. For full applications, tools like Cursor Agent handle end-to-end development, though human review remains essential.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

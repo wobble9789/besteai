@@ -97,9 +97,45 @@ const teacherTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI tool for teachers in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT is the most versatile for lesson planning and content creation. MagicSchool AI is purpose-built for educators with specialized templates.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can AI help create lesson plans?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, ChatGPT and MagicSchool AI generate complete lesson plans, learning objectives, activities, and assessments in minutes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is AI safe to use in the classroom?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI can be used safely with proper guidelines covering student data privacy (FERPA, COPPA) and responsible AI use policies.",
+      },
+    }
+  ],
+};
+
 export default function BestAIToolsForTeachersPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           🍎 Teacher Tools
@@ -166,6 +202,27 @@ export default function BestAIToolsForTeachersPage() {
           Start with <strong>ChatGPT Free</strong> + <strong>Canva Free</strong> + <strong>Grammarly Free</strong> — this trio alone can save a teacher 3-5 hours per week at zero cost.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI tool for teachers in 2025?</h3>
+                <p className="text-gray-600 text-sm">ChatGPT is the most versatile for lesson planning and content creation. MagicSchool AI is purpose-built for educators with specialized templates.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Can AI help create lesson plans?</h3>
+                <p className="text-gray-600 text-sm">Yes, ChatGPT and MagicSchool AI generate complete lesson plans, learning objectives, activities, and assessments in minutes.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is AI safe to use in the classroom?</h3>
+                <p className="text-gray-600 text-sm">AI can be used safely with proper guidelines covering student data privacy (FERPA, COPPA) and responsible AI use policies.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

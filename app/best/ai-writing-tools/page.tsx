@@ -97,9 +97,53 @@ const writingTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI writing tool in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT is the best overall AI writing tool in 2025. For long-form writing, Claude is top. For marketing copy, Jasper leads.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are AI writing tools free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, ChatGPT, Claude, and Writesonic all offer free tiers. Features are limited but sufficient for light use.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Jasper AI worth it?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jasper is worth it for marketing teams needing brand voice consistency. For individuals, Writesonic or ChatGPT offer better value.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which AI writing tool is best for SEO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Writesonic with Surfer SEO integration is the best AI writing tool for SEO content in 2025.",
+      },
+    }
+  ],
+};
+
 export default function BestAIWritingToolsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           ✍️ Writing Tools
@@ -151,6 +195,31 @@ export default function BestAIWritingToolsPage() {
           We test every tool with identical prompts across writing quality, speed, accuracy, and value for money. Rankings are updated quarterly. We earn a small commission when you use our affiliate links — at no extra cost to you.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI writing tool in 2025?</h3>
+                <p className="text-gray-600 text-sm">ChatGPT is the best overall AI writing tool in 2025. For long-form writing, Claude is top. For marketing copy, Jasper leads.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Are AI writing tools free?</h3>
+                <p className="text-gray-600 text-sm">Yes, ChatGPT, Claude, and Writesonic all offer free tiers. Features are limited but sufficient for light use.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is Jasper AI worth it?</h3>
+                <p className="text-gray-600 text-sm">Jasper is worth it for marketing teams needing brand voice consistency. For individuals, Writesonic or ChatGPT offer better value.</p>
+              </div>
+            <div key={"3"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Which AI writing tool is best for SEO?</h3>
+                <p className="text-gray-600 text-sm">Writesonic with Surfer SEO integration is the best AI writing tool for SEO content in 2025.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

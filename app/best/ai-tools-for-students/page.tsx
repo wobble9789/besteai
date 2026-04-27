@@ -86,9 +86,45 @@ const studentTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI tool for students in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT is most versatile. Perplexity AI is excellent for research with citations. Grammarly is the standard writing assistant. Claude excels at summarizing textbooks.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is using AI tools cheating in school?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It depends on your school policy. Most allow AI as a writing aid but prohibit submitting AI-generated work as your own. Always check academic integrity guidelines.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are there free AI tools for students?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. ChatGPT free, Grammarly free, Perplexity free, and Notion free are all excellent options. Many tools also offer student discounts.",
+      },
+    }
+  ],
+};
+
 export default function BestAIToolsForStudentsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-yellow-100 text-yellow-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           🎓 Student Tools
@@ -155,6 +191,27 @@ export default function BestAIToolsForStudentsPage() {
           Start with <strong>ChatGPT Free</strong> + <strong>Grammarly Free</strong> + <strong>Perplexity Free</strong> — that combination covers 90% of student AI needs at zero cost. Upgrade to paid plans only when you hit the limits.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI tool for students in 2025?</h3>
+                <p className="text-gray-600 text-sm">ChatGPT is most versatile. Perplexity AI is excellent for research with citations. Grammarly is the standard writing assistant. Claude excels at summarizing textbooks.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is using AI tools cheating in school?</h3>
+                <p className="text-gray-600 text-sm">It depends on your school policy. Most allow AI as a writing aid but prohibit submitting AI-generated work as your own. Always check academic integrity guidelines.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Are there free AI tools for students?</h3>
+                <p className="text-gray-600 text-sm">Yes. ChatGPT free, Grammarly free, Perplexity free, and Notion free are all excellent options. Many tools also offer student discounts.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

@@ -97,9 +97,45 @@ const businessTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI tool for small business in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT Team offers the best balance of capability and cost. For marketing, Jasper or Writesonic are top picks. For customer support, Intercom AI leads.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much can AI save a business?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI tools save knowledge workers 2-4 hours per day on routine tasks. For a 10-person team, that can represent $100,000+ in annual productivity gains.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are AI business tools secure?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Enterprise-grade AI tools offer SOC 2 compliance, data encryption, no training on your data, and admin controls for business security.",
+      },
+    }
+  ],
+};
+
 export default function BestAIToolsForBusinessPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-slate-100 text-slate-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           💼 Business Tools
@@ -166,6 +202,27 @@ export default function BestAIToolsForBusinessPage() {
           Every business should start with <strong>ChatGPT</strong> and <strong>Zapier AI</strong> — highest versatility, massive ROI. Microsoft shop? <strong>Copilot 365</strong> integrates into your existing workflow immediately. Build from there.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI tool for small business in 2025?</h3>
+                <p className="text-gray-600 text-sm">ChatGPT Team offers the best balance of capability and cost. For marketing, Jasper or Writesonic are top picks. For customer support, Intercom AI leads.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">How much can AI save a business?</h3>
+                <p className="text-gray-600 text-sm">AI tools save knowledge workers 2-4 hours per day on routine tasks. For a 10-person team, that can represent $100,000+ in annual productivity gains.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Are AI business tools secure?</h3>
+                <p className="text-gray-600 text-sm">Enterprise-grade AI tools offer SOC 2 compliance, data encryption, no training on your data, and admin controls for business security.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

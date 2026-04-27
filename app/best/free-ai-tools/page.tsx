@@ -109,9 +109,45 @@ const freeTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best completely free AI tool?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT free tier, Perplexity AI free, and Google Gemini free are the best completely free AI tools in 2025.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is there a free alternative to ChatGPT Plus?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Google Gemini offers GPT-4 level quality for free. Claude.ai has a generous free tier. Perplexity AI provides real-time web search for free.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What free AI tools are best for content creation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For writing: ChatGPT or Claude free tier. For images: Adobe Firefly free. For voice: ElevenLabs free (10,000 chars/mo).",
+      },
+    }
+  ],
+};
+
 export default function BestFreeAIToolsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           💸 Free Tools
@@ -169,6 +205,27 @@ export default function BestFreeAIToolsPage() {
           Every tool above has a paid upgrade. Start free, find what works for you, then invest in the tools that actually save you time. Most paid plans cost less than a coffee per day.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best completely free AI tool?</h3>
+                <p className="text-gray-600 text-sm">ChatGPT free tier, Perplexity AI free, and Google Gemini free are the best completely free AI tools in 2025.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is there a free alternative to ChatGPT Plus?</h3>
+                <p className="text-gray-600 text-sm">Google Gemini offers GPT-4 level quality for free. Claude.ai has a generous free tier. Perplexity AI provides real-time web search for free.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What free AI tools are best for content creation?</h3>
+                <p className="text-gray-600 text-sm">For writing: ChatGPT or Claude free tier. For images: Adobe Firefly free. For voice: ElevenLabs free (10,000 chars/mo).</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

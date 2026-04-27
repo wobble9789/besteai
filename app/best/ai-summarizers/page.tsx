@@ -86,9 +86,45 @@ const summarizerTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI summarizer in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Claude is best for long documents due to its 200k token context window. Perplexity AI is best for web content. QuillBot is the best quick tool for articles.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can AI summarize a whole book?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Claude can summarize entire books uploaded as PDFs. Other tools may require chunking the text into smaller sections.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are AI summarizers accurate?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Modern AI summarizers are highly accurate for factual content but may miss nuance. Always review summaries for critical research.",
+      },
+    }
+  ],
+};
+
 export default function BestAISummarizersPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           ⚡ Summarizer Tools
@@ -155,6 +191,27 @@ export default function BestAISummarizersPage() {
           Start with <strong>Perplexity AI (free)</strong> for web articles and <strong>Claude (free)</strong> for long PDFs. These two tools alone will save you hours of reading every week at zero cost.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI summarizer in 2025?</h3>
+                <p className="text-gray-600 text-sm">Claude is best for long documents due to its 200k token context window. Perplexity AI is best for web content. QuillBot is the best quick tool for articles.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Can AI summarize a whole book?</h3>
+                <p className="text-gray-600 text-sm">Claude can summarize entire books uploaded as PDFs. Other tools may require chunking the text into smaller sections.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Are AI summarizers accurate?</h3>
+                <p className="text-gray-600 text-sm">Modern AI summarizers are highly accurate for factual content but may miss nuance. Always review summaries for critical research.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

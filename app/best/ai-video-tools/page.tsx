@@ -97,9 +97,45 @@ const videoTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI video generator in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Runway Gen-3 and Sora are the best for quality. Pictory and Synthesia lead for marketing content creation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much do AI video tools cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI video tools range from free to $75+/month. Runway starts at $12/month, Synthesia at $22/month, Pictory at $19/month.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can AI create YouTube videos automatically?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI can automate scripts, voiceovers, footage assembly, and thumbnails. Fully automated YouTube channels are possible for certain content formats.",
+      },
+    }
+  ],
+};
+
 export default function BestAIVideoToolsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-purple-100 text-purple-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           🎬 Video Tools
@@ -166,6 +202,27 @@ export default function BestAIVideoToolsPage() {
           For most creators, <strong>Runway</strong> is the best all-around choice. Need AI avatars? Go with <strong>HeyGen</strong> or <strong>Synthesia</strong>. On a budget? <strong>Kling AI</strong> offers the best free tier. Rankings updated April 2025.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI video generator in 2025?</h3>
+                <p className="text-gray-600 text-sm">Runway Gen-3 and Sora are the best for quality. Pictory and Synthesia lead for marketing content creation.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">How much do AI video tools cost?</h3>
+                <p className="text-gray-600 text-sm">AI video tools range from free to $75+/month. Runway starts at $12/month, Synthesia at $22/month, Pictory at $19/month.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Can AI create YouTube videos automatically?</h3>
+                <p className="text-gray-600 text-sm">AI can automate scripts, voiceovers, footage assembly, and thumbnails. Fully automated YouTube channels are possible for certain content formats.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

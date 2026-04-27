@@ -86,9 +86,45 @@ const chatbots = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI chatbot in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT is the best overall AI chatbot. Claude is best for writing and long documents. Perplexity AI is best for real-time research with cited sources.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are AI chatbots free to use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, ChatGPT, Claude, Gemini, and Perplexity all offer free tiers sufficient for everyday tasks.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Claude better than ChatGPT?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Claude excels at long-form writing and handling large documents. ChatGPT wins for coding and versatility. Your use case determines the winner.",
+      },
+    }
+  ],
+};
+
 export default function BestAIChatbotsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           💬 AI Chatbots
@@ -155,6 +191,27 @@ export default function BestAIChatbotsPage() {
           For most people, <strong>ChatGPT</strong> or <strong>Claude</strong> is the best choice — both offer free tiers and $20/mo premium plans. Need research with sources? Use <strong>Perplexity</strong>. Want real-time news? Try <strong>Grok</strong>.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI chatbot in 2025?</h3>
+                <p className="text-gray-600 text-sm">ChatGPT is the best overall AI chatbot. Claude is best for writing and long documents. Perplexity AI is best for real-time research with cited sources.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Are AI chatbots free to use?</h3>
+                <p className="text-gray-600 text-sm">Yes, ChatGPT, Claude, Gemini, and Perplexity all offer free tiers sufficient for everyday tasks.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Is Claude better than ChatGPT?</h3>
+                <p className="text-gray-600 text-sm">Claude excels at long-form writing and handling large documents. ChatGPT wins for coding and versatility. Your use case determines the winner.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }

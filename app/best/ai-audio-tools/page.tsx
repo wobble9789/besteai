@@ -75,9 +75,45 @@ const audioTools = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the best AI voice generator in 2025?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ElevenLabs is the best for realistic human-like voices. Murf AI is best for professional narration with extensive customization.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can AI clone my voice?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, ElevenLabs and Murf AI offer voice cloning from a few minutes of audio. Commercial cloning requires consent and follows platform terms.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are AI voice generators free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ElevenLabs offers 10,000 characters/month free. Murf AI offers a free trial. Most tools have free tiers with limitations.",
+      },
+    }
+  ],
+};
+
 export default function BestAIAudioToolsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <span className="inline-block bg-orange-100 text-orange-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
           🎵 Audio Tools
@@ -144,6 +180,27 @@ export default function BestAIAudioToolsPage() {
           For voice and voiceover work, <strong>ElevenLabs</strong> is the clear #1. Creating music? Start with <strong>Suno</strong> free. Running a podcast? <strong>Descript</strong> will save you hours every episode.
         </p>
       </div>
+
+
+        {/* FAQ Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div key={"0"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">What is the best AI voice generator in 2025?</h3>
+                <p className="text-gray-600 text-sm">ElevenLabs is the best for realistic human-like voices. Murf AI is best for professional narration with extensive customization.</p>
+              </div>
+            <div key={"1"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Can AI clone my voice?</h3>
+                <p className="text-gray-600 text-sm">Yes, ElevenLabs and Murf AI offer voice cloning from a few minutes of audio. Commercial cloning requires consent and follows platform terms.</p>
+              </div>
+            <div key={"2"} className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
+                <h3 className="font-bold text-gray-900 mb-2">Are AI voice generators free?</h3>
+                <p className="text-gray-600 text-sm">ElevenLabs offers 10,000 characters/month free. Murf AI offers a free trial. Most tools have free tiers with limitations.</p>
+              </div>
+          </div>
+        </div>
     </main>
+    </>
   );
 }
