@@ -6,7 +6,7 @@ export function Header() {
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold text-indigo-600">
-          BestAI<span className="text-gray-400">.net</span>
+          SpotlightTool
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
           <Link href="/tools" className="hover:text-indigo-600 transition-colors">

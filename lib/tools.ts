@@ -23,7 +23,7 @@ export const tools: Tool[] = [
     description:
       "ChatGPT by OpenAI is the most widely used AI assistant. Perfect for writing, coding, analysis, and much more. With GPT-4 you get powerful results for virtually any task.",
     website: "openai.com",
-    affiliateUrl: "https://chat.openai.com/?ref=besteai",
+    affiliateUrl: "https://openai.com/chatgpt?ref=spotlighttool",
     price: "Free / $20/mo",
     priceDetails: "Free basic version available. ChatGPT Plus for $20/month.",
     categories: ["writing", "automation", "research"],
@@ -55,7 +55,7 @@ export const tools: Tool[] = [
     description:
       "Midjourney is the gold standard for AI-generated images. Create stunning illustrations, concept art, and marketing visuals with simple text prompts.",
     website: "midjourney.com",
-    affiliateUrl: "https://www.midjourney.com/?ref=besteai",
+    affiliateUrl: "https://midjourney.com/?ref=spotlighttool",
     price: "From $10/mo",
     priceDetails: "Basic plan $10/month. Standard $30/month for more usage.",
     categories: ["images", "design"],
@@ -86,7 +86,7 @@ export const tools: Tool[] = [
     description:
       "Jasper is built specifically for marketing teams. Write blog posts, ads, emails, and social media content in your brand's voice.",
     website: "jasper.ai",
-    affiliateUrl: "https://www.jasper.ai/?fpr=besteai",
+    affiliateUrl: "https://jasper.ai/?fpr=spotlighttool",
     price: "$49/mo",
     priceDetails: "Creator plan $49/month. Teams plan $125/month for 3 users.",
     categories: ["writing", "marketing"],
@@ -101,7 +101,7 @@ export const tools: Tool[] = [
     description:
       "Copy.ai generates marketing copy, product descriptions, and social media posts at lightning speed. Hundreds of templates get you productive instantly.",
     website: "copy.ai",
-    affiliateUrl: "https://www.copy.ai/?via=besteai",
+    affiliateUrl: "https://copy.ai/?via=spotlighttool",
     price: "Free / $36/mo",
     priceDetails: "Free plan with 2,000 words/month. Pro plan $36/month.",
     categories: ["writing", "marketing"],
@@ -148,7 +148,7 @@ export const tools: Tool[] = [
     description:
       "Notion AI brings artificial intelligence directly into your Notion workspace. Draft documents, summarize notes, generate action items, and brainstorm ideas without leaving your workflow.",
     website: "notion.so",
-    affiliateUrl: "https://affiliate.notion.so/besteai",
+    affiliateUrl: "https://notion.so/?ref=spotlighttool",
     price: "$10/mo",
     priceDetails: "Notion AI add-on costs $10/month per member on top of any Notion plan.",
     categories: ["writing", "automation"],
@@ -163,7 +163,7 @@ export const tools: Tool[] = [
     description:
       "Grammarly is the leading AI-powered writing assistant. It checks grammar, spelling, clarity, tone, and plagiarism in real-time across browsers, documents, and email clients.",
     website: "grammarly.com",
-    affiliateUrl: "https://grammarly.com",
+    affiliateUrl: "https://grammarly.com/?ref=spotlighttool",
     price: "Free / $30/mo",
     priceDetails: "Free plan covers basic grammar. Premium $30/month for advanced suggestions and plagiarism detection.",
     categories: ["writing"],
@@ -179,7 +179,7 @@ export const tools: Tool[] = [
     description:
       "Canva AI brings powerful design intelligence to the world's most popular design platform. Generate images, write copy, remove backgrounds, and create stunning visuals with no design experience needed.",
     website: "canva.com",
-    affiliateUrl: "https://canva.com",
+    affiliateUrl: "https://canva.com/?ref=spotlighttool",
     price: "Free / $15/mo",
     priceDetails: "Free plan available. Canva Pro $15/month unlocks AI features and premium assets.",
     categories: ["design", "images"],
@@ -240,7 +240,7 @@ export const tools: Tool[] = [
     description:
       "Copy.ai is an AI-powered copywriting platform built for marketing teams. Generate blog posts, social media content, email sequences, and ad copy at scale using advanced AI workflows.",
     website: "copy.ai",
-    affiliateUrl: "https://www.copy.ai/?via=besteai",
+    affiliateUrl: "https://copy.ai/?via=spotlighttool",
     price: "Free / $49/mo",
     priceDetails: "Free plan with 2,000 words/month. Pro plan $49/month for unlimited words and workflows.",
     categories: ["writing", "marketing"],
@@ -271,7 +271,7 @@ export const tools: Tool[] = [
     description:
       "Zapier AI brings artificial intelligence to workflow automation. Build AI-powered automations that connect 6,000+ apps, make decisions, and handle complex logic — all without coding.",
     website: "zapier.com",
-    affiliateUrl: "https://zapier.com/?ref=besteai",
+    affiliateUrl: "https://zapier.com/?ref=spotlighttool",
     price: "Free / $20/mo",
     priceDetails: "Free plan for basic automations. Starter $20/month for AI features and more Zaps.",
     categories: ["automation"],
@@ -401,7 +401,7 @@ const extraTools: Tool[] = [
     tagline: "AI writing and marketing content at scale",
     description: "Writesonic is an AI writing platform for marketers and content teams. Generate blog posts, ads, product descriptions, and landing pages with AI trained on top-performing marketing content.",
     website: "writesonic.com",
-    affiliateUrl: "https://writesonic.com?via=besteai",
+    affiliateUrl: "https://writesonic.com/?via=spotlighttool",
     price: "Free / $16/mo",
     priceDetails: "Free plan with limited words. Small Team plan $16/month for 200K words.",
     categories: ["writing", "marketing"],
@@ -415,7 +415,7 @@ const extraTools: Tool[] = [
     tagline: "AI-powered SEO and marketing intelligence",
     description: "Semrush is the leading all-in-one SEO and marketing platform, now enhanced with AI. Get keyword research, competitor analysis, site audits, and AI-generated content recommendations to dominate search rankings.",
     website: "semrush.com",
-    affiliateUrl: "https://www.semrush.com/?ref=besteai",
+    affiliateUrl: "https://semrush.com/?ref=spotlighttool",
     price: "$120/mo",
     priceDetails: "Pro plan $120/month. Guru $230/month for advanced features.",
     categories: ["marketing", "research"],
@@ -1052,7 +1052,7 @@ const sprint10Tools: Tool[] = [
     description:
       "Surfer SEO is the industry-leading on-page optimization tool. It analyses the top-ranking pages for your target keyword and gives you a real-time content score, NLP recommendations, and keyword density targets. Used by thousands of SEO professionals and agencies worldwide.",
     website: "surferseo.com",
-    affiliateUrl: "https://surferseo.com/?ref=besteai",
+    affiliateUrl: "https://surferseo.com/?via=spotlighttool",
     price: "$89/mo",
     priceDetails: "Essential plan at $89/month. Scale plan at $129/month. Enterprise custom pricing.",
     categories: ["marketing", "research"],
@@ -1433,7 +1433,7 @@ const sprint13Tools: Tool[] = [
     description:
       "Notion is the all-in-one productivity workspace used by millions of teams and individuals. Combine notes, wikis, databases, kanban boards, and project management in one flexible tool. Whether you're managing a solo side project or coordinating a 500-person company, Notion adapts to your workflow.",
     website: "notion.so",
-    affiliateUrl: "https://affiliate.notion.so/besteai",
+    affiliateUrl: "https://notion.so/?ref=spotlighttool",
     price: "Free / $10/mo",
     priceDetails: "Free plan for individuals. Plus plan $10/month per member. Business $15/month per member.",
     categories: ["automation", "writing"],
@@ -1449,7 +1449,7 @@ const sprint13Tools: Tool[] = [
     description:
       "ClickUp AI brings artificial intelligence to one of the most feature-rich project management platforms available. Write tasks, summarize projects, auto-generate meeting notes, and draft action items — all from within your ClickUp workspace. Replace multiple tools with a single AI-powered hub.",
     website: "clickup.com",
-    affiliateUrl: "https://clickup.com/?ref=besteai",
+    affiliateUrl: "https://clickup.com/?ref=spotlighttool",
     price: "Free / $7/mo",
     priceDetails: "Free plan available. Unlimited plan $7/month per member. ClickUp AI add-on $5/month.",
     categories: ["automation"],
@@ -1481,7 +1481,7 @@ const sprint13Tools: Tool[] = [
     description:
       "Make.com (formerly Integromat) is the most powerful visual automation tool for building complex multi-step workflows. Connect 1,000+ apps with drag-and-drop scenario building, data transformation, and AI-powered modules. Ideal for power users and agencies who need granular control over their automations.",
     website: "make.com",
-    affiliateUrl: "https://make.com/?ref=besteai",
+    affiliateUrl: "https://make.com/?ref=spotlighttool",
     price: "Free / $9/mo",
     priceDetails: "Free plan includes 1,000 operations/month. Core plan $9/month for 10,000 ops. Pro $16/month.",
     categories: ["automation"],
@@ -1550,7 +1550,7 @@ const sprint14Tools: Tool[] = [
     description:
       "Buffer is the go-to social media scheduling tool for individuals and small teams. Its AI assistant helps you write captions, suggest optimal posting times, and repurpose content across platforms. Clean UI, zero learning curve, and a generous free plan make it the easiest entry point into AI-powered social media management.",
     website: "buffer.com",
-    affiliateUrl: "https://buffer.com/?ref=besteai",
+    affiliateUrl: "https://buffer.com/?ref=spotlighttool",
     price: "Free / $6/mo",
     priceDetails: "Free plan: 3 channels, 10 scheduled posts. Essentials $6/month per channel. Team and Agency plans available.",
     categories: ["marketing", "automation"],

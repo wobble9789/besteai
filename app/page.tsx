@@ -4,20 +4,20 @@ import { tools, categories } from "@/lib/tools";
 import { ToolCard } from "@/components/ToolCard";
 
 export const metadata: Metadata = {
-  title: "Compare the Best AI Tools of 2025 — BestAI.net",
+  title: "SpotlightTool — Discover & Compare the Best Tools",
   description:
-    "Discover and compare the best AI tools of 2025. From ChatGPT to Midjourney — find the right AI tool for your needs.",
+    "Discover and compare the best tools. From ChatGPT to Canva — find the right tool for your needs with SpotlightTool.",
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "BestAI.net",
-  url: "https://besteai.nl",
-  description: "Compare the best AI tools of 2025",
+  name: "SpotlightTool",
+  url: "https://spotlighttool.com",
+  description: "Find, compare & choose the best tools",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://besteai.nl/tools?q={search_term_string}",
+    target: "https://spotlighttool.com/tools?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -25,6 +25,7 @@ const jsonLd = {
 export default function HomePage() {
   const featuredTools = tools.filter((t) => t.badge);
   const topTools = tools.slice(0, 8);
+  const mostPopular = [...tools].sort((a, b) => b.rating - a.rating).slice(0, 6);
 
   return (
     <>
@@ -40,11 +41,12 @@ export default function HomePage() {
             🚀 Updated April 2026
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-            Compare the best{" "}
-            <span className="text-indigo-600">AI tools</span> of 2025
+            Discover &amp; Compare the{" "}
+            <span className="text-indigo-600">Best Tools</span>{" "}
+            — Powered by Real Reviews
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Independent reviews of ChatGPT, Claude, Midjourney and more. Find the perfect AI tool for writing, design, research and automation.
+            SpotlightTool tracks 150+ AI tools so you don&apos;t have to. Compare features, pricing, and reviews in seconds.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
@@ -106,6 +108,40 @@ export default function HomePage() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* Most Popular */}
+      <section className="max-w-6xl mx-auto px-4 py-14">
+        <div className="text-center mb-10">
+          <span className="inline-block bg-yellow-100 text-yellow-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">🔥 Most Popular</span>
+          <h2 className="text-3xl font-extrabold text-gray-900">Top rated tools</h2>
+          <p className="text-gray-500 mt-2">The highest-rated tools in our directory</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {mostPopular.map((tool) => (
+            <div key={tool.slug} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-bold bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">🔥 {tool.badge || "Top Rated"}</span>
+                <span className="text-xs text-gray-400">{tool.price}</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-1">{tool.name}</h3>
+              <p className="text-sm text-gray-500 mb-1">{tool.tagline}</p>
+              <div className="flex items-center gap-1 mb-3">
+                <span className="text-amber-400 text-sm">{'★'.repeat(Math.round(tool.rating))}</span>
+                <span className="text-sm text-gray-500">{tool.rating}/5</span>
+              </div>
+              <p className="text-sm text-gray-600 flex-1 mb-4 line-clamp-2">{tool.description.slice(0, 100)}…</p>
+              <a
+                href={tool.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="mt-auto block text-center bg-yellow-500 text-white px-4 py-2 rounded-xl font-semibold hover:bg-yellow-600 transition-colors"
+              >
+                Try {tool.name} →
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 

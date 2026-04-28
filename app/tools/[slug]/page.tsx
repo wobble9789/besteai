@@ -96,7 +96,7 @@ export default function ToolPage({ params }: Props) {
               <a
                 href={tool.affiliateUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors"
               >
                 Try {tool.name} →
@@ -139,7 +139,7 @@ export default function ToolPage({ params }: Props) {
           <a
             href={tool.affiliateUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="inline-block mt-4 bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
           >
             See current pricing on {tool.website} →
